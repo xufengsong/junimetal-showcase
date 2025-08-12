@@ -310,6 +310,9 @@ const Index = () => {
                     "Safety officers",
                     "Environmental experts",
                     "Quality engineers",
+                    "Frosio III certified agent",
+                    "Cofrend II certified agents",
+                    "ACQPA level II and anticorrosive painting certified agent",
                   ].map((skill) => (
                     <Badge key={skill} variant="secondary" className="px-4 py-1">
                       {skill}
@@ -333,10 +336,10 @@ const Index = () => {
                 { title: "ISO 9001", desc: "Quality Management Systems" },
                 { title: "ISO 14001", desc: "Environmental Management Systems" },
                 { title: "ISO 45001", desc: "Health & Safety Management Systems" },
-                { title: "PED 2014/68/EU", desc: "Pressure Equipment Directive" },
-                { title: "EAC (Russia)", desc: "Eurasian Conformity" },
-                { title: "CE", desc: "European Conformity" },
-                { title: "Lloyd's Register", desc: "Compliance & Assurance" },
+                // { title: "PED 2014/68/EU", desc: "Pressure Equipment Directive" },
+                { title: "EAC (Russia)", desc: "Custom Union Technical Regulations" },
+                { title: "CE (European Conformity)", desc: "EC Directives for Related Products" },
+                { title: "Lloyd's Register\n PED 2014/68/EU", desc: "Pressure Equipment Directive" },
               ].map((c) => (
                 <Card key={c.title} className="flex items-start gap-3 p-5">
                   <BadgeCheck className="mt-0.5 text-sidebar-primary" />
@@ -354,7 +357,7 @@ const Index = () => {
         <section className="scroll-mt-24 border-t border-border py-16 md:py-24">
           <div className="container">
             <header className="mb-10">
-              <h2 className="text-3xl font-semibold md:text-4xl">Our Trusted Partners & Clients</h2>
+              <h2 className="text-3xl font-semibold md:text-4xl">Our Trusted Partners</h2>
             </header>
 
             <div className="mb-8">
@@ -372,14 +375,14 @@ const Index = () => {
             </div>
 
             <div>
-              <h3 className="mb-4 text-xl font-medium">Clients</h3>
+              {/* <h3 className="mb-4 text-xl font-medium">Clients</h3>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
                 {["Total", "Chevron", "Saipem", "Subsea 7", "Technip"].map((client) => (
                   <Card key={client} className="p-5 text-center text-muted-foreground">
                     {client}
                   </Card>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -394,7 +397,7 @@ const Index = () => {
               </p>
               <div className="mt-6 flex gap-3">
                 <Button asChild variant="accent">
-                  <a href="mailto:info@junimetal.example">Email Us</a>
+                  <a href="mailto:jmd@jmd.by-works.com">Email Us</a>
                 </Button>
                 <Button asChild variant="outline">
                   <a href="#offerings">View Offerings</a>
