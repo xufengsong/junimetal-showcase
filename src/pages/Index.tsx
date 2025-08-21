@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import heroImage from "@/assets/hero-industrial-night.jpg";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Wrench, Cog, Layers, Snowflake, ShieldCheck, Hammer, BadgeCheck, Users } from "lucide-react";
 
 const Index = () => {
@@ -176,62 +177,167 @@ const Index = () => {
               <h2 className="text-3xl font-semibold md:text-4xl">Our Offerings</h2>
             </header>
 
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              <Card className="group relative overflow-hidden border-border p-6 transition-transform hover:-translate-y-1">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
-                  <Layers className="text-sidebar-primary" />
-                </div>
-                <h3 className="mb-2 text-lg font-medium">Piping & Fittings</h3>
-                <p className="text-sm text-muted-foreground">
-                  Complete range of pipes, tubes, elbows, flanges, and fittings.
-                </p>
-              </Card>
+            <Tabs defaultValue="piping" className="w-full">
+              <TabsList className="grid w-full grid-cols-4">
+                <TabsTrigger value="piping">Piping & Fittings</TabsTrigger>
+                <TabsTrigger value="valves">Valves</TabsTrigger>
+                <TabsTrigger value="special">Special Pieces</TabsTrigger>
+                <TabsTrigger value="services">Services</TabsTrigger>
+              </TabsList>
 
-              <Card className="group relative overflow-hidden border-border p-6 transition-transform hover:-translate-y-1">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
-                  <Cog className="text-sidebar-primary" />
-                </div>
-                <h3 className="mb-2 text-lg font-medium">Valves</h3>
-                <p className="text-sm text-muted-foreground">
-                  Precision-engineered valves for demanding applications.
-                </p>
-              </Card>
+              <TabsContent value="piping" className="mt-8">
+                <Card className="p-8">
+                  <div className="grid gap-8 lg:grid-cols-2">
+                    <div>
+                      <div className="mb-4 flex items-center gap-3">
+                        <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
+                          <Layers className="text-sidebar-primary" />
+                        </div>
+                        <h3 className="text-2xl font-semibold">Piping & Fittings</h3>
+                      </div>
+                      <p className="text-muted-foreground">
+                        Complete range of pipes, tubes, elbows, flanges, and fittings for all industrial applications. 
+                        Our comprehensive inventory includes standard and custom solutions for various pressure ratings, 
+                        temperatures, and corrosive environments.
+                      </p>
+                      <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
+                        <li>Carbon Steel & Alloy Steel Pipes</li>
+                        <li>Stainless Steel & Duplex Fittings</li>
+                        <li>Flanges & Elbows</li>
+                        <li>Custom Pipe Configurations</li>
+                      </ul>
+                    </div>
+                    <div className="flex items-center justify-center">
+                      <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8">
+                        <div className="flex h-full flex-col items-center justify-center text-center">
+                          <div className="text-4xl text-muted-foreground/50">📷</div>
+                          <p className="mt-2 text-sm text-muted-foreground">
+                            Image placeholder for Piping & Fittings
+                          </p>
+                          <p className="text-xs text-muted-foreground/70">
+                            Insert your product image here
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Card>
+              </TabsContent>
 
-              <Card className="group relative overflow-hidden border-border p-6 transition-transform hover:-translate-y-1">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
-                  <Hammer className="text-sidebar-primary" />
-                </div>
-                <h3 className="mb-2 text-lg font-medium">Special Pieces</h3>
-                <p className="text-sm text-muted-foreground">
-                  Custom components and complex geometries with tight tolerances.
-                </p>
-              </Card>
+              <TabsContent value="valves" className="mt-8">
+                <Card className="p-8">
+                  <div className="grid gap-8 lg:grid-cols-2">
+                    <div>
+                      <div className="mb-4 flex items-center gap-3">
+                        <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
+                          <Cog className="text-sidebar-primary" />
+                        </div>
+                        <h3 className="text-2xl font-semibold">Valves</h3>
+                      </div>
+                      <p className="text-muted-foreground">
+                        Precision-engineered valves for demanding applications including cryogenic, high-pressure, 
+                        and corrosive environments. Our valve solutions ensure reliable operation and long service life.
+                      </p>
+                      <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
+                        <li>Extended Stem Ball Valves</li>
+                        <li>Bellows-Seal Valves</li>
+                        <li>Cryogenic-Specific Valves (-196°C rated)</li>
+                        <li>Gate & Check Valves</li>
+                      </ul>
+                    </div>
+                    <div className="flex items-center justify-center">
+                      <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8">
+                        <div className="flex h-full flex-col items-center justify-center text-center">
+                          <div className="text-4xl text-muted-foreground/50">📷</div>
+                          <p className="mt-2 text-sm text-muted-foreground">
+                            Image placeholder for Valves
+                          </p>
+                          <p className="text-xs text-muted-foreground/70">
+                            Insert your product image here
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Card>
+              </TabsContent>
 
-              <Card className="group relative overflow-hidden border-border p-6 transition-transform hover:-translate-y-1">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
-                  <Wrench className="text-sidebar-primary" />
-                </div>
-                <h3 className="mb-2 text-lg font-medium">Services</h3>
-                <p className="text-sm text-muted-foreground">
-                  Engineering support, testing, logistics, and project management.
-                </p>
-              </Card>
-            </div>
+              <TabsContent value="special" className="mt-8">
+                <Card className="p-8">
+                  <div className="grid gap-8 lg:grid-cols-2">
+                    <div>
+                      <div className="mb-4 flex items-center gap-3">
+                        <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
+                          <Hammer className="text-sidebar-primary" />
+                        </div>
+                        <h3 className="text-2xl font-semibold">Special Pieces</h3>
+                      </div>
+                      <p className="text-muted-foreground">
+                        Custom components and complex geometries with tight tolerances. Our specialized manufacturing 
+                        capabilities allow us to produce unique solutions for the most challenging applications.
+                      </p>
+                      <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
+                        <li>Vacuum-Jacketed Transfer Lines</li>
+                        <li>Phase Separators</li>
+                        <li>Buckle Arrestors</li>
+                        <li>Custom Insulated Manifolds</li>
+                      </ul>
+                    </div>
+                    <div className="flex items-center justify-center">
+                      <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8">
+                        <div className="flex h-full flex-col items-center justify-center text-center">
+                          <div className="text-4xl text-muted-foreground/50">📷</div>
+                          <p className="mt-2 text-sm text-muted-foreground">
+                            Image placeholder for Special Pieces
+                          </p>
+                          <p className="text-xs text-muted-foreground/70">
+                            Insert your product image here
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Card>
+              </TabsContent>
 
-            {/* <div className="mt-10">
-              <h3 className="mb-4 text-xl font-medium">Versatile Applications</h3>
-              <div className="flex flex-wrap gap-3">
-                {[
-                  "Offshore",
-                  "Low-temperature",
-                  "Corrosive Environments",
-                ].map((t) => (
-                  <Badge key={t} variant="secondary" className="px-4 py-1">
-                    {t}
-                  </Badge>
-                ))}
-              </div>
-            </div> */}
+              <TabsContent value="services" className="mt-8">
+                <Card className="p-8">
+                  <div className="grid gap-8 lg:grid-cols-2">
+                    <div>
+                      <div className="mb-4 flex items-center gap-3">
+                        <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
+                          <Wrench className="text-sidebar-primary" />
+                        </div>
+                        <h3 className="text-2xl font-semibold">Services</h3>
+                      </div>
+                      <p className="text-muted-foreground">
+                        Comprehensive engineering support, testing, logistics, and project management services. 
+                        From design consultation to final delivery, we ensure your project success.
+                      </p>
+                      <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
+                        <li>Engineering Support & Design</li>
+                        <li>Cryogenic Testing (-196°C validation)</li>
+                        <li>Quality Control & Inspection</li>
+                        <li>Project Management & Logistics</li>
+                      </ul>
+                    </div>
+                    <div className="flex items-center justify-center">
+                      <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8">
+                        <div className="flex h-full flex-col items-center justify-center text-center">
+                          <div className="text-4xl text-muted-foreground/50">📷</div>
+                          <p className="mt-2 text-sm text-muted-foreground">
+                            Image placeholder for Services
+                          </p>
+                          <p className="text-xs text-muted-foreground/70">
+                            Insert your service diagram or team photo here
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Card>
+              </TabsContent>
+            </Tabs>
           </div>
         </section>
 
