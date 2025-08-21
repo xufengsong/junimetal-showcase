@@ -87,7 +87,7 @@ const Index = () => {
     { href: "#about", label: "About Us" },
     { href: "#offerings", label: "Products & Services" },
     { href: "#expertise", label: "Our Expertise" },
-    { href: "#certifications", label: "Certifications" },
+    // { href: "#certifications", label: "Certifications" },
     { href: "#contact", label: "Contact Us" },
   ];
 
@@ -218,7 +218,7 @@ const Index = () => {
               </Card>
             </div>
 
-            <div className="mt-10">
+            {/* <div className="mt-10">
               <h3 className="mb-4 text-xl font-medium">Versatile Applications</h3>
               <div className="flex flex-wrap gap-3">
                 {[
@@ -231,7 +231,7 @@ const Index = () => {
                   </Badge>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -299,7 +299,7 @@ const Index = () => {
                 </ul>
               </Card>
 
-              <Card className="p-6 lg:col-span-2">
+              {/* <Card className="p-6 lg:col-span-2">
                 <div className="mb-2 flex items-center gap-2">
                   <Users className="text-sidebar-primary" />
                   <h3 className="text-xl font-medium">Technical Skills</h3>
@@ -319,13 +319,13 @@ const Index = () => {
                     </Badge>
                   ))}
                 </div>
-              </Card>
+              </Card> */}
             </div>
           </div>
         </section>
 
         {/* Certifications */}
-        <section id="certifications" className="scroll-mt-24 border-t border-border py-16 md:py-24">
+        {/* <section id="certifications" className="scroll-mt-24 border-t border-border py-16 md:py-24">
           <div className="container">
             <header className="mb-10">
               <h2 className="text-3xl font-semibold md:text-4xl">Our Certifications</h2>
@@ -351,10 +351,10 @@ const Index = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Partners and Clients */}
-        <section className="scroll-mt-24 border-t border-border py-16 md:py-24">
+        {/* <section className="scroll-mt-24 border-t border-border py-16 md:py-24">
           <div className="container">
             <header className="mb-10">
               <h2 className="text-3xl font-semibold md:text-4xl">Our Trusted Partners</h2>
@@ -375,17 +375,17 @@ const Index = () => {
             </div>
 
             <div>
-              {/* <h3 className="mb-4 text-xl font-medium">Clients</h3>
+              <h3 className="mb-4 text-xl font-medium">Clients</h3>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
                 {["Total", "Chevron", "Saipem", "Subsea 7", "Technip"].map((client) => (
                   <Card key={client} className="p-5 text-center text-muted-foreground">
                     {client}
                   </Card>
                 ))}
-              </div> */}
+              </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Contact / Footer */}
         <footer id="contact" className="scroll-mt-24 border-t border-border bg-card/40 py-16">
