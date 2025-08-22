@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from "react";
 import heroImage from "@/assets/hero-industrial-night.jpg";
+import pipeAndFitting from "@/assets/pipe&fitting.jpg";
+import valves from "@/assets/special pieces.jpg";
+import specialPiece from "@/assets/special pieces2.jpg";
+import cryogenic_service from "@/assets/cryogenic service.jpg";
+import fittings from "/@/assets/fittings.png";
+import flange1 from "/@/assets/flange.png";
+import cryogenic from "@/assets/cryogenic_pic.png";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -101,7 +108,7 @@ const Index = () => {
       <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
         <nav className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="h-7 w-7 rounded-sm bg-sidebar-primary" aria-hidden />
+            {/* <div className="h-7 w-7 rounded-sm bg-sidebar-primary" aria-hidden />  This is the blue box before JUNIMETAL DEVELOPMENT */}
             <span className="text-lg font-semibold tracking-wide">JUNIMETAL DEVELOPMENT</span>
           </div>
           <ul className="hidden items-center gap-6 md:flex">
@@ -208,7 +215,7 @@ const Index = () => {
                       </ul>
                     </div>
                     <div className="flex items-center justify-center">
-                      <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8">
+                      {/* <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8">
                         <div className="flex h-full flex-col items-center justify-center text-center">
                           <div className="text-4xl text-muted-foreground/50">📷</div>
                           <p className="mt-2 text-sm text-muted-foreground">
@@ -218,7 +225,11 @@ const Index = () => {
                             Insert your product image here
                           </p>
                         </div>
-                      </div>
+                      </div> */}
+                      <img
+                        src={pipeAndFitting}
+                        alt="Pipe and Fitting"
+                      />
                     </div>
                   </div>
                 </Card>
@@ -246,7 +257,7 @@ const Index = () => {
                       </ul>
                     </div>
                     <div className="flex items-center justify-center">
-                      <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8">
+                      {/* <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8">
                         <div className="flex h-full flex-col items-center justify-center text-center">
                           <div className="text-4xl text-muted-foreground/50">📷</div>
                           <p className="mt-2 text-sm text-muted-foreground">
@@ -256,7 +267,11 @@ const Index = () => {
                             Insert your product image here
                           </p>
                         </div>
-                      </div>
+                      </div> */}
+                      <img
+                        src={valves}
+                        alt="Valves"
+                      />
                     </div>
                   </div>
                 </Card>
@@ -284,7 +299,7 @@ const Index = () => {
                       </ul>
                     </div>
                     <div className="flex items-center justify-center">
-                      <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8">
+                      {/* <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8">
                         <div className="flex h-full flex-col items-center justify-center text-center">
                           <div className="text-4xl text-muted-foreground/50">📷</div>
                           <p className="mt-2 text-sm text-muted-foreground">
@@ -294,7 +309,11 @@ const Index = () => {
                             Insert your product image here
                           </p>
                         </div>
-                      </div>
+                      </div> */}
+                      <img
+                        src={specialPiece}
+                        alt="Special Pieces"
+                      />
                     </div>
                   </div>
                 </Card>
@@ -322,7 +341,7 @@ const Index = () => {
                       </ul>
                     </div>
                     <div className="flex items-center justify-center">
-                      <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8">
+                      {/* <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8">
                         <div className="flex h-full flex-col items-center justify-center text-center">
                           <div className="text-4xl text-muted-foreground/50">📷</div>
                           <p className="mt-2 text-sm text-muted-foreground">
@@ -332,7 +351,11 @@ const Index = () => {
                             Insert your service diagram or team photo here
                           </p>
                         </div>
-                      </div>
+                      </div> */}
+                      <img
+                        src={cryogenic}
+                        alt="Services"
+                      />
                     </div>
                   </div>
                 </Card>
@@ -503,7 +526,7 @@ const Index = () => {
               </p>
               <div className="mt-6 flex gap-3">
                 <Button asChild variant="accent">
-                  <a href="mailto:jmd@jmd.by-works.com">Email Us</a>
+                  <a href="mailto:jmd@jmd.by-works.com">jmd@jmd.by-works.com</a>
                 </Button>
                 <Button asChild variant="outline">
                   <a href="#offerings">View Offerings</a>
