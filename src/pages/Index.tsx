@@ -111,12 +111,12 @@ const Index = () => {
             {/* <div className="h-7 w-7 rounded-sm bg-sidebar-primary" aria-hidden />  This is the blue box before JUNIMETAL DEVELOPMENT */}
             <span className="text-lg font-semibold tracking-wide">JUNIMETAL DEVELOPMENT</span>
           </div>
-          <ul className="hidden items-center gap-6 md:flex">
+          <ul className="hidden items-center gap-8 md:flex">
             {navItems.map((item) => (
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                  className="relative px-4 py-2 text-sm font-medium text-muted-foreground transition-all duration-300 hover:text-foreground hover:bg-secondary rounded-md border border-transparent hover:border-border hover:shadow-sm"
                 >
                   {item.label}
                 </a>
@@ -186,8 +186,8 @@ const Index = () => {
 
             <Tabs defaultValue="piping" className="w-full">
               <TabsList className="grid w-full grid-cols-4">
-                <TabsTrigger value="piping">Piping</TabsTrigger>
-                <TabsTrigger value="valves">fittings</TabsTrigger>
+                <TabsTrigger value="piping">Piping & Fittings</TabsTrigger>
+                <TabsTrigger value="valves">Valves</TabsTrigger>
                 <TabsTrigger value="special">Special Pieces</TabsTrigger>
                 <TabsTrigger value="services">Services</TabsTrigger>
               </TabsList>
@@ -214,23 +214,19 @@ const Index = () => {
                         <li>Custom Pipe Configurations</li>
                       </ul>
                     </div>
-                    <div className="flex items-center justify-center">
-                      {/* <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8">
-                        <div className="flex h-full flex-col items-center justify-center text-center">
-                          <div className="text-4xl text-muted-foreground/50">📷</div>
-                          <p className="mt-2 text-sm text-muted-foreground">
-                            Image placeholder for Piping & Fittings
-                          </p>
-                          <p className="text-xs text-muted-foreground/70">
-                            Insert your product image here
-                          </p>
-                        </div>
-                      </div> */}
-                      <img
-                        src={pipeAndFitting}
-                        alt="Pipe and Fitting"
-                      />
-                    </div>
+                     <div className="flex items-center justify-center">
+                       <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8 flex items-center justify-center">
+                         <div className="text-center">
+                           <div className="text-4xl text-muted-foreground/50 mb-4">📷</div>
+                           <p className="text-sm text-muted-foreground">
+                             Image placeholder for Piping & Fittings
+                           </p>
+                           <p className="text-xs text-muted-foreground/70 mt-2">
+                             Insert your product image here
+                           </p>
+                         </div>
+                       </div>
+                     </div>
                   </div>
                 </Card>
               </TabsContent>
@@ -256,23 +252,19 @@ const Index = () => {
                         <li>Gate & Check Valves</li>
                       </ul>
                     </div>
-                    <div className="flex items-center justify-center">
-                      {/* <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8">
-                        <div className="flex h-full flex-col items-center justify-center text-center">
-                          <div className="text-4xl text-muted-foreground/50">📷</div>
-                          <p className="mt-2 text-sm text-muted-foreground">
-                            Image placeholder for Valves
-                          </p>
-                          <p className="text-xs text-muted-foreground/70">
-                            Insert your product image here
-                          </p>
-                        </div>
-                      </div> */}
-                      <img
-                        src={fittings}
-                        alt="fittings"
-                      />
-                    </div>
+                     <div className="flex items-center justify-center">
+                       <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8 flex items-center justify-center">
+                         <div className="text-center">
+                           <div className="text-4xl text-muted-foreground/50 mb-4">📷</div>
+                           <p className="text-sm text-muted-foreground">
+                             Image placeholder for Valves
+                           </p>
+                           <p className="text-xs text-muted-foreground/70 mt-2">
+                             Insert your product image here
+                           </p>
+                         </div>
+                       </div>
+                     </div>
                   </div>
                 </Card>
               </TabsContent>
@@ -298,23 +290,19 @@ const Index = () => {
                         <li>Custom Insulated Manifolds</li>
                       </ul>
                     </div>
-                    <div className="flex items-center justify-center">
-                      {/* <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8">
-                        <div className="flex h-full flex-col items-center justify-center text-center">
-                          <div className="text-4xl text-muted-foreground/50">📷</div>
-                          <p className="mt-2 text-sm text-muted-foreground">
-                            Image placeholder for Special Pieces
-                          </p>
-                          <p className="text-xs text-muted-foreground/70">
-                            Insert your product image here
-                          </p>
-                        </div>
-                      </div> */}
-                      <img
-                        src={flange1}
-                        alt="Special Pieces"
-                      />
-                    </div>
+                     <div className="flex items-center justify-center">
+                       <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8 flex items-center justify-center">
+                         <div className="text-center">
+                           <div className="text-4xl text-muted-foreground/50 mb-4">📷</div>
+                           <p className="text-sm text-muted-foreground">
+                             Image placeholder for Special Pieces
+                           </p>
+                           <p className="text-xs text-muted-foreground/70 mt-2">
+                             Insert your product image here
+                           </p>
+                         </div>
+                       </div>
+                     </div>
                   </div>
                 </Card>
               </TabsContent>
@@ -340,23 +328,19 @@ const Index = () => {
                         <li>Project Management & Logistics</li>
                       </ul>
                     </div>
-                    <div className="flex items-center justify-center">
-                      {/* <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8">
-                        <div className="flex h-full flex-col items-center justify-center text-center">
-                          <div className="text-4xl text-muted-foreground/50">📷</div>
-                          <p className="mt-2 text-sm text-muted-foreground">
-                            Image placeholder for Services
-                          </p>
-                          <p className="text-xs text-muted-foreground/70">
-                            Insert your service diagram or team photo here
-                          </p>
-                        </div>
-                      </div> */}
-                      <img
-                        src={cryogenic}
-                        alt="Services"
-                      />
-                    </div>
+                     <div className="flex items-center justify-center">
+                       <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8 flex items-center justify-center">
+                         <div className="text-center">
+                           <div className="text-4xl text-muted-foreground/50 mb-4">📷</div>
+                           <p className="text-sm text-muted-foreground">
+                             Image placeholder for Services
+                           </p>
+                           <p className="text-xs text-muted-foreground/70 mt-2">
+                             Insert your service diagram or team photo here
+                           </p>
+                         </div>
+                       </div>
+                     </div>
                   </div>
                 </Card>
               </TabsContent>
