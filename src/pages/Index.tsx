@@ -4,8 +4,8 @@ import pipeAndFitting from "@/assets/pipe&fitting.jpg";
 import valves from "@/assets/special pieces.jpg";
 import specialPiece from "@/assets/special pieces2.jpg";
 import cryogenic_service from "@/assets/cryogenic service.jpg";
-import fittings from "/@/assets/fittings.png";
-import flange1 from "/@/assets/flange.png";
+import fittings from "@/assets/fittings.png";
+import flange1 from "@/assets/flange.png";
 import cryogenic from "@/assets/cryogenic_pic.png";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -186,8 +186,8 @@ const Index = () => {
 
             <Tabs defaultValue="piping" className="w-full">
               <TabsList className="grid w-full grid-cols-4">
-                <TabsTrigger value="piping">Piping & Fittings</TabsTrigger>
-                <TabsTrigger value="valves">Valves</TabsTrigger>
+                <TabsTrigger value="piping">Piping</TabsTrigger>
+                <TabsTrigger value="valves">fittings</TabsTrigger>
                 <TabsTrigger value="special">Special Pieces</TabsTrigger>
                 <TabsTrigger value="services">Services</TabsTrigger>
               </TabsList>
@@ -269,8 +269,8 @@ const Index = () => {
                         </div>
                       </div> */}
                       <img
-                        src={valves}
-                        alt="Valves"
+                        src={fittings}
+                        alt="fittings"
                       />
                     </div>
                   </div>
@@ -311,7 +311,7 @@ const Index = () => {
                         </div>
                       </div> */}
                       <img
-                        src={specialPiece}
+                        src={flange1}
                         alt="Special Pieces"
                       />
                     </div>
