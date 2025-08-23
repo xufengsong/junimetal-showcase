@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import heroImage from "@/assets/hero-industrial-night.jpg";
-import pipeAndFitting from "@/assets/pipe&fitting.jpg";
-import valves from "@/assets/special pieces.jpg";
+import pipeAndTube from "@/assets/pipeAndTube.png";
+import valves from "@/assets/valves3.png";
 import specialPiece from "@/assets/special pieces2.jpg";
 import cryogenic_service from "@/assets/cryogenic service.jpg";
-import fittings from "@/assets/fittings.png";
-import flange1 from "@/assets/flange.png";
+import fittings from "@/assets/fittings3.png";
+import flange from "@/assets/flanges4.png";
 import cryogenic from "@/assets/cryogenic_pic.png";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -109,7 +109,12 @@ const Index = () => {
         <nav className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-3">
             {/* <div className="h-7 w-7 rounded-sm bg-sidebar-primary" aria-hidden />  This is the blue box before JUNIMETAL DEVELOPMENT */}
-            <span className="text-lg font-semibold tracking-wide">JUNIMETAL DEVELOPMENT</span>
+            <span 
+              className="text-lg font-semibold tracking-wide"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
+              JUNIMETAL DEVELOPMENT (JMDU)
+            </span>
           </div>
           <ul className="hidden items-center gap-8 md:flex">
             {navItems.map((item) => (
@@ -170,7 +175,7 @@ const Index = () => {
               <h2 className="text-3xl font-semibold md:text-4xl">Innovative Pipe & Tube Solutions</h2>
             </header>
             <p className="max-w-4xl text-muted-foreground">
-              Based in Seoul, South Korea, JUNIMETAL DEVELOPMENT operates a global main office and a
+              Based in Seoul, South Korea, JUNIMETAL DEVELOPMENT (JMDU) operates a global main office and a
               strategically located warehouse in Busan. We are a comprehensive pipe & fitting supplier
               (full package) and a manufacturer of valves, subsea components, and special pieces.
             </p>
@@ -186,21 +191,21 @@ const Index = () => {
 
             <Tabs defaultValue="piping" className="w-full">
               <TabsList className="grid w-full grid-cols-4">
-                <TabsTrigger value="piping">Piping & Fittings</TabsTrigger>
-                <TabsTrigger value="valves">Valves</TabsTrigger>
-                <TabsTrigger value="special">Special Pieces</TabsTrigger>
-                <TabsTrigger value="services">Services</TabsTrigger>
+                <TabsTrigger value="piping">Pipe & Tube</TabsTrigger>
+                <TabsTrigger value="fittings">Fittings</TabsTrigger>
+                <TabsTrigger value="flanges">Flanges</TabsTrigger>
+                <TabsTrigger value="fastners, gaskets, valves">Fastners, Gaskets, Valves</TabsTrigger>
               </TabsList>
 
               <TabsContent value="piping" className="mt-8">
                 <Card className="p-8">
-                  <div className="grid gap-8 lg:grid-cols-2">
-                    <div>
+                  <div className="grid gap-8 lg:grid-cols-2 items-stretch">
+                    <div className="flex flex-col h-full">
                       <div className="mb-4 flex items-center gap-3">
                         <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
                           <Layers className="text-sidebar-primary" />
                         </div>
-                        <h3 className="text-2xl font-semibold">Piping & Fittings</h3>
+                        <h3 className="text-2xl font-semibold">Pipe & Tube</h3>
                       </div>
                       <p className="text-muted-foreground">
                         Complete range of pipes, tubes, elbows, flanges, and fittings for all industrial applications. 
@@ -214,24 +219,20 @@ const Index = () => {
                         <li>Custom Pipe Configurations</li>
                       </ul>
                     </div>
-                     <div className="flex items-center justify-center">
-                       <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8 flex items-center justify-center">
-                         <div className="text-center">
-                           <div className="text-4xl text-muted-foreground/50 mb-4">📷</div>
-                           <p className="text-sm text-muted-foreground">
-                             Image placeholder for Piping & Fittings
-                           </p>
-                           <p className="text-xs text-muted-foreground/70 mt-2">
-                             Insert your product image here
-                           </p>
-                         </div>
-                       </div>
-                     </div>
+                    <div className="flex items-center justify-center h-full">
+                      <div className="w-full h-full flex items-center justify-center">
+                        <img
+                          src={pipeAndTube}
+                          alt="Pipe and Tube"
+                          className="h-full w-auto object-contain rounded-lg"
+                        />
+                      </div>
+                    </div>
                   </div>
                 </Card>
               </TabsContent>
 
-              <TabsContent value="valves" className="mt-8">
+              <TabsContent value="fittings" className="mt-8">
                 <Card className="p-8">
                   <div className="grid gap-8 lg:grid-cols-2">
                     <div>
@@ -239,7 +240,7 @@ const Index = () => {
                         <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
                           <Cog className="text-sidebar-primary" />
                         </div>
-                        <h3 className="text-2xl font-semibold">Valves</h3>
+                        <h3 className="text-2xl font-semibold">fittings</h3>
                       </div>
                       <p className="text-muted-foreground">
                         Precision-engineered valves for demanding applications including cryogenic, high-pressure, 
@@ -253,7 +254,7 @@ const Index = () => {
                       </ul>
                     </div>
                      <div className="flex items-center justify-center">
-                       <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8 flex items-center justify-center">
+                       {/* <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8 flex items-center justify-center">
                          <div className="text-center">
                            <div className="text-4xl text-muted-foreground/50 mb-4">📷</div>
                            <p className="text-sm text-muted-foreground">
@@ -263,13 +264,18 @@ const Index = () => {
                              Insert your product image here
                            </p>
                          </div>
-                       </div>
+                       </div> */}
+                       <img
+                          src={fittings}
+                          alt="a picture of a fitting"
+                          className="h-full w-auto object-contain rounded-lg"
+                         />
                      </div>
                   </div>
                 </Card>
               </TabsContent>
 
-              <TabsContent value="special" className="mt-8">
+              <TabsContent value="flanges" className="mt-8">
                 <Card className="p-8">
                   <div className="grid gap-8 lg:grid-cols-2">
                     <div>
@@ -291,23 +297,17 @@ const Index = () => {
                       </ul>
                     </div>
                      <div className="flex items-center justify-center">
-                       <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8 flex items-center justify-center">
-                         <div className="text-center">
-                           <div className="text-4xl text-muted-foreground/50 mb-4">📷</div>
-                           <p className="text-sm text-muted-foreground">
-                             Image placeholder for Special Pieces
-                           </p>
-                           <p className="text-xs text-muted-foreground/70 mt-2">
-                             Insert your product image here
-                           </p>
-                         </div>
-                       </div>
+                      <img
+                        src={flange}
+                        alt="a picture of flange"
+                        className="h-full w-auto object-contain rounded-lg"
+                      />
                      </div>
                   </div>
                 </Card>
               </TabsContent>
 
-              <TabsContent value="services" className="mt-8">
+              <TabsContent value="fastners, gaskets, valves" className="mt-8">
                 <Card className="p-8">
                   <div className="grid gap-8 lg:grid-cols-2">
                     <div>
@@ -315,7 +315,7 @@ const Index = () => {
                         <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
                           <Wrench className="text-sidebar-primary" />
                         </div>
-                        <h3 className="text-2xl font-semibold">Services</h3>
+                        <h3 className="text-2xl font-semibold">Fastners, Gaskets, Valves</h3>
                       </div>
                       <p className="text-muted-foreground">
                         Comprehensive engineering support, testing, logistics, and project management services. 
@@ -329,17 +329,11 @@ const Index = () => {
                       </ul>
                     </div>
                      <div className="flex items-center justify-center">
-                       <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8 flex items-center justify-center">
-                         <div className="text-center">
-                           <div className="text-4xl text-muted-foreground/50 mb-4">📷</div>
-                           <p className="text-sm text-muted-foreground">
-                             Image placeholder for Services
-                           </p>
-                           <p className="text-xs text-muted-foreground/70 mt-2">
-                             Insert your service diagram or team photo here
-                           </p>
-                         </div>
-                       </div>
+                       <img
+                         src={valves}
+                         alt="a picture of a valves"
+                         className="h-full w-auto object-contain rounded-lg"                         
+                        />
                      </div>
                   </div>
                 </Card>
@@ -349,7 +343,7 @@ const Index = () => {
         </section>
 
         {/* Our Expertise */}
-        <section id="expertise" className="scroll-mt-24 border-t border-border py-16 md:py-24">
+        {/* <section id="expertise" className="scroll-mt-24 border-t border-border py-16 md:py-24">
           <div className="container">
             <header className="mb-10">
               <h2 className="text-3xl font-semibold md:text-4xl">Unmatched Flexibility and Certified Quality</h2>
@@ -412,7 +406,7 @@ const Index = () => {
                 </ul>
               </Card>
 
-              {/* <Card className="p-6 lg:col-span-2">
+              <Card className="p-6 lg:col-span-2">
                 <div className="mb-2 flex items-center gap-2">
                   <Users className="text-sidebar-primary" />
                   <h3 className="text-xl font-medium">Technical Skills</h3>
@@ -432,10 +426,126 @@ const Index = () => {
                     </Badge>
                   ))}
                 </div>
-              </Card> */}
+              </Card>
+            </div>
+          </div>
+        </section> */}
+
+        {/* doubao support */}
+        <section id="expertise" className="scroll-mt-24 border-t border-border py-16 md:py-24">
+          <div className="container">
+            <header className="mb-10 text-center">
+              <h2 className="text-3xl font-semibold md:text-4xl">Unmatched Flexibility and Certified Quality</h2>
+            </header>
+
+            <div className="grid gap-8 lg:grid-cols-2">
+              {/* Materials Card */}
+              <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
+                <div className="relative h-48 overflow-hidden">
+                  {/* <img 
+                    src="/images/materials.jpg" 
+                    alt="Various metal materials including carbon steel, alloy steel and stainless steel" 
+                    className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
+                    loading="lazy"
+                  /> */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
+                  <h3 className="absolute bottom-4 left-4 text-xl font-medium">Materials</h3>
+                </div>
+                <div className="p-6">
+                  <ul className="grid list-disc gap-2 pl-5 text-muted-foreground sm:grid-cols-2">
+                    {[
+                      "Carbon Steel",
+                      "Alloy Steel",
+                      "Stainless Steel",
+                      "Duplex",
+                      "Coated Pipes",
+                    ].map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              </Card>
+
+              {/* Heat Treatment Card */}
+              <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
+                <div className="relative h-48 overflow-hidden">
+                  {/* <img 
+                    src="/images/heat-treatment.jpg" 
+                    alt="Industrial heat treatment process for metals" 
+                    className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
+                    loading="lazy"
+                  /> */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
+                  <h3 className="absolute bottom-4 left-4 text-xl font-medium">Heat Treatment</h3>
+                </div>
+                <div className="p-6">
+                  <ul className="grid list-disc gap-2 pl-5 text-muted-foreground sm:grid-cols-2">
+                    {["Stress Relief", "Quenching", "Corrosion-Resistant Annealing"].map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              </Card>
+
+              {/* Cryogenic Service Card */}
+              <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
+                <div className="relative h-48 overflow-hidden">
+                  {/* <img 
+                    src="/images/cryogenic.jpg" 
+                    alt="Cryogenic testing equipment for materials" 
+                    className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
+                    loading="lazy"
+                  /> */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
+                  <div className="absolute bottom-4 left-4 flex items-center gap-2">
+                    <Snowflake className="text-sidebar-primary" />
+                    <h3 className="text-xl font-medium">Cryogenic Service</h3>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <ul className="list-disc space-y-2 pl-5 text-muted-foreground">
+                    <li>In-house validation of cryogenic capabilities by testing @ -196°C</li>
+                    <li>Tightness testing with helium</li>
+                  </ul>
+                </div>
+              </Card>
+
+              {/* Custom Designs Card */}
+              <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
+                <div className="relative h-48 overflow-hidden">
+                  {/* <img 
+                    src="/images/custom-forgings.jpg" 
+                    alt="Custom metal forging components and designs" 
+                    className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
+                    loading="lazy"
+                  /> */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
+                  <div className="absolute bottom-4 left-4 flex items-center gap-2">
+                    <ShieldCheck className="text-sidebar-primary" />
+                    <h3 className="text-xl font-medium">Custom Designs & Special Forgings</h3>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <p className="mb-3 text-muted-foreground">
+                    Tailored components with adjustable radii angles and precise tolerances.
+                  </p>
+                  <ul className="grid list-disc gap-2 pl-5 text-muted-foreground sm:grid-cols-2">
+                    {[
+                      "Buckle Arrestors",
+                      "Pipe Anchors",
+                      "Hanger Flanges",
+                      "Tees and Barred Tees",
+                      "Wyes",
+                    ].map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              </Card>
             </div>
           </div>
         </section>
+        
 
         {/* Certifications */}
         {/* <section id="certifications" className="scroll-mt-24 border-t border-border py-16 md:py-24">
