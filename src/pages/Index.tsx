@@ -233,7 +233,7 @@ const Index = () => {
             </header>
 
             <Tabs defaultValue="piping" className="w-full">
-              <TabsList className="grid w-full grid-cols-4">
+              <TabsList className="w-full flex overflow-x-auto sm:grid sm:grid-cols-4">
                 <TabsTrigger value="piping">{t.offerings.tabs.pipeTube}</TabsTrigger>
                 <TabsTrigger value="fittings">{t.offerings.tabs.fittings}</TabsTrigger>
                 <TabsTrigger value="flanges">{t.offerings.tabs.flanges}</TabsTrigger>
