@@ -169,7 +169,7 @@ const Index = () => {
         </section>
 
         {/* About Us */}
-        <section id="about" className="scroll-mt-24 border-t border-border py-16 md:py-24">
+        {/* <section id="about" className="scroll-mt-24 border-t border-border py-16 md:py-24">
           <div className="container">
             <header className="mb-8">
               <h2 className="text-3xl font-semibold md:text-4xl">Innovative Pipe & Tube Solutions</h2>
@@ -180,7 +180,57 @@ const Index = () => {
               (full package) and a manufacturer of valves, subsea components, and special pieces.
             </p>
           </div>
+        </section> */}
+        <section
+          id="about"
+          className="scroll-mt-24 border-t border-border w-full bg-gradient-to-r from-black via-[#0a0f2c] to-[#0a1a3c] shadow-lg"
+        >
+          <div className="container py-12 text-left">
+            {/* Heading */}
+            <h1 className="text-3xl md:text-4xl font-bold text-white leading-snug">
+              A sustainable and value-creating business model
+            </h1>
+
+            {/* Subheading */}
+            <p className="mt-6 max-w-3xl text-lg font-semibold text-gray-100 leading-relaxed">
+              JUNIMETAL DEVELOPMENT (JMDU) is a trusted global distributor of 
+              <span className="text-white"> high value-added industrial products</span> 
+              made from advanced stainless steels and special alloys — serving the 
+              multi-energy and mobility industries.
+            </p>
+
+            {/* Body */}
+            <div className="mt-8 space-y-6 max-w-3xl text-gray-300 leading-relaxed">
+              <p>
+                As a <span className="text-white font-semibold">full-package distributor</span>, 
+                we provide seamless supply chain solutions by connecting manufacturers 
+                with clients worldwide.
+              </p>
+
+              <p>
+                From <span className="text-white">sourcing and logistics</span> to 
+                <span className="text-white"> reliable delivery and after-sales support</span>, 
+                we ensure every project is backed by the highest quality materials 
+                and on-time execution.
+              </p>
+
+              <p>
+                Through strong partnerships with leading manufacturers, JMDU guarantees 
+                consistent access to <span className="text-white">advanced stainless steels 
+                and special alloys</span>, engineered to excel in the most demanding 
+                environments.
+              </p>
+
+              <p>
+                Our distribution model is built on 
+                <span className="text-white"> reliability, flexibility,</span> and 
+                <span className="text-white"> long-term value creation</span> 
+                for our clients across the globe.
+              </p>
+            </div>
+          </div>
         </section>
+
 
         {/* Products & Services */}
         <section id="offerings" className="scroll-mt-24 border-t border-border py-16 md:py-24">
@@ -200,34 +250,49 @@ const Index = () => {
               <TabsContent value="piping" className="mt-8">
                 <Card className="p-8">
                   <div className="grid gap-8 lg:grid-cols-2 items-stretch">
+                    {/* Text Column */}
                     <div className="flex flex-col h-full">
                       <div className="mb-4 flex items-center gap-3">
                         <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
                           <Layers className="text-sidebar-primary" />
                         </div>
-                        <h3 className="text-2xl font-semibold">Pipe & Tube</h3>
+                        <h3 className="text-2xl font-semibold">Pipe & Tube Distribution</h3>
                       </div>
+
                       <p className="text-muted-foreground">
-                        Complete range of pipes, tubes, elbows, flanges, and fittings for all industrial applications. 
-                        Our comprehensive inventory includes standard and custom solutions for various pressure ratings, 
-                        temperatures, and corrosive environments.
+                        As a trusted distributor, JUNIMETAL DEVELOPMENT offers a 
+                        <span className="font-semibold text-foreground"> comprehensive range of pipes, tubes, and fittings </span> 
+                        sourced from leading global manufacturers. 
+                        Our strength lies in providing clients with immediate access to both 
+                        standard products and <span className="font-semibold text-foreground">tailored solutions</span> 
+                        that meet demanding project requirements.
                       </p>
-                      <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
+
+                      <p className="mt-4 text-muted-foreground">
+                        With a well-managed inventory and reliable logistics network, 
+                        we ensure <span className="font-semibold text-foreground">timely delivery</span> 
+                        and consistent quality across every order — from urgent 
+                        replacements to large-scale industrial supply contracts.
+                      </p>
+
+                      <ul className="mt-6 list-disc space-y-2 pl-5 text-muted-foreground">
                         <li>Carbon Steel & Alloy Steel Pipes</li>
                         <li>Stainless Steel & Duplex Fittings</li>
-                        <li>Flanges & Elbows</li>
-                        <li>Custom Pipe Configurations</li>
+                        <li>Flanges, Elbows & Connectors</li>
+                        <li>Custom Pipe Configurations & Project Packages</li>
                       </ul>
                     </div>
-                    <div className="flex items-center justify-center h-full">
-                      <div className="w-full h-full flex items-center justify-center">
+
+                    {/* Image Column */}
+                    {/* <div className="flex items-center justify-center h-full"> */}
+                      <div className="w-full h-full flex items-center justify-center aspect-[4/3]">
                         <img
                           src={pipeAndTube}
-                          alt="Pipe and Tube"
+                          alt="Pipe and Tube Distribution"
                           className="h-full w-auto object-contain rounded-lg"
                         />
                       </div>
-                    </div>
+                    {/* </div> */}
                   </div>
                 </Card>
               </TabsContent>
@@ -243,34 +308,28 @@ const Index = () => {
                         <h3 className="text-2xl font-semibold">fittings</h3>
                       </div>
                       <p className="text-muted-foreground">
-                        Precision-engineered valves for demanding applications including cryogenic, high-pressure, 
-                        and corrosive environments. Our valve solutions ensure reliable operation and long service life.
+                        <span className="font-semibold text-foreground">JUNIMETAL DEVELOPMENT</span> delivers 
+                        high-quality fittings for a wide range of industrial applications. With <span className="font-semibold text-foreground">ready inventory</span> 
+                        and <span className="font-semibold text-foreground">custom supply solutions</span>, we ensure your operations stay on schedule and projects run smoothly.
                       </p>
                       <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
-                        <li>Extended Stem Ball Valves</li>
-                        <li>Bellows-Seal Valves</li>
-                        <li>Cryogenic-Specific Valves (-196°C rated)</li>
-                        <li>Gate & Check Valves</li>
+                        <li><span className="font-semibold text-foreground">Pipe Fittings</span> – available for urgent replacements and project supply contracts</li>
+                        <li><span className="font-semibold text-foreground">Flanges & Couplings</span> – backed by global sourcing and logistics expertise</li>
+                        <li><span className="font-semibold text-foreground">Specialty Fittings</span> – ready for immediate deployment in challenging environments</li>
+                        <li><span className="font-semibold text-foreground">Adapters & Reducers</span> – scalable solutions for large project requirements</li>
                       </ul>
+                      <p className="mt-4 text-muted-foreground">
+                        Trust <span className="font-semibold text-foreground">JUNIMETAL DEVELOPMENT</span> for reliable sourcing, 
+                        <span className="font-semibold text-foreground">logistics support</span>, and tailored supply solutions for all your fitting needs.
+                      </p>
                     </div>
-                     <div className="flex items-center justify-center">
-                       {/* <div className="aspect-video w-full rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/10 p-8 flex items-center justify-center">
-                         <div className="text-center">
-                           <div className="text-4xl text-muted-foreground/50 mb-4">📷</div>
-                           <p className="text-sm text-muted-foreground">
-                             Image placeholder for Valves
-                           </p>
-                           <p className="text-xs text-muted-foreground/70 mt-2">
-                             Insert your product image here
-                           </p>
-                         </div>
-                       </div> */}
-                       <img
-                          src={fittings}
-                          alt="a picture of a fitting"
-                          className="h-full w-auto object-contain rounded-lg"
-                         />
-                     </div>
+                    <div className="flex items-center justify-center aspect-[4/3]">
+                      <img
+                        src={fittings}
+                        alt="a picture of a fitting"
+                        className="h-full w-auto object-contain rounded-lg"
+                      />
+                    </div>
                   </div>
                 </Card>
               </TabsContent>
@@ -283,26 +342,34 @@ const Index = () => {
                         <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
                           <Hammer className="text-sidebar-primary" />
                         </div>
-                        <h3 className="text-2xl font-semibold">Special Pieces</h3>
+                        <h3 className="text-2xl font-semibold">Flanges</h3>
                       </div>
                       <p className="text-muted-foreground">
-                        Custom components and complex geometries with tight tolerances. Our specialized manufacturing 
-                        capabilities allow us to produce unique solutions for the most challenging applications.
+                        <span className="font-semibold text-foreground">JUNIMETAL DEVELOPMENT</span> delivers a comprehensive range of 
+                        <span className="font-semibold text-foreground"> flanges</span> for industrial, subsea, and high-spec applications. 
+                        With <span className="font-semibold text-foreground">ready inventory</span>, <span className="font-semibold text-foreground">custom supply solutions</span>, 
+                        and <span className="font-semibold text-foreground">global sourcing expertise</span>, we ensure fast, reliable supply for urgent replacements, ongoing projects, and large-scale contracts.
                       </p>
                       <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
-                        <li>Vacuum-Jacketed Transfer Lines</li>
-                        <li>Phase Separators</li>
-                        <li>Buckle Arrestors</li>
-                        <li>Custom Insulated Manifolds</li>
+                        <li><span className="font-semibold text-foreground">Vacuum-Jacketed Transfer Line Flanges</span> – immediate availability for critical projects</li>
+                        <li><span className="font-semibold text-foreground">Phase Separator Flanges</span> – fully supported by logistics for project scalability</li>
+                        <li><span className="font-semibold text-foreground">Buckle Arrestor Flanges</span> – sourced globally to meet tight tolerances</li>
+                        <li><span className="font-semibold text-foreground">Custom Insulated Manifold Flanges</span> – tailored solutions for demanding industrial and subsea environments</li>
+                        <li><span className="font-semibold text-foreground">Special Flanges to match ASME/API Standards</span> – engineered and supplied to precise codes</li>
                       </ul>
+                      <p className="mt-4 text-muted-foreground">
+                        Count on <span className="font-semibold text-foreground">JUNIMETAL DEVELOPMENT</span> for reliable sourcing, 
+                        <span className="font-semibold text-foreground">logistics support</span>, and <span className="font-semibold text-foreground">client-focused solutions</span> 
+                        that keep your operations running smoothly, whether onshore or subsea.
+                      </p>
                     </div>
-                     <div className="flex items-center justify-center">
+                    <div className="flex items-center justify-center aspect-[4/3]">
                       <img
                         src={flange}
-                        alt="a picture of flange"
+                        alt="industrial and subsea flange components"
                         className="h-full w-auto object-contain rounded-lg"
                       />
-                     </div>
+                    </div>
                   </div>
                 </Card>
               </TabsContent>
@@ -315,29 +382,38 @@ const Index = () => {
                         <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
                           <Wrench className="text-sidebar-primary" />
                         </div>
-                        <h3 className="text-2xl font-semibold">Fastners, Gaskets, Valves</h3>
+                        <h3 className="text-2xl font-semibold">Fasteners, Gaskets, Valves</h3>
                       </div>
                       <p className="text-muted-foreground">
-                        Comprehensive engineering support, testing, logistics, and project management services. 
-                        From design consultation to final delivery, we ensure your project success.
+                        <span className="font-semibold text-foreground">JUNIMETAL DEVELOPMENT</span> supplies a wide range of 
+                        <span className="font-semibold text-foreground"> fasteners, gaskets, and valves</span> for onshore and 
+                        <span className="font-semibold text-foreground"> subsea applications</span>. With <span className="font-semibold text-foreground">ready inventory</span>, 
+                        <span className="font-semibold text-foreground">custom supply solutions</span>, and <span className="font-semibold text-foreground">global sourcing expertise</span>, 
+                        we ensure fast delivery, reliable quality, and seamless project execution.
                       </p>
                       <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
-                        <li>Engineering Support & Design</li>
-                        <li>Cryogenic Testing (-196°C validation)</li>
-                        <li>Quality Control & Inspection</li>
-                        <li>Project Management & Logistics</li>
+                        <li><span className="font-semibold text-foreground">Engineering Support & Design</span> – tailored to project requirements</li>
+                        <li><span className="font-semibold text-foreground">Cryogenic Testing (-196°C)</span> – verified for extreme conditions</li>
+                        <li><span className="font-semibold text-foreground">Quality Control & Inspection</span> – ensures compliance with standards and subsea specifications</li>
+                        <li><span className="font-semibold text-foreground">Project Management & Logistics</span> – delivering solutions on time and on budget</li>
                       </ul>
+                      <p className="mt-4 text-muted-foreground">
+                        Rely on <span className="font-semibold text-foreground">JUNIMETAL DEVELOPMENT</span> for 
+                        <span className="font-semibold text-foreground">scalable supply solutions</span>, <span className="font-semibold text-foreground">logistics coordination</span>, 
+                        and <span className="font-semibold text-foreground">client-focused support</span> across your projects, whether onshore or subsea.
+                      </p>
                     </div>
-                     <div className="flex items-center justify-center">
-                       <img
-                         src={valves}
-                         alt="a picture of a valves"
-                         className="h-full w-auto object-contain rounded-lg"                         
-                        />
-                     </div>
+                    <div className="flex items-center justify-center aspect-[4/3]">
+                      <img
+                        src={valves}
+                        alt="industrial fasteners, gaskets, and valves for onshore and subsea applications"
+                        className="h-full w-auto object-contain rounded-lg"
+                      />
+                    </div>
                   </div>
                 </Card>
               </TabsContent>
+
             </Tabs>
           </div>
         </section>
