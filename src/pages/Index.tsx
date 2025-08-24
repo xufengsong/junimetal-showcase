@@ -11,9 +11,11 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { Wrench, Cog, Layers, Snowflake, ShieldCheck, Hammer, BadgeCheck, Users } from "lucide-react";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Wrench, Cog, Layers, Snowflake, ShieldCheck, Hammer, BadgeCheck, Users, Globe } from "lucide-react";
 
 const Index = () => {
+  const [language, setLanguage] = useState("en");
   useEffect(() => {
     // Force dark theme for sleek black UI and smooth scrolling
     document.documentElement.classList.add("dark", "scroll-smooth");
@@ -128,10 +130,23 @@ const Index = () => {
               </li>
             ))}
           </ul>
-          <div className="md:hidden">
-            <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground">
-              Contact
-            </a>
+          <div className="flex items-center gap-4">
+            <Select value={language} onValueChange={setLanguage}>
+              <SelectTrigger className="w-[120px] h-8">
+                <Globe className="h-4 w-4 mr-2" />
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="en">English</SelectItem>
+                <SelectItem value="zh">中文</SelectItem>
+                <SelectItem value="ko">한국어</SelectItem>
+              </SelectContent>
+            </Select>
+            <div className="md:hidden">
+              <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground">
+                Contact
+              </a>
+            </div>
           </div>
         </nav>
       </header>
