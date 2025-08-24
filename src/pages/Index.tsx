@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { translations, type Language } from "@/utils/translations";
 import heroImage from "@/assets/hero-industrial-night.jpg";
 import pipeAndTube from "@/assets/pipeAndTube.png";
+import pipe3 from "@/assets/pipe3.png"
 import valves from "@/assets/valves3.png";
-import specialPiece from "@/assets/special pieces2.jpg";
 import cryogenic_service from "@/assets/cryogenic service.jpg";
 import fittings from "@/assets/fittings3.png";
-import flange from "@/assets/flanges4.png";
+import flange from "@/assets/flanges6.png";
 import cryogenic from "@/assets/cryogenic_pic.png";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -271,7 +271,7 @@ const Index = () => {
                     {/* <div className="flex items-center justify-center h-full"> */}
                       <div className="w-full h-full flex items-center justify-center aspect-[4/3]">
                         <img
-                          src={pipeAndTube}
+                          src={pipe3}
                           alt="Pipe and Tube Distribution"
                           className="h-full w-auto object-contain rounded-lg"
                         />
@@ -492,11 +492,11 @@ const Index = () => {
                     loading="lazy"
                   /> */}
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
-                  <h3 className="absolute bottom-4 left-4 text-xl font-medium">Materials</h3>
+                  <h3 className="absolute bottom-4 left-4 text-xl font-medium">{t.expertise.materials_title}</h3>
                 </div>
                 <div className="p-6">
                   <ul className="grid list-disc gap-2 pl-5 text-muted-foreground sm:grid-cols-2">
-                    {[
+                    {/* {[
                       "Carbon Steel",
                       "Alloy Steel",
                       "Stainless Steel",
@@ -504,7 +504,10 @@ const Index = () => {
                       "Coated Pipes",
                     ].map((item) => (
                       <li key={item}>{item}</li>
-                    ))}
+                    ))} */}
+                    {
+                      t.expertise.materials.map((item) => <li key={item}>{item}</li>)
+                    }
                   </ul>
                 </div>
               </Card>
@@ -519,13 +522,16 @@ const Index = () => {
                     loading="lazy"
                   /> */}
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
-                  <h3 className="absolute bottom-4 left-4 text-xl font-medium">Heat Treatment</h3>
+                  <h3 className="absolute bottom-4 left-4 text-xl font-medium">{t.expertise.heat_title}</h3>
                 </div>
                 <div className="p-6">
                   <ul className="grid list-disc gap-2 pl-5 text-muted-foreground sm:grid-cols-2">
-                    {["Stress Relief", "Quenching", "Corrosion-Resistant Annealing"].map((item) => (
+                    {/* {["Stress Relief", "Quenching", "Corrosion-Resistant Annealing"].map((item) => (
                       <li key={item}>{item}</li>
-                    ))}
+                    ))} */}
+                    {
+                      t.expertise.heat.map((item) => <li key={item}>{item}</li>)
+                    }
                   </ul>
                 </div>
               </Card>
@@ -547,8 +553,11 @@ const Index = () => {
                 </div>
                 <div className="p-6">
                   <ul className="list-disc space-y-2 pl-5 text-muted-foreground">
-                    <li>In-house validation of cryogenic capabilities by testing @ -196°C</li>
-                    <li>Tightness testing with helium</li>
+                    {/* <li>In-house validation of cryogenic capabilities by testing @ -196°C</li>
+                    <li>Tightness testing with helium</li> */}
+                    {
+                      t.expertise.cryogenic.map((item) => <li key={item}>{item}</li>)
+                    }
                   </ul>
                 </div>
               </Card>
@@ -565,15 +574,15 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
                   <div className="absolute bottom-4 left-4 flex items-center gap-2">
                     <ShieldCheck className="text-sidebar-primary" />
-                    <h3 className="text-xl font-medium">Custom Designs & Special Forgings</h3>
+                    <h3 className="text-xl font-medium">{t.expertise.custom_design_title}</h3>
                   </div>
                 </div>
                 <div className="p-6">
                   <p className="mb-3 text-muted-foreground">
-                    Tailored components with adjustable radii angles and precise tolerances.
+                    {t.expertise.custom_design_subtitle}
                   </p>
                   <ul className="grid list-disc gap-2 pl-5 text-muted-foreground sm:grid-cols-2">
-                    {[
+                    {/* {[
                       "Buckle Arrestors",
                       "Pipe Anchors",
                       "Hanger Flanges",
@@ -581,7 +590,10 @@ const Index = () => {
                       "Wyes",
                     ].map((item) => (
                       <li key={item}>{item}</li>
-                    ))}
+                    ))} */}
+                    {
+                      t.expertise.custom_design.map((item) => <li key={item}>{item}</li>)                    
+                    }
                   </ul>
                 </div>
               </Card>

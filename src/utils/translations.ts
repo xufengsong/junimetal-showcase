@@ -88,6 +88,34 @@ export const translations = {
     expertise: {
       title: "Our Expertise",
       subtitle: "Specialized solutions across multiple industries",
+      materials_title: "Materials",
+      materials: [
+        "Carbon Steel",
+        "Alloy Steel",
+        "Stainless Steel",
+        "Duplex",
+        "Coated Pipes"
+      ],
+      heat_title: "Heat Treatment",
+      heat: [
+        "Stress Relief",
+        "Quenching",
+        "Corrosion-Resistant Annealing",
+      ],
+      cryogenic_title: "Cryogenic Service",
+      cryogenic: [
+        "In-house validation of cryogenic capabilities by testing @ -196°C",
+        "Tightness testing with helium"
+      ],
+      custom_design_title: "Custom Designs & Special Forgings",
+      custom_design_subtitle: "Tailored components with adjustable radii angles and precise tolerances.",
+      custom_design: [
+        "Buckle Arrestors",
+        "Pipe Anchors",
+        "Hanger Flanges",
+        "Tees and Barred Tees",
+        "Wyes"
+      ],
       items: [
         {
           title: "Quality Assurance",
@@ -258,6 +286,32 @@ export const translations = {
     expertise: {
       title: "我们的专业",
       subtitle: "跨多个行业的专业解决方案",
+      materials_title: "材料",
+      materials: [
+        "碳钢",
+        "金钢",
+        "锈钢",
+        "相钢",
+        "涂层管道"],
+      heat_title: "热处理",
+      heat: [
+        "应力消除",
+        "淬火",
+        "耐腐蚀退火"],
+      cryogenic_title: "低温应用",
+      cryogenic: [
+        "通过-196°C测试进行低温能力的内部验证",
+        "氦气紧密性测试"
+      ],
+      custom_design_title: "定制设计与特殊锻件",
+      custom_design_subtitle: "带可调半径角度和精密公差的定制部件。",
+      custom_design: [
+        "屈曲制止器",
+        "管道锚固件",
+        "吊架法兰",
+        "三通和挡板三通",
+        "Y型分叉管"
+      ],
       items: [
         {
           title: "质量保证",
@@ -428,6 +482,34 @@ export const translations = {
     expertise: {
       title: "우리의 전문성",
       subtitle: "여러 산업 분야의 전문 솔루션",
+      materials_title: "재료",
+      materials: [
+        "탄소강",
+        "합금강",
+        "스테인리스강",
+        "듀플렉스",
+        "코팅 파이프"
+      ],
+      heat_title: "열처리",
+      heat: [
+        "응력 완화",
+        "담금질",
+        "내식성 어닐링"
+      ],
+      cryogenic_title: "극저온 서비스",
+      cryogenic: [
+        "-196°C에서의 테스트를 통한 초저온 능력 내부 검증-196°C에서의 테스트를 통한 초저온 능력 내부 검증",
+        "헬륨 기밀성 시험"
+      ],
+      custom_design_title: "맞춤형 설계 및 특수 단조",
+      custom_design_subtitle: "조절 가능한 반경 각도와 정밀 공차를 갖춘 맞춤형 부품.",
+      custom_design: [
+        "좌굴 방지기",
+        "파이프 앵커",
+        "행거 플랜지",
+        "티 및 막대 티",
+        "Y형 분기관"
+      ],
       items: [
         {
           title: "품질 보증",
@@ -598,6 +680,34 @@ export const translations = {
     expertise: {
       title: "私たちの専門性",
       subtitle: "複数の産業にわたる専門ソリューション",
+      materials_title: "材料",
+      materials: [
+        "炭素鋼",
+        "合金鋼",
+        "ステンレス鋼",
+        "二相鋼",
+        "被覆鋼管"
+      ],
+      heat_title: "熱処理",
+      heat: [
+        "応力除去",
+        "焼入れ",
+        "耐食性焼鈍"
+      ],
+      cryogenic_title: "低温用",
+      cryogenic: [
+        "-196°Cでのテストによる低温能力の社内検証",
+        "ヘリウムによる密閉性試験"
+      ],
+      custom_design_title: "カスタム設計＆特殊鍛造品",
+      custom_design_subtitle: "調整可能な半径角度と精密公差を備えた特注コンポーネント.",
+      custom_design: [
+        "座屈防止器",
+        "管アンカー",
+        "ハンガーフランジ",
+        "ティー及びバードティー",
+        "Y分岐"
+      ],
       items: [
         {
           title: "品質保証",
