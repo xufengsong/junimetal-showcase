@@ -370,7 +370,7 @@ export const translations = {
         },
         busan: {
           title: "釜山仓库",
-          address: "韩国釜山江西区加里새2路13号街32号"
+          address: "韩国釜山市江西区加里峰二路13番街"
         }
       },
       form: {
