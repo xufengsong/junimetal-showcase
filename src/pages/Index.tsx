@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { translations, type Language } from "@/utils/translations";
 import heroImage from "@/assets/hero-industrial-night.jpg";
 import pipeAndTube from "@/assets/pipeAndTube.png";
 import valves from "@/assets/valves3.png";
@@ -15,15 +16,17 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Wrench, Cog, Layers, Snowflake, ShieldCheck, Hammer, BadgeCheck, Users, Globe } from "lucide-react";
 
 const Index = () => {
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState<Language>("en");
+  
+  const t = translations[language];
+  
   useEffect(() => {
     // Force dark theme for sleek black UI and smooth scrolling
     document.documentElement.classList.add("dark", "scroll-smooth");
 
-    // SEO: Title, Description, Canonical, OpenGraph, Twitter
-    const title = "JUNIMETAL DEVELOPMENT | Piping Solutions";
-    const description =
-      "Innovative pipe & tube solutions from Seoul and Busan. Full-package piping supplier and specialized manufacturer for valves, subsea & special pieces.";
+    // SEO: Title, Description, Canonical, OpenGraph, Twitter based on selected language
+    const title = t.seo.title;
+    const description = t.seo.description;
 
     document.title = title;
 
@@ -62,7 +65,7 @@ const Index = () => {
       "@type": "Organization",
       name: "JUNIMETAL DEVELOPMENT",
       url: window.location.origin,
-      slogan: "Piping Solutions: With us every project is under reliable protection!",
+      slogan: t.seo.slogan,
       address: {
         "@type": "PostalAddress",
         streetAddress: "Office #804, 25, Yeonmujang 5 Ga-Gil, Seongdong-Gu",
@@ -91,20 +94,19 @@ const Index = () => {
     script.id = "org-json-ld";
     script.innerHTML = JSON.stringify(jsonLd);
     document.head.appendChild(script);
-  }, []);
+  }, [language, t]);
 
   const navItems = [
-    { href: "#about", label: "About Us" },
-    { href: "#offerings", label: "Products & Services" },
-    { href: "#expertise", label: "Our Expertise" },
-    // { href: "#certifications", label: "Certifications" },
-    { href: "#contact", label: "Contact Us" },
+    { href: "#about", label: t.nav.aboutUs },
+    { href: "#offerings", label: t.nav.productsServices },
+    { href: "#expertise", label: t.nav.ourExpertise },
+    { href: "#contact", label: t.nav.contactUs },
   ];
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50">
-        Skip to content
+        {t.hero.skipToContent}
       </a>
 
       <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
@@ -131,7 +133,7 @@ const Index = () => {
             ))}
           </ul>
           <div className="flex items-center gap-4">
-            <Select value={language} onValueChange={setLanguage}>
+            <Select value={language} onValueChange={(value) => setLanguage(value as Language)}>
               <SelectTrigger className="w-[120px] h-8">
                 <Globe className="h-4 w-4 mr-2" />
                 <SelectValue />
@@ -140,11 +142,12 @@ const Index = () => {
                 <SelectItem value="en">English</SelectItem>
                 <SelectItem value="zh">中文</SelectItem>
                 <SelectItem value="ko">한국어</SelectItem>
+                <SelectItem value="ja">日本語</SelectItem>
               </SelectContent>
             </Select>
             <div className="md:hidden">
               <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground">
-                Contact
+                {t.nav.contactUs}
               </a>
             </div>
           </div>
@@ -167,17 +170,17 @@ const Index = () => {
 
           <div className="relative z-10 container flex min-h-[100svh] flex-col items-start justify-center gap-6 py-24">
             <h1 className="max-w-3xl text-4xl font-bold tracking-tight md:text-6xl">
-              JUNIMETAL DEVELOPMENT
+              {t.hero.title}
             </h1>
             <p className="max-w-2xl text-lg text-muted-foreground md:text-xl">
-              Piping Solutions: With us every project is under reliable protection!
+              {t.hero.subtitle}
             </p>
             <div className="mt-4 flex flex-wrap gap-4">
               <Button asChild variant="accent" size="xl">
-                <a href="#offerings">Explore Our Offerings</a>
+                <a href="#offerings">{t.hero.exploreOfferings}</a>
               </Button>
               <Button asChild variant="outline" size="xl">
-                <a href="#contact">Get in Touch</a>
+                <a href="#contact">{t.hero.getInTouch}</a>
               </Button>
             </div>
           </div>
@@ -203,45 +206,20 @@ const Index = () => {
           <div className="container py-12 text-left">
             {/* Heading */}
             <h1 className="text-3xl md:text-4xl font-bold text-white leading-snug">
-              A sustainable and value-creating business model
+              {t.about.heading}
             </h1>
 
             {/* Subheading */}
             <p className="mt-6 max-w-3xl text-lg font-semibold text-gray-100 leading-relaxed">
-              JUNIMETAL DEVELOPMENT (JMDU) is a trusted global distributor of 
-              <span className="text-white"> high value-added industrial products</span> 
-              made from advanced stainless steels and special alloys — serving the 
-              multi-energy and mobility industries.
+              {t.about.subheading}
             </p>
 
             {/* Body */}
             <div className="mt-8 space-y-6 max-w-3xl text-gray-300 leading-relaxed">
-              <p>
-                As a <span className="text-white font-semibold">full-package distributor</span>, 
-                we provide seamless supply chain solutions by connecting manufacturers 
-                with clients worldwide.
-              </p>
-
-              <p>
-                From <span className="text-white">sourcing and logistics</span> to 
-                <span className="text-white"> reliable delivery and after-sales support</span>, 
-                we ensure every project is backed by the highest quality materials 
-                and on-time execution.
-              </p>
-
-              <p>
-                Through strong partnerships with leading manufacturers, JMDU guarantees 
-                consistent access to <span className="text-white">advanced stainless steels 
-                and special alloys</span>, engineered to excel in the most demanding 
-                environments.
-              </p>
-
-              <p>
-                Our distribution model is built on 
-                <span className="text-white"> reliability, flexibility,</span> and 
-                <span className="text-white"> long-term value creation</span> 
-                for our clients across the globe.
-              </p>
+              <p>{t.about.paragraph1}</p>
+              <p>{t.about.paragraph2}</p>
+              <p>{t.about.paragraph3}</p>
+              <p>{t.about.paragraph4}</p>
             </div>
           </div>
         </section>
@@ -251,15 +229,15 @@ const Index = () => {
         <section id="offerings" className="scroll-mt-24 border-t border-border py-16 md:py-24">
           <div className="container">
             <header className="mb-10">
-              <h2 className="text-3xl font-semibold md:text-4xl">Our Offerings</h2>
+              <h2 className="text-3xl font-semibold md:text-4xl">{t.offerings.title}</h2>
             </header>
 
             <Tabs defaultValue="piping" className="w-full">
               <TabsList className="grid w-full grid-cols-4">
-                <TabsTrigger value="piping">Pipe & Tube</TabsTrigger>
-                <TabsTrigger value="fittings">Fittings</TabsTrigger>
-                <TabsTrigger value="flanges">Flanges</TabsTrigger>
-                <TabsTrigger value="fastners, gaskets, valves">Fastners, Gaskets, Valves</TabsTrigger>
+                <TabsTrigger value="piping">{t.offerings.tabs.pipeTube}</TabsTrigger>
+                <TabsTrigger value="fittings">{t.offerings.tabs.fittings}</TabsTrigger>
+                <TabsTrigger value="flanges">{t.offerings.tabs.flanges}</TabsTrigger>
+                <TabsTrigger value="fastners, gaskets, valves">{t.offerings.tabs.fasteners}</TabsTrigger>
               </TabsList>
 
               <TabsContent value="piping" className="mt-8">
@@ -271,30 +249,21 @@ const Index = () => {
                         <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
                           <Layers className="text-sidebar-primary" />
                         </div>
-                        <h3 className="text-2xl font-semibold">Pipe & Tube Distribution</h3>
+                        <h3 className="text-2xl font-semibold">{t.offerings.pipeTube.title}</h3>
                       </div>
 
                       <p className="text-muted-foreground">
-                        As a trusted distributor, JUNIMETAL DEVELOPMENT offers a 
-                        <span className="font-semibold text-foreground"> comprehensive range of pipes, tubes, and fittings </span> 
-                        sourced from leading global manufacturers. 
-                        Our strength lies in providing clients with immediate access to both 
-                        standard products and <span className="font-semibold text-foreground">tailored solutions</span> 
-                        that meet demanding project requirements.
+                        {t.offerings.pipeTube.description1}
                       </p>
 
                       <p className="mt-4 text-muted-foreground">
-                        With a well-managed inventory and reliable logistics network, 
-                        we ensure <span className="font-semibold text-foreground">timely delivery</span> 
-                        and consistent quality across every order — from urgent 
-                        replacements to large-scale industrial supply contracts.
+                        {t.offerings.pipeTube.description2}
                       </p>
 
                       <ul className="mt-6 list-disc space-y-2 pl-5 text-muted-foreground">
-                        <li>Carbon Steel & Alloy Steel Pipes</li>
-                        <li>Stainless Steel & Duplex Fittings</li>
-                        <li>Flanges, Elbows & Connectors</li>
-                        <li>Custom Pipe Configurations & Project Packages</li>
+                        {t.offerings.pipeTube.features.map((feature, index) => (
+                          <li key={index}>{feature}</li>
+                        ))}
                       </ul>
                     </div>
 
@@ -320,22 +289,18 @@ const Index = () => {
                         <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
                           <Cog className="text-sidebar-primary" />
                         </div>
-                        <h3 className="text-2xl font-semibold">fittings</h3>
+                        <h3 className="text-2xl font-semibold">{t.offerings.fittings.title}</h3>
                       </div>
                       <p className="text-muted-foreground">
-                        <span className="font-semibold text-foreground">JUNIMETAL DEVELOPMENT</span> delivers 
-                        high-quality fittings for a wide range of industrial applications. With <span className="font-semibold text-foreground">ready inventory</span> 
-                        and <span className="font-semibold text-foreground">custom supply solutions</span>, we ensure your operations stay on schedule and projects run smoothly.
+                        {t.offerings.fittings.description1}
                       </p>
                       <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
-                        <li><span className="font-semibold text-foreground">Pipe Fittings</span> – available for urgent replacements and project supply contracts</li>
-                        <li><span className="font-semibold text-foreground">Flanges & Couplings</span> – backed by global sourcing and logistics expertise</li>
-                        <li><span className="font-semibold text-foreground">Specialty Fittings</span> – ready for immediate deployment in challenging environments</li>
-                        <li><span className="font-semibold text-foreground">Adapters & Reducers</span> – scalable solutions for large project requirements</li>
+                        {t.offerings.fittings.features.map((feature, index) => (
+                          <li key={index}>{feature}</li>
+                        ))}
                       </ul>
                       <p className="mt-4 text-muted-foreground">
-                        Trust <span className="font-semibold text-foreground">JUNIMETAL DEVELOPMENT</span> for reliable sourcing, 
-                        <span className="font-semibold text-foreground">logistics support</span>, and tailored supply solutions for all your fitting needs.
+                        {t.offerings.fittings.description2}
                       </p>
                     </div>
                     <div className="flex items-center justify-center aspect-[4/3]">
@@ -357,25 +322,18 @@ const Index = () => {
                         <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
                           <Hammer className="text-sidebar-primary" />
                         </div>
-                        <h3 className="text-2xl font-semibold">Flanges</h3>
+                        <h3 className="text-2xl font-semibold">{t.offerings.flanges.title}</h3>
                       </div>
                       <p className="text-muted-foreground">
-                        <span className="font-semibold text-foreground">JUNIMETAL DEVELOPMENT</span> delivers a comprehensive range of 
-                        <span className="font-semibold text-foreground"> flanges</span> for industrial, subsea, and high-spec applications. 
-                        With <span className="font-semibold text-foreground">ready inventory</span>, <span className="font-semibold text-foreground">custom supply solutions</span>, 
-                        and <span className="font-semibold text-foreground">global sourcing expertise</span>, we ensure fast, reliable supply for urgent replacements, ongoing projects, and large-scale contracts.
+                        {t.offerings.flanges.description1}
                       </p>
                       <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
-                        <li><span className="font-semibold text-foreground">Vacuum-Jacketed Transfer Line Flanges</span> – immediate availability for critical projects</li>
-                        <li><span className="font-semibold text-foreground">Phase Separator Flanges</span> – fully supported by logistics for project scalability</li>
-                        <li><span className="font-semibold text-foreground">Buckle Arrestor Flanges</span> – sourced globally to meet tight tolerances</li>
-                        <li><span className="font-semibold text-foreground">Custom Insulated Manifold Flanges</span> – tailored solutions for demanding industrial and subsea environments</li>
-                        <li><span className="font-semibold text-foreground">Special Flanges to match ASME/API Standards</span> – engineered and supplied to precise codes</li>
+                        {t.offerings.flanges.features.map((feature, index) => (
+                          <li key={index}>{feature}</li>
+                        ))}
                       </ul>
                       <p className="mt-4 text-muted-foreground">
-                        Count on <span className="font-semibold text-foreground">JUNIMETAL DEVELOPMENT</span> for reliable sourcing, 
-                        <span className="font-semibold text-foreground">logistics support</span>, and <span className="font-semibold text-foreground">client-focused solutions</span> 
-                        that keep your operations running smoothly, whether onshore or subsea.
+                        {t.offerings.flanges.description2}
                       </p>
                     </div>
                     <div className="flex items-center justify-center aspect-[4/3]">
@@ -397,25 +355,18 @@ const Index = () => {
                         <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
                           <Wrench className="text-sidebar-primary" />
                         </div>
-                        <h3 className="text-2xl font-semibold">Fasteners, Gaskets, Valves</h3>
+                        <h3 className="text-2xl font-semibold">{t.offerings.fasteners.title}</h3>
                       </div>
                       <p className="text-muted-foreground">
-                        <span className="font-semibold text-foreground">JUNIMETAL DEVELOPMENT</span> supplies a wide range of 
-                        <span className="font-semibold text-foreground"> fasteners, gaskets, and valves</span> for onshore and 
-                        <span className="font-semibold text-foreground"> subsea applications</span>. With <span className="font-semibold text-foreground">ready inventory</span>, 
-                        <span className="font-semibold text-foreground">custom supply solutions</span>, and <span className="font-semibold text-foreground">global sourcing expertise</span>, 
-                        we ensure fast delivery, reliable quality, and seamless project execution.
+                        {t.offerings.fasteners.description1}
                       </p>
                       <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
-                        <li><span className="font-semibold text-foreground">Engineering Support & Design</span> – tailored to project requirements</li>
-                        <li><span className="font-semibold text-foreground">Cryogenic Testing (-196°C)</span> – verified for extreme conditions</li>
-                        <li><span className="font-semibold text-foreground">Quality Control & Inspection</span> – ensures compliance with standards and subsea specifications</li>
-                        <li><span className="font-semibold text-foreground">Project Management & Logistics</span> – delivering solutions on time and on budget</li>
+                        {t.offerings.fasteners.features.map((feature, index) => (
+                          <li key={index}>{feature}</li>
+                        ))}
                       </ul>
                       <p className="mt-4 text-muted-foreground">
-                        Rely on <span className="font-semibold text-foreground">JUNIMETAL DEVELOPMENT</span> for 
-                        <span className="font-semibold text-foreground">scalable supply solutions</span>, <span className="font-semibold text-foreground">logistics coordination</span>, 
-                        and <span className="font-semibold text-foreground">client-focused support</span> across your projects, whether onshore or subsea.
+                        {t.offerings.fasteners.description2}
                       </p>
                     </div>
                     <div className="flex items-center justify-center aspect-[4/3]">
@@ -526,7 +477,8 @@ const Index = () => {
         <section id="expertise" className="scroll-mt-24 border-t border-border py-16 md:py-24">
           <div className="container">
             <header className="mb-10 text-center">
-              <h2 className="text-3xl font-semibold md:text-4xl">Unmatched Flexibility and Certified Quality</h2>
+              <h2 className="text-3xl font-semibold md:text-4xl">{t.expertise.title}</h2>
+              <p className="mt-4 text-lg text-muted-foreground">{t.expertise.subtitle}</p>
             </header>
 
             <div className="grid gap-8 lg:grid-cols-2">
@@ -705,30 +657,28 @@ const Index = () => {
         <footer id="contact" className="scroll-mt-24 border-t border-border bg-card/40 py-16">
           <div className="container grid gap-10 lg:grid-cols-3">
             <div>
-              <h2 className="mb-4 text-2xl font-semibold">Contact Us</h2>
+              <h2 className="mb-4 text-2xl font-semibold">{t.contact.title}</h2>
               <p className="text-muted-foreground">
-                We are here to support your projects with flexible, certified solutions.
+                {t.contact.subtitle}
               </p>
               <div className="mt-6 flex gap-3">
                 <Button asChild variant="accent">
                   <a href="mailto:jmd@jmd.by-works.com">jmd@jmd.by-works.com</a>
                 </Button>
                 <Button asChild variant="outline">
-                  <a href="#offerings">View Offerings</a>
+                  <a href="#offerings">{t.hero.exploreOfferings}</a>
                 </Button>
               </div>
             </div>
 
             <div>
-              <h3 className="mb-3 text-lg font-medium">Main Office (Seoul)</h3>
+              <h3 className="mb-3 text-lg font-medium">{t.contact.offices.seoul.title}</h3>
               <address className="not-italic text-sm text-muted-foreground">
-                Office #804, 25, Yeonmujang 5 Ga-Gil,
-                <br /> Seongdong-Gu, Seoul, South Korea
+                {t.contact.offices.seoul.address}
               </address>
-              <h3 className="mb-3 mt-6 text-lg font-medium">Warehouse (Busan)</h3>
+              <h3 className="mb-3 mt-6 text-lg font-medium">{t.contact.offices.busan.title}</h3>
               <address className="not-italic text-sm text-muted-foreground">
-                32, Garisae 2-ro 13 Beon-gil,
-                <br /> Gangseo-gu, Busan, South Korea
+                {t.contact.offices.busan.address}
               </address>
             </div>
 
@@ -746,7 +696,7 @@ const Index = () => {
             </div>
           </div>
           <div className="container mt-10 border-t border-border py-6 text-center text-sm text-muted-foreground">
-            © 2025 JUNIMETAL DEVELOPMENT. All Rights Reserved.
+            © 2025 JUNIMETAL DEVELOPMENT. {t.footer.allRightsReserved}
           </div>
         </footer>
       </main>
