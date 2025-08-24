@@ -41,13 +41,13 @@ export const translations = {
       },
       pipeTube: {
         title: "Pipe & Tube Distribution",
-        description1: "As a trusted distributor, JUNIMETAL DEVELOPMENT offers a comprehensive range of pipes, tubes, and fittings sourced from leading global manufacturers. Our strength lies in providing clients with immediate access to both standard products and tailored solutions that meet demanding project requirements.",
-        description2: "With a well-managed inventory and reliable logistics network, we ensure timely delivery and consistent quality across every order — from urgent replacements to large-scale industrial supply contracts.",
+        description1: "As a trusted distributor, JUNIMETAL DEVELOPMENT provides a comprehensive range of pipes and tubes sourced from leading global manufacturers. We specialize in giving clients immediate access to both standard sizes and customized pipe and tube solutions for demanding industrial projects.",
+        description2: "With ready inventory and a reliable logistics network, we ensure timely delivery and consistent quality across every order — from urgent replacements to large-scale project supply contracts.",
         features: [
           "Carbon Steel & Alloy Steel Pipes",
-          "Stainless Steel & Duplex Fittings", 
+          "Stainless Steel & Duplex Tubes",
           "Flanges, Elbows & Connectors",
-          "Custom Pipe Configurations & Project Packages"
+          "Custom Pipe & Tube Configurations"
         ]
       },
       fittings: {
