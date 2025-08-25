@@ -393,6 +393,384 @@ export const translations = {
       allRightsReserved: "版权所有。"
     }
   },
+  es: {
+    nav: {
+      aboutUs: "Acerca de Nosotros",
+      productsServices: "Productos y Servicios",
+      ourExpertise: "Nuestra Experiencia",
+      contactUs: "Contáctenos"
+    },
+    seo: {
+      title: "JUNIMETAL DEVELOPMENT | Soluciones de Tuberías",
+      description: "Soluciones innovadoras de tuberías y tubos desde Seúl y Busan. Proveedor completo de tuberías y fabricante especializado de válvulas, piezas submarinas y especiales.",
+      slogan: "Soluciones de Tuberías: ¡Con nosotros cada proyecto está bajo una protección fiable!"
+    },
+    hero: {
+      title: "JUNIMETAL DEVELOPMENT",
+      subtitle: "Soluciones de Tuberías: ¡Con nosotros cada proyecto está bajo una protección fiable!",
+      exploreOfferings: "Explore Nuestros Productos",
+      getInTouch: "Póngase en Contacto",
+      skipToContent: "Saltar al contenido"
+    },
+    about: {
+      heading: "Un modelo de negocio sostenible y que crea valor",
+      subheading: "JUNIMETAL DEVELOPMENT (JMDU) es un distribuidor global de confianza de productos industriales de alto valor añadido, fabricados con aceros inoxidables avanzados y aleaciones especiales, que atiende a las industrias de multi-energía y movilidad.",
+      paragraph1: "Como distribuidor de paquete completo, proporcionamos soluciones de cadena de suministro sin fisuras conectando a los fabricantes con clientes en todo el mundo.",
+      paragraph2: "Desde el abastecimiento y la logística hasta la entrega fiable y el soporte post-venta, nos aseguramos de que cada proyecto esté respaldado por materiales de la más alta calidad y una ejecución a tiempo.",
+      paragraph3: "A través de sólidas asociaciones con fabricantes líderes, JMDU garantiza un acceso constante a aceros inoxidables avanzados y aleaciones especiales, diseñados para sobresalir en los entornos más exigentes.",
+      paragraph4: "Nuestro modelo de distribución se basa en la fiabilidad, la flexibilidad y la creación de valor a largo plazo para nuestros clientes en todo el mundo."
+    },
+    offerings: {
+      title: "Nuestros Productos",
+      tabs: {
+        pipeTube: "Tubería y Tubos",
+        fittings: "Accesorios",
+        flanges: "Bridas",
+        fasteners: "Sujetadores, Juntas, Válvulas"
+      },
+      pipeTube: {
+        title: "Distribución de Tubería y Tubos",
+        description1: "Como distribuidor de confianza, JUNIMETAL DEVELOPMENT ofrece una amplia gama de tuberías y tubos procedentes de los principales fabricantes globales. Nos especializamos en dar a los clientes acceso inmediato tanto a tamaños estándar como a soluciones personalizadas de tubería y tubos para proyectos industriales exigentes.",
+        description2: "Con inventario disponible y una red logística fiable, aseguramos la entrega a tiempo y la calidad constante en cada pedido, desde reemplazos urgentes hasta contratos de suministro para proyectos a gran escala.",
+        features: [
+          "Tuberías de Acero al Carbono y Acero Aleado",
+          "Tubos de Acero Inoxidable y Dúplex",
+          "Bridas, Codos y Conectores",
+          "Configuraciones de Tubería y Tubos Personalizadas"
+        ]
+      },
+      fittings: {
+        title: "Accesorios",
+        description1: "JUNIMETAL DEVELOPMENT suministra accesorios de alta calidad para una amplia gama de aplicaciones industriales. Con inventario disponible y soluciones de suministro personalizadas, nos aseguramos de que sus operaciones se mantengan a tiempo y los proyectos se desarrollen sin problemas.",
+        description2: "Confíe en JUNIMETAL DEVELOPMENT para un abastecimiento fiable, soporte logístico y soluciones de suministro a medida para todas sus necesidades de accesorios.",
+        features: [
+          "Accesorios de Tubería – disponibles para reemplazos urgentes y contratos de suministro para proyectos",
+          "Bridas y Acoplamientos – respaldados por nuestra experiencia en abastecimiento y logística global",
+          "Accesorios Especiales – listos para su despliegue inmediato en entornos desafiantes",
+          "Adaptadores y Reductores – soluciones escalables para requisitos de proyectos grandes"
+        ]
+      },
+      flanges: {
+        title: "Bridas",
+        description1: "JUNIMETAL DEVELOPMENT suministra una amplia gama de bridas para aplicaciones industriales, submarinas y de alta especificación. Con una profunda experiencia en el mercado y capacidades de abastecimiento global, ofrecemos a los clientes acceso inmediato a soluciones de bridas tanto estándar como personalizadas.",
+        description2: "Desde acero forjado hasta aleaciones exóticas, nuestra cartera de bridas apoya proyectos en las industrias de energía, marítima y de procesamiento, garantizando conexiones fiables bajo las condiciones más exigentes.",
+        features: [
+          "Bridas de Cuello de Soldadura y Deslizantes – variantes de acero forjado y acero aleado",
+          "Bridas Ciega y Roscadas – disponibilidad inmediata para requisitos urgentes",
+          "Bridas RTJ y de Cara Plana – diseñadas para aplicaciones submarinas de alta presión",
+          "Paquetes de Bridas Personalizados – soluciones a medida para necesidades de proyectos especializados"
+        ]
+      },
+      fasteners: {
+        title: "Sujetadores, Juntas, Válvulas",
+        description1: "Complete sus sistemas de tuberías con nuestra amplia gama de sujetadores, juntas y válvulas. JUNIMETAL DEVELOPMENT asegura que cada componente cumpla con los más altos estándares de fiabilidad y rendimiento.",
+        description2: "Desde aplicaciones industriales estándar hasta entornos submarinos especializados, nuestra gama de productos soporta la entrega completa de proyectos con calidad consistente y rendimiento a tiempo.",
+        features: [
+          "Tornillos y Sujetadores de Alta Resistencia – opciones de grado marino y para uso submarino",
+          "Juntas y Soluciones de Sellado – diseñadas para presiones y temperaturas extremas",
+          "Válvulas Industriales y Submarinas – configuraciones de válvula de bola, compuerta y especializadas",
+          "Paquetes de Ensamblaje Completos – suministro coordinado para la entrega de proyectos llave en mano"
+        ]
+      }
+    },
+    expertise: {
+      title: "Nuestra Experiencia",
+      subtitle: "Soluciones especializadas en múltiples industrias",
+      materials_title: "Materiales",
+      materials: [
+        "Acero al Carbono",
+        "Acero Aleado",
+        "Acero Inoxidable",
+        "Dúplex",
+        "Tuberías Recubiertas"
+      ],
+      heat_title: "Tratamiento Térmico",
+      heat: [
+        "Alivio de Tensiones",
+        "Temple",
+        "Recocido Resistente a la Corrosión"
+      ],
+      cryogenic_title: "Servicio Criogénico",
+      cryogenic: [
+        "Validación interna de capacidades criogénicas mediante pruebas a -196°C",
+        "Prueba de estanqueidad con helio"
+      ],
+      custom_design_title: "Diseños Personalizados y Forjas Especiales",
+      custom_design_subtitle: "Componentes a medida con ángulos de radio ajustables y tolerancias precisas.",
+      custom_design: [
+        "Arrestadores de Pandeo",
+        "Anclajes de Tubería",
+        "Bridas de Colgador",
+        "Tes y Tes Aisladas",
+        "Y-es"
+      ],
+      items: [
+        {
+          title: "Garantía de Calidad",
+          description: "Rigurosos procesos de prueba y certificación aseguran que cada producto cumpla con los estándares internacionales y las especificaciones del proyecto."
+        },
+        {
+          title: "Logística Global",
+          description: "Red mundial de envío y distribución con almacenes estratégicos para una entrega eficiente en cualquier lugar."
+        },
+        {
+          title: "Soporte Técnico",
+          description: "Consulta de ingeniería experta y orientación técnica a lo largo del ciclo de vida de su proyecto."
+        }
+      ]
+    },
+    applications: {
+      title: "Aplicaciones Industriales",
+      subtitle: "Sirviendo a diversos sectores con soluciones especializadas",
+      industries: [
+        {
+          title: "Petróleo y Gas",
+          description: "Soluciones de tuberías críticas para operaciones upstream, midstream y downstream, con un enfoque en la seguridad y la fiabilidad."
+        },
+        {
+          title: "Ingeniería Submarina",
+          description: "Componentes especializados diseñados para resistir condiciones subacuáticas extremas y entornos marinos corrosivos."
+        },
+        {
+          title: "Petroquímica",
+          description: "Materiales y accesorios de alto rendimiento para plantas de procesamiento químico y refinerías."
+        },
+        {
+          title: "Generación de Energía",
+          description: "Sistemas de tuberías robustos para instalaciones de energía térmica, nuclear y renovable."
+        },
+        {
+          title: "Marina y Offshore",
+          description: "Soluciones resistentes a la corrosión para la construcción naval y plataformas offshore."
+        },
+        {
+          title: "Manufactura Industrial",
+          description: "Soluciones de tuberías estándar y personalizadas para instalaciones de fabricación e industrias de procesos."
+        }
+      ]
+    },
+    contact: {
+      title: "Contáctenos",
+      subtitle: "Póngase en contacto para sus necesidades de soluciones de tuberías",
+      offices: {
+        title: "Nuestras Oficinas",
+        seoul: {
+          title: "Oficina de Seúl (Principal)",
+          address: "Office #804, 25, Yeonmujang 5 Ga-Gil, Seongdong-Gu, Seoul, South Korea"
+        },
+        busan: {
+          title: "Almacén de Busan",
+          address: "32, Garisae 2-ro 13 Beon-gil, Gangseo-gu, Busan, South Korea"
+        }
+      },
+      form: {
+        name: "Nombre",
+        email: "Correo Electrónico",
+        company: "Empresa",
+        message: "Mensaje",
+        submit: "Enviar Mensaje",
+        nameRequired: "Se requiere el nombre",
+        emailRequired: "Por favor, introduzca un correo electrónico válido",
+        messageRequired: "Se requiere el mensaje"
+      }
+    },
+    footer: {
+      description: "Distribuidor líder de soluciones de tuberías y componentes industriales de alta calidad para las industrias globales de energía y movilidad.",
+      quickLinks: "Enlaces Rápidos",
+      contactInfo: "Información de Contacto",
+      followUs: "Síganos",
+      allRightsReserved: "Todos los derechos reservados."
+    }
+  },
+  ru: {
+    "nav": {
+      "aboutUs": "О нас",
+      "productsServices": "Продукты и услуги",
+      "ourExpertise": "Наш опыт",
+      "contactUs": "Связаться с нами"
+    },
+    "seo": {
+      "title": "JUNIMETAL DEVELOPMENT | Трубопроводные решения",
+      "description": "Инновационные решения для труб и трубопроводов из Сеула и Пусана. Поставщик полного спектра трубопроводной продукции и специализированный производитель клапанов, подводных и специальных изделий.",
+      "slogan": "Трубопроводные решения: С нами каждый проект находится под надежной защитой!"
+    },
+    "hero": {
+      "title": "JUNIMETAL DEVELOPMENT",
+      "subtitle": "Трубопроводные решения: С нами каждый проект находится под надежной защитой!",
+      "exploreOfferings": "Изучите наши предложения",
+      "getInTouch": "Связаться",
+      "skipToContent": "Перейти к содержимому"
+    },
+    "about": {
+      "heading": "Устойчивая и создающая ценность бизнес-модель",
+      "subheading": "JUNIMETAL DEVELOPMENT (JMDU) — это надежный глобальный дистрибьютор высокоценной промышленной продукции из передовых нержавеющих сталей и специальных сплавов, обслуживающий многоэнергетическую и мобильную отрасли.",
+      "paragraph1": "Как дистрибьютор полного пакета, мы предоставляем бесшовные решения для цепочки поставок, соединяя производителей с клиентами по всему миру.",
+      "paragraph2": "От поиска и логистики до надежной доставки и послепродажной поддержки, мы гарантируем, что каждый проект будет обеспечен материалами высочайшего качества и выполнен в срок.",
+      "paragraph3": "Благодаря прочным партнерским отношениям с ведущими производителями, JMDU гарантирует постоянный доступ к передовым нержавеющим сталям и специальным сплавам, разработанным для превосходной работы в самых требовательных средах.",
+      "paragraph4": "Наша модель дистрибуции построена на надежности, гибкости и создании долгосрочной ценности для наших клиентов по всему миру."
+    },
+    "offerings": {
+      "title": "Наши предложения",
+      "tabs": {
+        "pipeTube": "Трубы и трубки",
+        "fittings": "Фитинги",
+        "flanges": "Фланцы",
+        "fasteners": "Крепеж, прокладки, клапаны"
+      },
+      "pipeTube": {
+        "title": "Поставка труб и трубопроводов",
+        "description1": "Как надежный дистрибьютор, JUNIMETAL DEVELOPMENT предоставляет широкий ассортимент труб и трубопроводов, поставляемых от ведущих мировых производителей. Мы специализируемся на предоставлении клиентам немедленного доступа как к стандартным размерам, так и к индивидуальным решениям для труб и трубопроводов для требовательных промышленных проектов.",
+        "description2": "С готовым запасом и надежной логистической сетью, мы обеспечиваем своевременную доставку и постоянное качество по каждому заказу — от срочных замен до крупномасштабных контрактов на поставку для проектов.",
+        "features": [
+          "Трубы из углеродистой и легированной стали",
+          "Трубки из нержавеющей стали и дуплекса",
+          "Фланцы, отводы и соединители",
+          "Индивидуальные конфигурации труб и трубопроводов"
+        ]
+      },
+      "fittings": {
+        "title": "Фитинги",
+        "description1": "JUNIMETAL DEVELOPMENT поставляет высококачественные фитинги для широкого спектра промышленных применений. С готовым запасом и индивидуальными решениями для поставок, мы гарантируем, что ваши операции будут идти по графику, а проекты будут выполняться без сбоев.",
+        "description2": "Доверьтесь JUNIMETAL DEVELOPMENT для надежного поиска, логистической поддержки и индивидуальных решений для всех ваших потребностей в фитингах.",
+        "features": [
+          "Трубные фитинги – доступны для срочной замены и контрактов на поставку для проектов",
+          "Фланцы и муфты – поддерживаются глобальным опытом в поиске и логистике",
+          "Специальные фитинги – готовы к немедленному использованию в сложных средах",
+          "Адаптеры и редукторы – масштабируемые решения для крупных проектов"
+        ]
+      },
+      "flanges": {
+        "title": "Фланцы",
+        "description1": "JUNIMETAL DEVELOPMENT поставляет широкий ассортимент фланцев для промышленных, подводных и высокоспециализированных применений. Обладая глубоким знанием рынка и глобальными возможностями по поиску, мы предоставляем клиентам немедленный доступ как к стандартным, так и к индивидуальным решениям для фланцев.",
+        "description2": "От кованой стали до экзотических сплавов, наш портфель фланцев поддерживает проекты в энергетической, морской и перерабатывающей отраслях, обеспечивая надежные соединения в самых требовательных условиях.",
+        "features": [
+          "Приварные встык и накладные фланцы – варианты из кованой и легированной стали",
+          "Глухие и резьбовые фланцы – немедленная доступность для срочных требований",
+          "Фланцы RTJ и с плоской поверхностью – разработаны для подводных применений с высоким давлением",
+          "Индивидуальные комплекты фланцев – решения, специально разработанные для нужд специализированных проектов"
+        ]
+      },
+      "fasteners": {
+        "title": "Крепеж, прокладки, клапаны",
+        "description1": "Завершите свои трубопроводные системы с нашим широким ассортиментом крепежа, прокладок и клапанов. JUNIMETAL DEVELOPMENT гарантирует, что каждый компонент соответствует самым высоким стандартам надежности и производительности.",
+        "description2": "От стандартных промышленных применений до специализированных подводных сред, наш ассортимент продукции поддерживает полную поставку проектов с постоянным качеством и своевременным выполнением.",
+        "features": [
+          "Высокопрочные болты и крепеж – морского и подводного классов",
+          "Прокладки и уплотнительные решения – разработаны для экстремальных давлений и температур",
+          "Промышленные и подводные клапаны – шаровые, задвижки и специализированные конфигурации клапанов",
+          "Полные комплекты для сборки – скоординированная поставка для выполнения проектов «под ключ»"
+        ]
+      }
+    },
+    "expertise": {
+      "title": "Наш опыт",
+      "subtitle": "Специализированные решения в различных отраслях",
+      "materials_title": "Материалы",
+      "materials": [
+        "Углеродистая сталь",
+        "Легированная сталь",
+        "Нержавеющая сталь",
+        "Дуплекс",
+        "Трубы с покрытием"
+      ],
+      "heat_title": "Термическая обработка",
+      "heat": [
+        "Снятие напряжений",
+        "Закалка",
+        "Антикоррозионный отжиг"
+      ],
+      "cryogenic_title": "Криогенные услуги",
+      "cryogenic": [
+        "Внутренняя проверка криогенных возможностей путем тестирования при -196°C",
+        "Проверка герметичности с гелием"
+      ],
+      "custom_design_title": "Индивидуальные конструкции и специальная ковка",
+      "custom_design_subtitle": "Изготовленные на заказ компоненты с регулируемыми углами радиуса и точными допусками.",
+      "custom_design": [
+        "Аресторы для изгиба",
+        "Трубные якоря",
+        "Подвесные фланцы",
+        "Тройники и тройники с перемычками",
+        "Y-образные разветвители"
+      ],
+      "items": [
+        {
+          "title": "Гарантия качества",
+          "description": "Строгие процессы тестирования и сертификации гарантируют, что каждый продукт соответствует международным стандартам и спецификациям проекта."
+        },
+        {
+          "title": "Глобальная логистика",
+          "description": "Всемирная сеть доставки и распределения со стратегическими складами для эффективной доставки в любую точку."
+        },
+        {
+          "title": "Техническая поддержка",
+          "description": "Экспертные инженерные консультации и техническое руководство на протяжении всего жизненного цикла вашего проекта."
+        }
+      ]
+    },
+    "applications": {
+      "title": "Отраслевые применения",
+      "subtitle": "Обслуживание различных секторов с помощью специализированных решений",
+      "industries": [
+        {
+          "title": "Нефть и газ",
+          "description": "Критические трубопроводные решения для операций на добыче, транспортировке и переработке с акцентом на безопасность и надежность."
+        },
+        {
+          "title": "Подводное машиностроение",
+          "description": "Специализированные компоненты, разработанные для выдерживания экстремальных подводных условий и коррозионных морских сред."
+        },
+        {
+          "title": "Нефтехимия",
+          "description": "Высокопроизводительные материалы и фитинги для химических перерабатывающих заводов и нефтеперерабатывающих предприятий."
+        },
+        {
+          "title": "Энергетика",
+          "description": "Надежные трубопроводные системы для тепловых, атомных и возобновляемых энергетических установок."
+        },
+        {
+          "title": "Морская и оффшорная отрасли",
+          "description": "Коррозионно-стойкие решения для судостроения и строительства оффшорных платформ."
+        },
+        {
+          "title": "Промышленное производство",
+          "description": "Стандартные и индивидуальные трубопроводные решения для производственных объектов и перерабатывающих отраслей."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Связаться с нами",
+      "subtitle": "Свяжитесь с нами по вопросам трубопроводных решений",
+      "offices": {
+        "title": "Наши офисы",
+        "seoul": {
+          "title": "Офис в Сеуле (Главный)",
+          "address": "Office #804, 25, Yeonmujang 5 Ga-Gil, Seongdong-Gu, Seoul, South Korea"
+        },
+        "busan": {
+          "title": "Склад в Пусане",
+          "address": "32, Garisae 2-ro 13 Beon-gil, Gangseo-gu, Busan, South Korea"
+        }
+      },
+      "form": {
+        "name": "Имя",
+        "email": "Электронная почта",
+        "company": "Компания",
+        "message": "Сообщение",
+        "submit": "Отправить сообщение",
+        "nameRequired": "Имя обязательно",
+        "emailRequired": "Пожалуйста, введите действительный адрес электронной почты",
+        "messageRequired": "Сообщение обязательно"
+      }
+    },
+    "footer": {
+      "description": "Ведущий дистрибьютор высококачественных трубопроводных решений и промышленных компонентов для глобальных энергетической и мобильной отраслей.",
+      "quickLinks": "Быстрые ссылки",
+      "contactInfo": "Контактная информация",
+      "followUs": "Подпишитесь на нас",
+      "allRightsReserved": "Все права защищены."
+    }
+  },
   ko: {
     // Navigation
     nav: {
