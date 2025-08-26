@@ -550,7 +550,7 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
                   <div className="absolute bottom-4 left-4 flex items-center gap-2">
                     <Snowflake className="text-sidebar-primary" />
-                    <h3 className="text-xl font-medium">Cryogenic Service</h3>
+                    <h3 className="text-xl font-medium">{t.expertise.cryogenic_title}</h3>
                   </div>
                 </div>
                 <div className="p-6">
@@ -697,7 +697,7 @@ const Index = () => {
             </div>
 
             <div>
-              <h3 className="mb-3 text-lg font-medium">Seoul Office Map</h3>
+              <h3 className="mb-3 text-lg font-medium">{t.footer.office_location}</h3>
               <div className="overflow-hidden rounded-md border">
                 <iframe
                   title="Map of JUNIMETAL DEVELOPMENT Seoul Office"
