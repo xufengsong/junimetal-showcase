@@ -256,7 +256,7 @@ const Index = () => {
             </header>
 
             <Tabs defaultValue="piping" className="w-full">
-              <TabsList className="w-full flex overflow-x-auto sm:grid sm:grid-cols-4">
+              <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 h-auto">
                 <TabsTrigger value="piping">{t.offerings.tabs.pipeTube}</TabsTrigger>
                 <TabsTrigger value="fittings">{t.offerings.tabs.fittings}</TabsTrigger>
                 <TabsTrigger value="flanges">{t.offerings.tabs.flanges}</TabsTrigger>
@@ -265,9 +265,9 @@ const Index = () => {
 
               <TabsContent value="piping" className="mt-8">
                 <Card className="p-8">
-                  <div className="grid gap-8 lg:grid-cols-2 items-stretch">
+                  <div className="grid gap-8 lg:grid-cols-2 items-content">
                     {/* Text Column */}
-                    <div className="flex flex-col h-full">
+                    <div className="flex flex-col">
                       <div className="mb-4 flex items-center gap-3">
                         <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
                           <Layers className="text-sidebar-primary" />
@@ -291,8 +291,7 @@ const Index = () => {
                     </div>
 
                     {/* Image Column */}
-                    {/* <div className="flex items-center justify-center h-full"> */}
-                      <div className="w-full h-full flex items-center justify-center aspect-[4/3]">
+                    <div className="flex items-center justify-center">
                         <picture>
                           <source srcSet={pipe6_webp} type="image/webp"></source>
                           <img
@@ -301,7 +300,6 @@ const Index = () => {
                             className="h-full w-auto object-contain rounded-lg"
                           />
                         </picture>
-                      {/* </div> */}
                     </div>
                   </div>
                 </Card>
@@ -309,8 +307,8 @@ const Index = () => {
 
               <TabsContent value="fittings" className="mt-8">
                 <Card className="p-8">
-                  <div className="grid gap-8 lg:grid-cols-2">
-                    <div>
+                  <div className="grid gap-8 lg:grid-cols-2 items-center">
+                    <div className="flex flex-col">
                       <div className="mb-4 flex items-center gap-3">
                         <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
                           <Cog className="text-sidebar-primary" />
@@ -329,13 +327,13 @@ const Index = () => {
                         {t.offerings.fittings.description2}
                       </p>
                     </div>
-                    <div className="flex items-center justify-center aspect-[4/3]">
+                    <div className="flex items-center justify-center">
                       <picture>
                         <source srcSet={fittings_webp} type="image/webp"></source>
                         <img
                           src={fittings}
                           alt="a picture of a fitting"
-                          className="h-full w-auto object-contain rounded-lg"
+                          className="w-full h-auto object-contain rounded-lg"
                         />
                       </picture>
                     </div>
@@ -345,8 +343,8 @@ const Index = () => {
 
               <TabsContent value="flanges" className="mt-8">
                 <Card className="p-8">
-                  <div className="grid gap-8 lg:grid-cols-2">
-                    <div>
+                  <div className="grid gap-8 lg:grid-cols-2 items-center">
+                    <div className="flex flex-col">
                       <div className="mb-4 flex items-center gap-3">
                         <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
                           <Hammer className="text-sidebar-primary" />
@@ -371,7 +369,7 @@ const Index = () => {
                         <img
                           src={flange}
                           alt="industrial and subsea flange components"
-                          className="h-full w-auto object-contain rounded-lg"
+                          className="w-full h-auto object-contain rounded-lg"
                         />              
                       </picture>
                     </div>
@@ -381,8 +379,8 @@ const Index = () => {
 
               <TabsContent value="fastners, gaskets, valves" className="mt-8">
                 <Card className="p-8">
-                  <div className="grid gap-8 lg:grid-cols-2">
-                    <div>
+                  <div className="grid gap-8 lg:grid-cols-2 items-center">
+                    <div className="flex flex-col">
                       <div className="mb-4 flex items-center gap-3">
                         <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
                           <Wrench className="text-sidebar-primary" />
@@ -401,13 +399,13 @@ const Index = () => {
                         {t.offerings.fasteners.description2}
                       </p>
                     </div>
-                    <div className="flex items-center justify-center aspect-[4/3]">
+                    <div className="flex items-center justify-center">
                       <picture>
                         <source srcSet={valves_webp} type="image/webp"></source>
                         <img
                           src={valves}
                           alt="industrial fasteners, gaskets, and valves for onshore and subsea applications"
-                          className="h-full w-auto object-contain rounded-lg"
+                          className="w-full h-auto object-contain rounded-lg"
                         />
                       </picture>
                     </div>
