@@ -290,14 +290,14 @@ const Index = () => {
                     {/* Image Column */}
                     {/* <div className="flex items-center justify-center h-full"> */}
                       <div className="w-full h-full flex items-center justify-center aspect-[4/3]">
-                        <picture>
-                          <source srcSet={pipe3_webp} type="image/webp"></source>
+                        {/* <picture>
+                          <source srcSet={pipe3_webp} type="image/webp"></source> */}
                           <img
                             src={pipe3}
                             alt="Pipe and Tube Distribution"
                             className="h-full w-auto object-contain rounded-lg"
                           />
-                        </picture>
+                        {/* </picture> */}
                       {/* </div> */}
                     </div>
                   </div>
