@@ -4,6 +4,8 @@ import heroImage from "@/assets/hero-industrial-night.jpg";
 
 import pipe3 from "@/assets/pipe3.png"
 import pipe3_webp from "@/assets/pipe3_webp.webp";
+import pipe6 from "@/assets/pipe6.png";
+import pipe6_webp from "@/assets/pipe6_webp.webp";
 
 import valves from "@/assets/valves3.png";
 import valves_webp from "@/assets/valves3_webp.webp";
@@ -41,6 +43,7 @@ const Index = () => {
   useEffect(() => {
     // Force dark theme for sleek black UI and smooth scrolling
     document.documentElement.classList.add("dark", "scroll-smooth");
+    document.documentElement.lang = language;
 
     // SEO: Title, Description, Canonical, OpenGraph, Twitter based on selected language
     const title = t.seo.title;
@@ -290,14 +293,14 @@ const Index = () => {
                     {/* Image Column */}
                     {/* <div className="flex items-center justify-center h-full"> */}
                       <div className="w-full h-full flex items-center justify-center aspect-[4/3]">
-                        {/* <picture>
-                          <source srcSet={pipe3_webp} type="image/webp"></source> */}
+                        <picture>
+                          <source srcSet={pipe6_webp} type="image/webp"></source>
                           <img
-                            src={pipe3}
+                            src={pipe6}
                             alt="Pipe and Tube Distribution"
                             className="h-full w-auto object-contain rounded-lg"
                           />
-                        {/* </picture> */}
+                        </picture>
                       {/* </div> */}
                     </div>
                   </div>
