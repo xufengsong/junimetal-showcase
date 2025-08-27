@@ -1,18 +1,31 @@
 import React, { useEffect, useState } from "react";
 import { translations, type Language } from "@/utils/translations";
 import heroImage from "@/assets/hero-industrial-night.jpg";
+
 import pipe3 from "@/assets/pipe3.png"
+import pipe3_webp from "@/assets/pipe3_webp.webp";
+
 import valves from "@/assets/valves3.png";
+import valves_webp from "@/assets/valves3_webp.webp";
+
 import fittings from "@/assets/fittings3.png";
-import flange from "@/assets/flanges6.png";
+import fittings_webp from "@/assets/fittings3_webp.webp";
+
+import flange from "@/assets/flanges7.png";
+import flange_webp from "@/assets/flanges7_webp.webp";
+
 import materials from "@/assets/materials3.png";
 import materials_webp from "@/assets/materials3_webp.webp"
+
 import heat from "@/assets/heat4.png";
 import heat_webp from "@/assets/heat4_webp.webp";
+
 import cold from "@/assets/cold2.png";
 import cold_webp from "@/assets/cold2_webp.webp";
+
 import custom_design from "@/assets/custom_design3.png";
 import custom_design_webp from "@/assets/custom_design3_webp.webp"
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -277,13 +290,16 @@ const Index = () => {
                     {/* Image Column */}
                     {/* <div className="flex items-center justify-center h-full"> */}
                       <div className="w-full h-full flex items-center justify-center aspect-[4/3]">
-                        <img
-                          src={pipe3}
-                          alt="Pipe and Tube Distribution"
-                          className="h-full w-auto object-contain rounded-lg"
-                        />
-                      </div>
-                    {/* </div> */}
+                        <picture>
+                          <source srcSet={pipe3_webp} type="image/webp"></source>
+                          <img
+                            src={pipe3}
+                            alt="Pipe and Tube Distribution"
+                            className="h-full w-auto object-contain rounded-lg"
+                          />
+                        </picture>
+                      {/* </div> */}
+                    </div>
                   </div>
                 </Card>
               </TabsContent>
@@ -311,11 +327,14 @@ const Index = () => {
                       </p>
                     </div>
                     <div className="flex items-center justify-center aspect-[4/3]">
-                      <img
-                        src={fittings}
-                        alt="a picture of a fitting"
-                        className="h-full w-auto object-contain rounded-lg"
-                      />
+                      <picture>
+                        <source srcSet={fittings_webp} type="image/webp"></source>
+                        <img
+                          src={fittings}
+                          alt="a picture of a fitting"
+                          className="h-full w-auto object-contain rounded-lg"
+                        />
+                      </picture>
                     </div>
                   </div>
                 </Card>
@@ -344,11 +363,14 @@ const Index = () => {
                       </p>
                     </div>
                     <div className="flex items-center justify-center aspect-[4/3]">
-                      <img
-                        src={flange}
-                        alt="industrial and subsea flange components"
-                        className="h-full w-auto object-contain rounded-lg"
-                      />
+                      <picture>
+                        <source srcSet={flange_webp} type="image/webp"></source>
+                        <img
+                          src={flange}
+                          alt="industrial and subsea flange components"
+                          className="h-full w-auto object-contain rounded-lg"
+                        />              
+                      </picture>
                     </div>
                   </div>
                 </Card>
@@ -377,11 +399,14 @@ const Index = () => {
                       </p>
                     </div>
                     <div className="flex items-center justify-center aspect-[4/3]">
-                      <img
-                        src={valves}
-                        alt="industrial fasteners, gaskets, and valves for onshore and subsea applications"
-                        className="h-full w-auto object-contain rounded-lg"
-                      />
+                      <picture>
+                        <source srcSet={valves_webp} type="image/webp"></source>
+                        <img
+                          src={valves}
+                          alt="industrial fasteners, gaskets, and valves for onshore and subsea applications"
+                          className="h-full w-auto object-contain rounded-lg"
+                        />
+                      </picture>
                     </div>
                   </div>
                 </Card>
