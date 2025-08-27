@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { translations, type Language } from "@/utils/translations";
 import heroImage from "@/assets/hero-industrial-night.jpg";
-import pipeAndTube from "@/assets/pipeAndTube.png";
 import pipe3 from "@/assets/pipe3.png"
 import valves from "@/assets/valves3.png";
-import cryogenic_service from "@/assets/cryogenic service.jpg";
 import fittings from "@/assets/fittings3.png";
 import flange from "@/assets/flanges6.png";
-import cryogenic from "@/assets/cryogenic_pic.png";
+import materials from "@/assets/materials3.png";
+import materials_webp from "@/assets/materials3_webp.webp"
+import heat from "@/assets/heat4.png";
+import heat_webp from "@/assets/heat4_webp.webp";
+import cold from "@/assets/cold2.png";
+import cold_webp from "@/assets/cold2_webp.webp";
+import custom_design from "@/assets/custom_design3.png";
+import custom_design_webp from "@/assets/custom_design3_webp.webp"
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -487,12 +492,15 @@ const Index = () => {
               {/* Materials Card */}
               <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
                 <div className="relative h-48 overflow-hidden">
-                  {/* <img 
-                    src="/images/materials.jpg" 
-                    alt="Various metal materials including carbon steel, alloy steel and stainless steel" 
-                    className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
-                    loading="lazy"
-                  /> */}
+                  <picture>
+                    <source srcSet={materials_webp} type="image/webp"></source>
+                    <img 
+                      src={materials}
+                      alt="Various metal materials including carbon steel, alloy steel and stainless steel" 
+                      className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
                   <h3 className="absolute bottom-4 left-4 text-xl font-medium">{t.expertise.materials_title}</h3>
                 </div>
@@ -517,12 +525,15 @@ const Index = () => {
               {/* Heat Treatment Card */}
               <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
                 <div className="relative h-48 overflow-hidden">
-                  {/* <img 
-                    src="/images/heat-treatment.jpg" 
-                    alt="Industrial heat treatment process for metals" 
-                    className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
-                    loading="lazy"
-                  /> */}
+                  <picture>
+                    <source srcSet={heat_webp} type="imgage/webp"></source>
+                    <img 
+                      src={heat}
+                      alt="Industrial heat treatment process for metals" 
+                      className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
                   <h3 className="absolute bottom-4 left-4 text-xl font-medium">{t.expertise.heat_title}</h3>
                 </div>
@@ -541,12 +552,15 @@ const Index = () => {
               {/* Cryogenic Service Card */}
               <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
                 <div className="relative h-48 overflow-hidden">
-                  {/* <img 
-                    src="/images/cryogenic.jpg" 
-                    alt="Cryogenic testing equipment for materials" 
-                    className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
-                    loading="lazy"
-                  /> */}
+                  <picture>
+                    <source srcSet={cold_webp} type="image/webp"></source>
+                    <img 
+                      src={cold}
+                      alt="Cryogenic testing equipment for materials" 
+                      className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
+                      loading="lazy"
+                    />            
+                  </picture>
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
                   <div className="absolute bottom-4 left-4 flex items-center gap-2">
                     <Snowflake className="text-sidebar-primary" />
@@ -567,12 +581,15 @@ const Index = () => {
               {/* Custom Designs Card */}
               <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
                 <div className="relative h-48 overflow-hidden">
-                  {/* <img 
-                    src="/images/custom-forgings.jpg" 
-                    alt="Custom metal forging components and designs" 
-                    className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
-                    loading="lazy"
-                  /> */}
+                  <picture>
+                    <source srcSet={custom_design_webp} type="image/webp"></source>
+                    <img 
+                      src={custom_design}
+                      alt="Custom metal forging components and designs" 
+                      className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
                   <div className="absolute bottom-4 left-4 flex items-center gap-2">
                     <ShieldCheck className="text-sidebar-primary" />
