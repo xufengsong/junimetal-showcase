@@ -208,14 +208,14 @@ export const translations = {
     },
     // SEO
     seo: {
-      title: "JUNIMETAL DEVELOPMENT | 管道解决方案",
-      description: "来自首尔和釜山的创新管道解决方案。全套管道供应商和阀门、海底及特殊部件的专业制造商。",
-      slogan: "管道解决方案：与我们合作，每个项目都在可靠保护之下！"
+      title: "JUNIMETAL DEVELOPMENT | 钢管解决方案",
+      description: "来自首尔和釜山的创新钢管解决方案。全套钢管供应商和阀门、海底及特殊部件的专业制造商。",
+      slogan: "钢管解决方案：与我们合作，每个项目都在可靠保护之下！"
     },
     // Hero Section
     hero: {
       title: "JUNIMETAL DEVELOPMENT",
-      subtitle: "管道解决方案：与我们合作，每个项目都在可靠保护之下！",
+      subtitle: "钢管解决方案：与我们合作，每个项目都在可靠保护之下！",
       exploreOfferings: "探索我们的产品",
       getInTouch: "联系我们",
       skipToContent: "跳转到内容"
@@ -233,20 +233,20 @@ export const translations = {
     offerings: {
       title: "我们的产品",
       tabs: {
-        pipeTube: "管道",
+        pipeTube: "钢管",
         fittings: "管件",
         flanges: "法兰",
         fasteners: "紧固件、垫片、阀门"
       },
       pipeTube: {
-        title: "管道分销",
-        description1: "作为可信赖的分销商，JUNIMETAL DEVELOPMENT 提供来自全球领先制造商的全面管道、管件系列。我们的优势在于为客户提供标准产品和满足苛刻项目要求的定制解决方案的即时访问。",
+        title: "钢管分销",
+        description1: "作为可信赖的分销商，JUNIMETAL DEVELOPMENT 提供来自全球领先制造商的全面钢管、管件系列。我们的优势在于为客户提供标准产品和满足苛刻项目要求的定制解决方案的即时访问。",
         description2: "凭借管理良好的库存和可靠的物流网络，我们确保每个订单的及时交付和一致质量——从紧急更换到大型工业供应合同。",
         features: [
-          "碳钢和合金钢管道",
+          "碳钢和合金钢钢管",
           "不锈钢和双相钢管件",
           "法兰、弯头和连接器",
-          "定制管道配置和项目包"
+          "定制钢管配置和项目包"
         ]
       },
       fittings: {
@@ -254,7 +254,7 @@ export const translations = {
         description1: "JUNIMETAL DEVELOPMENT 为广泛的工业应用提供高质量管件。凭借现货库存和定制供应解决方案，我们确保您的运营按计划进行，项目顺利运行。",
         description2: "信赖 JUNIMETAL DEVELOPMENT 提供可靠的采购、物流支持和为您所有管件需求量身定制的供应解决方案。",
         features: [
-          "管道配件——可用于紧急更换和项目供应合同",
+          "钢管配件——可用于紧急更换和项目供应合同",
           "法兰和联轴器——由全球采购和物流专业知识支持",
           "专用配件——准备在挑战性环境中立即部署",
           "适配器和异径管——大型项目需求的可扩展解决方案"
@@ -273,7 +273,7 @@ export const translations = {
       },
       fasteners: {
         title: "紧固件、垫片、阀门",
-        description1: "用我们全面的紧固件、垫片和阀门系列完善您的管道系统。JUNIMETAL DEVELOPMENT 确保每个组件都符合可靠性和性能的最高标准。",
+        description1: "用我们全面的紧固件、垫片和阀门系列完善您的钢管系统。JUNIMETAL DEVELOPMENT 确保每个组件都符合可靠性和性能的最高标准。",
         description2: "从标准工业应用到专门的海底环境，我们的产品系列支持完整项目交付，具有一致的质量和准时性能。",
         features: [
           "高强度螺栓和紧固件——船用级和海底级选项",
@@ -290,10 +290,10 @@ export const translations = {
       materials_title: "材料",
       materials: [
         "碳钢",
-        "金钢",
-        "锈钢",
-        "相钢",
-        "涂层管道"],
+        "合金钢",
+        "不锈钢",
+        "双相钢",
+        "涂层钢管"],
       heat_title: "热处理",
       heat: [
         "应力消除",
@@ -308,7 +308,7 @@ export const translations = {
       custom_design_subtitle: "带可调半径角度和精密公差的定制部件。",
       custom_design: [
         "屈曲制止器",
-        "管道锚固件",
+        "钢管锚固件",
         "吊架法兰",
         "三通和挡板三通",
         "Y型分叉管"
@@ -335,7 +335,7 @@ export const translations = {
       industries: [
         {
           title: "石油天然气",
-          description: "为上游、中游和下游作业提供关键管道解决方案，专注于安全性和可靠性。"
+          description: "为上游、中游和下游作业提供关键钢管解决方案，专注于安全性和可靠性。"
         },
         {
           title: "海底工程",
@@ -347,7 +347,7 @@ export const translations = {
         },
         {
           title: "发电",
-          description: "为火力、核能和可再生能源设施提供坚固的管道系统。"
+          description: "为火力、核能和可再生能源设施提供坚固的钢管系统。"
         },
         {
           title: "海事和海上",
@@ -355,14 +355,14 @@ export const translations = {
         },
         {
           title: "工业制造",
-          description: "为制造设施和工艺行业提供标准和定制管道解决方案。"
+          description: "为制造设施和工艺行业提供标准和定制钢管解决方案。"
         }
       ]
     },
     // Contact Section
     contact: {
       title: "联系我们",
-      subtitle: "联系我们了解您的管道解决方案需求",
+      subtitle: "联系我们了解您的钢管解决方案需求",
       offices: {
         title: "我们的办公室",
         seoul: {
@@ -371,7 +371,7 @@ export const translations = {
         },
         busan: {
           title: "釜山仓库",
-          address: "韩国釜山市江西区加里峰二路13番街"
+          address: "韩国釜山市江西区加里峰二路13番街32"
         }
       },
       form: {
@@ -387,7 +387,7 @@ export const translations = {
     },
     // Footer
     footer: {
-      description: "全球能源和交通行业高质量管道解决方案和工业组件的领先分销商。",
+      description: "全球能源和交通行业高质量钢管解决方案和工业组件的领先分销商。",
       quickLinks: "快速链接",
       contactInfo: "联系信息",
       followUs: "关注我们",
@@ -503,8 +503,8 @@ export const translations = {
         "Arrestadores de Pandeo",
         "Anclajes de Tubería",
         "Bridas de Colgador",
-        "Tes y Tes Aisladas",
-        "Y-es"
+        "Tes y Tes con Barra",
+        "Conexión en Y"
       ],
       items: [
         {
