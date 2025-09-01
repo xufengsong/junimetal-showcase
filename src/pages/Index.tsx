@@ -18,15 +18,23 @@ import flange_webp from "@/assets/flanges7_webp.webp";
 
 import materials from "@/assets/materials3.png";
 import materials_webp from "@/assets/materials3_webp.webp"
+import materials2 from "@/assets/materials2.png";
+import materials2_webp from "@/assets/materials2_webp.webp";
 
 import heat from "@/assets/heat4.png";
 import heat_webp from "@/assets/heat4_webp.webp";
+import heated_pipe from "@/assets/heated_pipe.png";
+import heated_pipe_webp from "@/assets/heated_pipe.webp";
 
 import cold from "@/assets/cold2.png";
 import cold_webp from "@/assets/cold2_webp.webp";
+import cryogenic from "@/assets/cryogenic.png";
+import cryogenic_webp from "@/assets/cryogenic_webp.webp";
 
 import custom_design from "@/assets/custom_design3.png";
 import custom_design_webp from "@/assets/custom_design3_webp.webp"
+import custom_design2 from "@/assets/custom_design2.png";
+import custom_design2_webp from "@/assets/custom_design2_webp.webp"
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -519,9 +527,9 @@ const Index = () => {
               <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
                 <div className="relative h-48 overflow-hidden">
                   <picture>
-                    <source srcSet={materials_webp} type="image/webp"></source>
+                    <source srcSet={materials2_webp} type="image/webp"></source>
                     <img 
-                      src={materials}
+                      src={materials2}
                       alt="Various metal materials including carbon steel, alloy steel and stainless steel" 
                       className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
                       loading="lazy"
@@ -554,7 +562,7 @@ const Index = () => {
                   <picture>
                     <source srcSet={heat_webp} type="imgage/webp"></source>
                     <img 
-                      src={heat}
+                      src={heated_pipe_webp}
                       alt="Industrial heat treatment process for metals" 
                       className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
                       loading="lazy"
@@ -579,9 +587,9 @@ const Index = () => {
               <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
                 <div className="relative h-48 overflow-hidden">
                   <picture>
-                    <source srcSet={cold_webp} type="image/webp"></source>
+                    <source srcSet={cryogenic_webp} type="image/webp"></source>
                     <img 
-                      src={cold}
+                      src={cryogenic}
                       alt="Cryogenic testing equipment for materials" 
                       className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
                       loading="lazy"
@@ -608,9 +616,9 @@ const Index = () => {
               <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
                 <div className="relative h-48 overflow-hidden">
                   <picture>
-                    <source srcSet={custom_design_webp} type="image/webp"></source>
+                    <source srcSet={custom_design2_webp} type="image/webp"></source>
                     <img 
-                      src={custom_design}
+                      src={custom_design2}
                       alt="Custom metal forging components and designs" 
                       className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
                       loading="lazy"
