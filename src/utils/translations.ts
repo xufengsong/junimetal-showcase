@@ -188,6 +188,125 @@ export const translations = {
         messageRequired: "Message is required"
       }
     },
+    // Product Pages
+    products: {
+      viewDetails: "View Details",
+      requestQuote: "Request a Quote for This Product",
+      downloadDatasheet: "Download Datasheet",
+      specifications: "Specifications",
+      materials: "Materials",
+      sizes: "Sizes",
+      pressureClass: "Pressure Class",
+      standards: "Standards",
+      applications: "Applications",
+      features: "Key Features",
+      
+      pipestubes: {
+        title: "Pipes & Tubes",
+        subtitle: "Comprehensive range of high-quality pipes and tubes for industrial applications",
+        description: "Our extensive pipe and tube inventory covers everything from standard carbon steel to exotic alloys, serving diverse industrial needs with reliable quality and prompt delivery.",
+        specifications: {
+          materials: ["Carbon Steel", "Stainless Steel", "Alloy Steel", "Duplex Steel", "Super Duplex", "Inconel", "Hastelloy"],
+          diameters: ["1/8\" to 60\" NPS", "Custom sizes available"],
+          pressureRating: ["150# to 2500#", "PN6 to PN420"],
+          standards: ["ASTM", "ASME", "API", "EN", "JIS", "KS"],
+          wallThickness: ["SCH 10 to XXS", "Custom thickness"],
+          lengths: ["Standard 6m/12m", "Custom lengths available"]
+        },
+        applications: ["Oil & Gas", "Petrochemical", "Power Generation", "Marine & Offshore", "Chemical Processing"],
+        features: [
+          "Wide range of materials and sizes",
+          "Fast delivery from stock",
+          "Custom fabrication available",
+          "Full mill test certificates",
+          "Quality assurance testing"
+        ]
+      },
+      
+      fittings: {
+        title: "Fittings",
+        subtitle: "Precision-engineered fittings for reliable pipe connections",
+        description: "Complete range of butt weld, socket weld, and threaded fittings manufactured to international standards, ensuring perfect fit and long-lasting performance.",
+        specifications: {
+          materials: ["Carbon Steel", "Stainless Steel", "Alloy Steel", "Duplex Steel", "Inconel", "Monel"],
+          sizes: ["1/8\" to 60\" NPS", "DN6 to DN1500"],
+          pressureRating: ["150# to 2500#", "PN6 to PN420"],
+          standards: ["ASME B16.9", "ASME B16.11", "MSS SP-75", "EN 10253", "JIS B2311"],
+          types: ["Elbows", "Tees", "Reducers", "Caps", "Crosses", "Stub Ends"]
+        },
+        applications: ["Pipeline Systems", "Process Plants", "Offshore Platforms", "Refineries", "Chemical Plants"],
+        features: [
+          "Full range of connection types",
+          "Precision manufacturing",
+          "Extensive inventory",
+          "Custom configurations",
+          "Certified to international standards"
+        ]
+      },
+      
+      flanges: {
+        title: "Flanges",
+        subtitle: "High-performance flanges for critical applications",
+        description: "Comprehensive flange portfolio including standard and exotic materials, engineered for demanding applications in energy, marine, and process industries.",
+        specifications: {
+          materials: ["Carbon Steel", "Stainless Steel", "Alloy Steel", "Duplex", "Super Duplex", "Inconel", "Hastelloy", "Monel"],
+          sizes: ["1/2\" to 60\" NPS", "DN15 to DN1500"],
+          pressureRating: ["150# to 2500#", "PN6 to PN420"],
+          standards: ["ASME B16.5", "ASME B16.47", "EN 1092", "JIS B2220", "DIN", "GOST"],
+          types: ["Weld Neck", "Slip-On", "Blind", "Socket Weld", "Threaded", "Lap Joint"],
+          facing: ["RF", "FF", "RTJ", "Custom"]
+        },
+        applications: ["High Pressure Systems", "Subsea Applications", "Chemical Processing", "Power Plants", "Offshore Platforms"],
+        features: [
+          "Wide pressure and temperature range",
+          "Custom facing and drilling",
+          "Exotic material availability",
+          "Subsea qualified products",
+          "Full traceability documentation"
+        ]
+      },
+      
+      fasteners: {
+        title: "Fasteners, Gaskets & Valves",
+        subtitle: "Complete system solutions for piping integrity",
+        description: "Comprehensive range of fasteners, gaskets, and valves to complete your piping systems with components that ensure reliability and performance.",
+        specifications: {
+          fastenerMaterials: ["Carbon Steel", "Stainless Steel", "Super Duplex", "Inconel", "Monel", "Hastelloy"],
+          gasketTypes: ["Spiral Wound", "RTJ", "Sheet Gaskets", "O-Rings", "Custom Gaskets"],
+          valveTypes: ["Ball Valves", "Gate Valves", "Globe Valves", "Check Valves", "Butterfly Valves"],
+          standards: ["ASTM", "ASME", "API", "EN", "JIS", "MSS"],
+          sizes: ["1/4\" to 24\" for valves", "All bolt sizes available"]
+        },
+        applications: ["Complete Piping Systems", "Maintenance & Repair", "New Construction", "Subsea Systems"],
+        features: [
+          "Complete system packages",
+          "Quality assured components",
+          "Fast delivery programs",
+          "Technical support included",
+          "Custom assembly services"
+        ]
+      },
+      
+      custom: {
+        title: "Custom Solutions",
+        subtitle: "Tailored engineering solutions for unique requirements",
+        description: "Specialized custom fabrication and engineering services for unique project requirements, including special forgings, custom fittings, and engineered solutions.",
+        specifications: {
+          capabilities: ["Custom Forgings", "Special Fittings", "Engineered Solutions", "Prototype Development"],
+          materials: ["All Standard & Exotic Alloys", "Customer Specified Materials"],
+          standards: ["Customer Specifications", "Industry Standards", "Custom Requirements"],
+          services: ["Design Engineering", "Manufacturing", "Testing", "Documentation", "Installation Support"]
+        },
+        applications: ["Unique Project Requirements", "Prototype Development", "Specialized Industries", "R&D Projects"],
+        features: [
+          "Full engineering support",
+          "Rapid prototyping capability",
+          "Custom material selection",
+          "Comprehensive testing",
+          "Complete documentation package"
+        ]
+      }
+    },
     // Footer
     footer: {
       description: "Leading distributor of high-quality piping solutions and industrial components for global energy and mobility industries.",
@@ -383,6 +502,125 @@ export const translations = {
         nameRequired: "姓名必填",
         emailRequired: "请输入有效邮箱",
         messageRequired: "留言必填"
+      }
+    },
+    // Product Pages
+    products: {
+      viewDetails: "查看详情",
+      requestQuote: "申请此产品报价",
+      downloadDatasheet: "下载数据表",
+      specifications: "规格参数",
+      materials: "材料",
+      sizes: "尺寸",
+      pressureClass: "压力等级",
+      standards: "标准",
+      applications: "应用",
+      features: "主要特点",
+      
+      pipestubes: {
+        title: "钢管",
+        subtitle: "工业应用的全面高质量钢管系列",
+        description: "我们广泛的钢管库存涵盖从标准碳钢到特殊合金的所有产品，以可靠的质量和及时的交付服务于各种工业需求。",
+        specifications: {
+          materials: ["碳钢", "不锈钢", "合金钢", "双相钢", "超级双相钢", "因科镍合金", "哈氏合金"],
+          diameters: ["1/8\" 至 60\" NPS", "可定制尺寸"],
+          pressureRating: ["150# 至 2500#", "PN6 至 PN420"],
+          standards: ["ASTM", "ASME", "API", "EN", "JIS", "KS"],
+          wallThickness: ["SCH 10 至 XXS", "定制厚度"],
+          lengths: ["标准6m/12m", "可定制长度"]
+        },
+        applications: ["石油天然气", "石化", "发电", "海事和海上", "化学加工"],
+        features: [
+          "广泛的材料和尺寸范围",
+          "库存快速交付",
+          "可定制制造",
+          "完整的轧机测试证书",
+          "质量保证测试"
+        ]
+      },
+      
+      fittings: {
+        title: "管件",
+        subtitle: "精密工程管件，确保可靠的管道连接",
+        description: "完整的对焊、承插焊和螺纹管件系列，按国际标准制造，确保完美配合和持久性能。",
+        specifications: {
+          materials: ["碳钢", "不锈钢", "合金钢", "双相钢", "因科镍合金", "蒙乃尔合金"],
+          sizes: ["1/8\" 至 60\" NPS", "DN6 至 DN1500"],
+          pressureRating: ["150# 至 2500#", "PN6 至 PN420"],
+          standards: ["ASME B16.9", "ASME B16.11", "MSS SP-75", "EN 10253", "JIS B2311"],
+          types: ["弯头", "三通", "异径管", "管帽", "四通", "短管"]
+        },
+        applications: ["管道系统", "工艺设备", "海上平台", "炼油厂", "化工厂"],
+        features: [
+          "全系列连接类型",
+          "精密制造",
+          "广泛库存",
+          "定制配置",
+          "国际标准认证"
+        ]
+      },
+      
+      flanges: {
+        title: "法兰",
+        subtitle: "关键应用的高性能法兰",
+        description: "全面的法兰产品组合，包括标准和特殊材料，专为能源、海事和工艺行业的苛刻应用而设计。",
+        specifications: {
+          materials: ["碳钢", "不锈钢", "合金钢", "双相钢", "超级双相钢", "因科镍合金", "哈氏合金", "蒙乃尔合金"],
+          sizes: ["1/2\" 至 60\" NPS", "DN15 至 DN1500"],
+          pressureRating: ["150# 至 2500#", "PN6 至 PN420"],
+          standards: ["ASME B16.5", "ASME B16.47", "EN 1092", "JIS B2220", "DIN", "GOST"],
+          types: ["对焊法兰", "滑套法兰", "盲板法兰", "承插焊法兰", "螺纹法兰", "搭接法兰"],
+          facing: ["RF", "FF", "RTJ", "定制"]
+        },
+        applications: ["高压系统", "海底应用", "化学加工", "发电厂", "海上平台"],
+        features: [
+          "宽压力和温度范围",
+          "定制密封面和钻孔",
+          "特殊材料可用性",
+          "海底合格产品",
+          "完整可追溯文档"
+        ]
+      },
+      
+      fasteners: {
+        title: "紧固件、垫片和阀门",
+        subtitle: "管道完整性的完整系统解决方案",
+        description: "全面的紧固件、垫片和阀门系列，以确保可靠性和性能的组件完善您的管道系统。",
+        specifications: {
+          fastenerMaterials: ["碳钢", "不锈钢", "超级双相钢", "因科镍合金", "蒙乃尔合金", "哈氏合金"],
+          gasketTypes: ["缠绕垫片", "RTJ", "板式垫片", "O型圈", "定制垫片"],
+          valveTypes: ["球阀", "闸阀", "截止阀", "止回阀", "蝶阀"],
+          standards: ["ASTM", "ASME", "API", "EN", "JIS", "MSS"],
+          sizes: ["阀门1/4\" 至 24\"", "所有螺栓尺寸可用"]
+        },
+        applications: ["完整管道系统", "维护和修理", "新建工程", "海底系统"],
+        features: [
+          "完整系统包",
+          "质量保证组件",
+          "快速交付程序",
+          "包含技术支持",
+          "定制装配服务"
+        ]
+      },
+      
+      custom: {
+        title: "定制解决方案",
+        subtitle: "独特需求的定制工程解决方案",
+        description: "针对独特项目需求的专业定制制造和工程服务，包括特殊锻件、定制管件和工程解决方案。",
+        specifications: {
+          capabilities: ["定制锻件", "特殊管件", "工程解决方案", "原型开发"],
+          materials: ["所有标准和特殊合金", "客户指定材料"],
+          standards: ["客户规格", "行业标准", "定制要求"],
+          services: ["设计工程", "制造", "测试", "文档", "安装支持"]
+        },
+        applications: ["独特项目需求", "原型开发", "专业行业", "研发项目"],
+        features: [
+          "全面工程支持",
+          "快速原型制作能力",
+          "定制材料选择",
+          "全面测试",
+          "完整文档包"
+        ]
       }
     },
     // Footer
@@ -964,6 +1202,24 @@ export const translations = {
         messageRequired: "메시지는 필수입니다"
       }
     },
+    // Product Pages
+    products: {
+      viewDetails: "Ver Detalles",
+      requestQuote: "Solicitar Cotización para Este Producto",
+      downloadDatasheet: "Descargar Hoja de Datos",
+      specifications: "Especificaciones",
+      materials: "Materiales",
+      sizes: "Tamaños",
+      pressureClass: "Clase de Presión",
+      standards: "Estándares",
+      applications: "Aplicaciones",
+      features: "Características Clave",
+      pipestubes: { title: "Tuberías", subtitle: "Soluciones de tubería industrial", description: "Tubería de alta calidad", specifications: { materials: ["Acero al Carbono"], diameters: ["1/8\" a 60\""], pressureRating: ["150# a 2500#"], standards: ["ASTM"], wallThickness: ["SCH 10"], lengths: ["6m/12m"] }, applications: ["Petróleo y Gas"], features: ["Amplia gama"] },
+      fittings: { title: "Accesorios", subtitle: "Accesorios de precisión", description: "Accesorios confiables", specifications: { materials: ["Acero"], sizes: ["1/8\""], pressureRating: ["150#"], standards: ["ASME"], types: ["Codos"] }, applications: ["Sistemas"], features: ["Precisión"] },
+      flanges: { title: "Bridas", subtitle: "Bridas de alto rendimiento", description: "Bridas industriales", specifications: { materials: ["Acero"], sizes: ["1/2\""], pressureRating: ["150#"], standards: ["ASME"], types: ["Soldadura"], facing: ["RF"] }, applications: ["Sistemas"], features: ["Alto rendimiento"] },
+      fasteners: { title: "Sujetadores", subtitle: "Soluciones completas", description: "Sujetadores industriales", specifications: { fastenerMaterials: ["Acero"], gasketTypes: ["Espiral"], valveTypes: ["Bola"], standards: ["ASTM"], sizes: ["1/4\""] }, applications: ["Sistemas"], features: ["Completo"] },
+      custom: { title: "Soluciones Personalizadas", subtitle: "Ingeniería personalizada", description: "Soluciones únicas", specifications: { capabilities: ["Forjas"], materials: ["Todos"], standards: ["Cliente"], services: ["Diseño"] }, applications: ["Únicos"], features: ["Soporte completo"] }
+    },
     // Footer
     footer: {
       description: "글로벌 에너지 및 모빌리티 산업을 위한 고품질 배관 솔루션 및 산업 구성 요소의 선도적인 유통업체.",
@@ -1162,6 +1418,24 @@ export const translations = {
         emailRequired: "有効なメールアドレスを入力してください",
         messageRequired: "メッセージは必須です"
       }
+    },
+    // Product Pages  
+    products: {
+      viewDetails: "Посмотреть детали",
+      requestQuote: "Запросить предложение",
+      downloadDatasheet: "Скачать техпаспорт", 
+      specifications: "Технические характеристики",
+      materials: "Материалы",
+      sizes: "Размеры",
+      pressureClass: "Класс давления",
+      standards: "Стандарты",
+      applications: "Применение",
+      features: "Основные характеристики",
+      pipestubes: { title: "Трубы", subtitle: "Промышленные трубы", description: "Качественные трубы", specifications: { materials: ["Сталь"], diameters: ["1/8\""], pressureRating: ["150#"], standards: ["ГОСТ"], wallThickness: ["10мм"], lengths: ["6м"] }, applications: ["Нефтегаз"], features: ["Широкий ассортимент"] },
+      fittings: { title: "Фитинги", subtitle: "Точные фитинги", description: "Надежные фитинги", specifications: { materials: ["Сталь"], sizes: ["1/8\""], pressureRating: ["150#"], standards: ["ГОСТ"], types: ["Отводы"] }, applications: ["Системы"], features: ["Точность"] },
+      flanges: { title: "Фланцы", subtitle: "Высокопроизводительные фланцы", description: "Промышленные фланцы", specifications: { materials: ["Сталь"], sizes: ["1/2\""], pressureRating: ["150#"], standards: ["ГОСТ"], types: ["Сварные"], facing: ["РФ"] }, applications: ["Системы"], features: ["Высокая производительность"] },
+      fasteners: { title: "Крепеж", subtitle: "Комплексные решения", description: "Промышленный крепеж", specifications: { fastenerMaterials: ["Сталь"], gasketTypes: ["Спиральные"], valveTypes: ["Шаровые"], standards: ["ГОСТ"], sizes: ["1/4\""] }, applications: ["Системы"], features: ["Полный комплект"] },
+      custom: { title: "Индивидуальные решения", subtitle: "Индивидуальная инженерия", description: "Уникальные решения", specifications: { capabilities: ["Поковки"], materials: ["Все"], standards: ["Заказчика"], services: ["Проектирование"] }, applications: ["Уникальные"], features: ["Полная поддержка"] }
     },
     // Footer
     footer: {

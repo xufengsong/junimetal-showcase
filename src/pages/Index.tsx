@@ -304,6 +304,12 @@ const Index = () => {
                           <li key={index}>{feature}</li>
                         ))}
                       </ul>
+                      
+                      <div className="mt-6">
+                        <Button asChild className="bg-sidebar-primary hover:bg-sidebar-primary/90">
+                          <a href="/products/pipes-tubes">View Details</a>
+                        </Button>
+                      </div>
                     </div>
 
                     {/* Image Column */}
@@ -342,6 +348,12 @@ const Index = () => {
                       <p className="mt-4 text-muted-foreground">
                         {t.offerings.fittings.description2}
                       </p>
+                      
+                      <div className="mt-6">
+                        <Button asChild className="bg-sidebar-primary hover:bg-sidebar-primary/90">
+                          <a href="/products/fittings">View Details</a>
+                        </Button>
+                      </div>
                     </div>
                     <div className="flex items-center justify-center">
                       <picture>
@@ -378,6 +390,12 @@ const Index = () => {
                       <p className="mt-4 text-muted-foreground">
                         {t.offerings.flanges.description2}
                       </p>
+                      
+                      <div className="mt-6">
+                        <Button asChild className="bg-sidebar-primary hover:bg-sidebar-primary/90">
+                          <a href="/products/flanges">View Details</a>
+                        </Button>
+                      </div>
                     </div>
                     <div className="flex items-center justify-center aspect-[4/3]">
                       <picture>
@@ -414,6 +432,15 @@ const Index = () => {
                       <p className="mt-4 text-muted-foreground">
                         {t.offerings.fasteners.description2}
                       </p>
+                      
+                      <div className="mt-6 flex gap-4">
+                        <Button asChild className="bg-sidebar-primary hover:bg-sidebar-primary/90">
+                          <a href="/products/fasteners">View Details</a>
+                        </Button>
+                        <Button asChild variant="outline">
+                          <a href="/products/custom-solutions">Custom Solutions</a>
+                        </Button>
+                      </div>
                     </div>
                     <div className="flex items-center justify-center">
                       <picture>
