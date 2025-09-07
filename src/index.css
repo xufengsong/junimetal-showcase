@@ -97,9 +97,7 @@ All colors MUST be HSL.
     --nav-hover-foreground: 0 0% 100%;
     --nav-active: 217.2 91.2% 59.8%;
   }
-}
-
-@layer base {
+  
   * {
     @apply border-border;
   }

@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { translations, type Language } from "@/utils/translations";
 import heroImage from "@/assets/hero-industrial-night.jpg";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link } from "react-router-dom";
+import {
+  ArrowRight,
+} from "lucide-react";
 
 // import pipe3 from "@/assets/pipe3.png"
 // import pipe3_webp from "@/assets/pipe3_webp.webp";
@@ -45,11 +50,12 @@ import custom_design4 from "@/assets/custom4.png";
 import custom_design4_webp from "@/assets/custom4_webp.webp"
 
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+// import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Wrench, Cog, Layers, Snowflake, ShieldCheck, Hammer, BadgeCheck, Users, Globe } from "lucide-react";
+import { productCategories } from "@/data/productCategories";
 
 const Index = () => {
   const [language, setLanguage] = useState<Language>("en");
@@ -264,6 +270,44 @@ const Index = () => {
           </div>
         </section>
 
+      {/* Our Products Section */}
+      <section id="products" className="py-16 sm:py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="mb-2 text-center text-3xl font-bold tracking-tight">
+            Our Products
+          </h2>
+          <p className="mb-10 text-center text-muted-foreground">
+            Explore our main product categories.???
+          </p>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {productCategories.map((category) => (
+              <Card
+                key={category.id}
+                className="overflow-hidden transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl"
+              >
+                <CardHeader>
+                  <CardTitle>{category.name}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">
+                    {category.description}
+                  </p>
+                  <Button asChild className="mt-4 w-full">
+                    <Link to={`/products#${category.id}`}>View Details</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          <div className="mt-12 text-center">
+            <Button asChild variant="outline">
+              <Link to="/products">
+                More Products <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
 
         {/* Products & Services */}
         <section id="offerings" className="scroll-mt-24 border-t border-border py-16 md:py-24">

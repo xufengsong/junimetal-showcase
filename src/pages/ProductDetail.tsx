@@ -9,7 +9,7 @@ import { translations } from "@/utils/translations";
 
 const ProductDetail = () => {
   const { categoryId, productId } = useParams();
-  const [language, setLanguage] = useState<'en' | 'zh' | 'ko' | 'ja'>('en');
+  const [language, setLanguage] = useState<'en' | 'zh' | 'es' | 'ru'>('en');
   const t = translations[language];
 
   // Product data based on URL params
@@ -92,7 +92,7 @@ const ProductDetail = () => {
   const product = getProductData();
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-background/95">
+    <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
       <nav className="border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto px-4 py-4">
@@ -325,14 +325,14 @@ const ProductDetail = () => {
               <h4 className="text-md font-semibold text-foreground mb-4">Contact</h4>
               <div className="space-y-2 text-sm text-foreground/70">
                 <p>Seoul & Busan, South Korea</p>
-                <p>Email: info@junimetal.com</p>
-                <p>Phone: +82-2-XXXX-XXXX</p>
+                <p>Email: jmd@jmd.by-works.com</p>
+                <p>Phone: +82-10-XXXX-XXXX</p>
               </div>
             </div>
           </div>
           <div className="border-t border-border/40 mt-8 pt-8 text-center">
             <p className="text-foreground/60 text-sm">
-              © 2024 JUNIMETAL DEVELOPMENT. All rights reserved.
+              © 2025 JUNIMETAL DEVELOPMENT. All rights reserved.
             </p>
           </div>
         </div>
