@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { translations, type Language } from "@/utils/translations";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -10,15 +9,9 @@ import { Link } from "react-router-dom";
 import custom4 from "@/assets/custom4.png";
 import custom4_webp from "@/assets/custom4_webp.webp";
 
-interface CustomSolutionsProps {
-  language?: Language;
-}
-
-const CustomSolutions: React.FC<CustomSolutionsProps> = ({ language = "en" }) => {
-  const t = translations[language];
-
+const CustomSolutions = () => {
   useEffect(() => {
-    document.title = `${t.products.custom.title} - JUNIMETAL DEVELOPMENT`;
+    document.title = "Custom Solutions - JUNIMETAL DEVELOPMENT";
     
     const setMeta = (selector: string, attr: "name" | "property", content: string) => {
       let meta = document.head.querySelector<HTMLMetaElement>(`meta[${attr}='${selector}']`);
@@ -30,8 +23,8 @@ const CustomSolutions: React.FC<CustomSolutionsProps> = ({ language = "en" }) =>
       meta.setAttribute("content", content);
     };
 
-    setMeta("description", "name", t.products.custom.description);
-  }, [language, t]);
+    setMeta("description", "name", "Custom engineering solutions and specialized piping components designed to meet unique project requirements.");
+  }, []);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -60,17 +53,17 @@ const CustomSolutions: React.FC<CustomSolutionsProps> = ({ language = "en" }) =>
         <section className="mb-12">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl font-bold mb-4">{t.products.custom.title}</h1>
+              <h1 className="text-4xl font-bold mb-4">Custom Solutions</h1>
               <p className="text-xl text-muted-foreground mb-6">
-                {t.products.custom.subtitle}
+                Engineered solutions for unique project requirements
               </p>
               <p className="text-muted-foreground mb-8">
-                {t.products.custom.description}
+                Our engineering team specializes in developing custom piping solutions, special forgings, and unique components tailored to your specific project needs.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-sidebar-primary hover:bg-sidebar-primary/90">
+                <Button size="lg" className="bg-primary hover:bg-primary/90">
                   <Mail className="h-4 w-4 mr-2" />
-                  {t.products.requestQuote}
+                  Request a Quote for This Product
                 </Button>
                 <Button variant="outline" size="lg">
                   <Download className="h-4 w-4 mr-2" />
@@ -105,20 +98,20 @@ const CustomSolutions: React.FC<CustomSolutionsProps> = ({ language = "en" }) =>
                 </TableHeader>
                 <TableBody>
                   <TableRow>
-                    <TableCell className="font-medium">Capabilities</TableCell>
-                    <TableCell>{t.products.custom.specifications.capabilities.join(", ")}</TableCell>
+                    <TableCell className="font-medium">Materials</TableCell>
+                    <TableCell>Stainless Steel, Carbon Steel, Duplex, Super Duplex, Nickel Alloys</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium">{t.products.materials}</TableCell>
-                    <TableCell>{t.products.custom.specifications.materials.join(", ")}</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium">{t.products.standards}</TableCell>
-                    <TableCell>{t.products.custom.specifications.standards.join(", ")}</TableCell>
+                    <TableCell className="font-medium">Standards</TableCell>
+                    <TableCell>ASME, ASTM, API, ISO, EN, JIS</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">Services</TableCell>
-                    <TableCell>{t.products.custom.specifications.services.join(", ")}</TableCell>
+                    <TableCell>Design, Engineering, Manufacturing, Testing, Certification</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="font-medium">Applications</TableCell>
+                    <TableCell>Oil & Gas, Chemical Processing, Power Generation, Marine, Industrial</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
@@ -132,52 +125,27 @@ const CustomSolutions: React.FC<CustomSolutionsProps> = ({ language = "en" }) =>
             <h2 className="text-2xl font-semibold mb-6">Our Engineering Process</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center">
-                <div className="w-12 h-12 bg-sidebar-primary rounded-full flex items-center justify-center text-white font-bold mb-4 mx-auto">1</div>
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mb-4 mx-auto">1</div>
                 <h3 className="font-semibold mb-2">Consultation</h3>
                 <p className="text-sm text-muted-foreground">Understanding your specific requirements and constraints</p>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 bg-sidebar-primary rounded-full flex items-center justify-center text-white font-bold mb-4 mx-auto">2</div>
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mb-4 mx-auto">2</div>
                 <h3 className="font-semibold mb-2">Design</h3>
                 <p className="text-sm text-muted-foreground">Engineering design with 3D modeling and stress analysis</p>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 bg-sidebar-primary rounded-full flex items-center justify-center text-white font-bold mb-4 mx-auto">3</div>
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mb-4 mx-auto">3</div>
                 <h3 className="font-semibold mb-2">Prototype</h3>
                 <p className="text-sm text-muted-foreground">Rapid prototyping and testing validation</p>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 bg-sidebar-primary rounded-full flex items-center justify-center text-white font-bold mb-4 mx-auto">4</div>
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mb-4 mx-auto">4</div>
                 <h3 className="font-semibold mb-2">Production</h3>
                 <p className="text-sm text-muted-foreground">Full-scale manufacturing with quality control</p>
               </div>
             </div>
           </Card>
-        </section>
-
-        {/* Applications and Features */}
-        <section className="mb-12">
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="p-6">
-              <h3 className="text-xl font-semibold mb-4">{t.products.applications}</h3>
-              <div className="flex flex-wrap gap-2">
-                {t.products.custom.applications.map((app, index) => (
-                  <Badge key={index} variant="secondary">{app}</Badge>
-                ))}
-              </div>
-            </Card>
-            <Card className="p-6">
-              <h3 className="text-xl font-semibold mb-4">{t.products.features}</h3>
-              <ul className="space-y-2">
-                {t.products.custom.features.map((feature, index) => (
-                  <li key={index} className="flex items-start gap-2">
-                    <div className="h-2 w-2 rounded-full bg-sidebar-primary mt-2 flex-shrink-0" />
-                    <span className="text-muted-foreground">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </Card>
-          </div>
         </section>
 
         {/* Custom Projects Examples */}
@@ -209,12 +177,12 @@ const CustomSolutions: React.FC<CustomSolutionsProps> = ({ language = "en" }) =>
 
         {/* CTA Section */}
         <section className="text-center">
-          <Card className="p-8 bg-gradient-to-r from-sidebar-primary/10 to-sidebar-primary/5">
+          <Card className="p-8 bg-gradient-to-r from-primary/10 to-primary/5">
             <h2 className="text-2xl font-semibold mb-4">Have a Unique Challenge?</h2>
             <p className="text-muted-foreground mb-6">
               Our engineering team thrives on solving complex problems. Let's discuss your custom requirements and develop the perfect solution.
             </p>
-            <Button size="lg" className="bg-sidebar-primary hover:bg-sidebar-primary/90">
+            <Button size="lg" className="bg-primary hover:bg-primary/90">
               <Mail className="h-4 w-4 mr-2" />
               Start Engineering Consultation
             </Button>

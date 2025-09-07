@@ -135,6 +135,7 @@ const Index = () => {
 
   const navItems = [
     { href: "#about", label: t.nav.aboutUs },
+    { href: "/products", label: "Our Products" },
     { href: "#offerings", label: t.nav.productsServices },
     { href: "#expertise", label: t.nav.ourExpertise },
     { href: "#contact", label: t.nav.contactUs },

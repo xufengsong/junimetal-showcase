@@ -10,6 +10,8 @@ import Fittings from "./pages/Fittings";
 import Flanges from "./pages/Flanges";
 import Fasteners from "./pages/Fasteners";
 import CustomSolutions from "./pages/CustomSolutions";
+import Products from "./pages/Products";
+import ProductDetail from "./pages/ProductDetail";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +23,8 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/:categoryId/:productId" element={<ProductDetail />} />
           <Route path="/products/pipes-tubes" element={<PipesTubes />} />
           <Route path="/products/fittings" element={<Fittings />} />
           <Route path="/products/flanges" element={<Flanges />} />

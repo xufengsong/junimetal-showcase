@@ -3,6 +3,7 @@ export const translations = {
     // Navigation
     nav: {
       aboutUs: "About Us",
+      products: "Our Products",
       productsServices: "Products & Services", 
       ourExpertise: "Our Expertise",
       contactUs: "Contact Us"
@@ -321,6 +322,7 @@ export const translations = {
     // Navigation
     nav: {
       aboutUs: "关于我们",
+      products: "我们的产品",
       productsServices: "产品与服务",
       ourExpertise: "我们的专业",
       contactUs: "联系我们"
@@ -636,6 +638,7 @@ export const translations = {
   es: {
     nav: {
       aboutUs: "Acerca de Nosotros",
+      products: "Nuestros Productos",
       productsServices: "Productos y Servicios",
       ourExpertise: "Nuestra Experiencia",
       contactUs: "Contáctenos"
