@@ -144,6 +144,7 @@ const Index = () => {
     { href: "#products", label: "Our Products" },
     // { href: "#offerings", label: t.nav.productsServices },
     { href: "#expertise", label: t.nav.ourExpertise },
+    { href: "#visits", label: t.visits.title },
     { href: "#contact", label: t.nav.contactUs },
   ];
 
@@ -733,7 +734,86 @@ const Index = () => {
             </div>
           </div>
         </section>
-        
+
+        {/* Our Visits Section */}
+        <section className="scroll-mt-24 border-t border-border py-16 md:py-24 bg-gradient-to-br from-background to-background/50">
+          <div className="container">
+            <header className="mb-10 text-center">
+              <h2 className="text-3xl font-semibold md:text-4xl mb-4">{t.visits.title}</h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">{t.visits.subtitle}</p>
+            </header>
+
+            {/* Previous Visits Carousel */}
+            <div className="mb-12">
+              <h3 className="text-xl font-medium mb-6 text-center">{t.visits.visitsCarousel}</h3>
+              <div className="relative overflow-hidden rounded-lg bg-card/20 backdrop-blur-sm p-4">
+                <div className="flex animate-scroll-left space-x-6 will-change-transform">
+                  {[...Array(12)].map((_, i) => (
+                    <div
+                      key={i}
+                      className="flex-shrink-0 w-80 h-48 bg-gradient-to-br from-muted/50 to-muted/20 rounded-lg border border-border/50 flex items-center justify-center hover:scale-105 transition-transform duration-300"
+                    >
+                      <div className="text-center p-4">
+                        <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                          <Users className="w-8 h-8 text-primary" />
+                        </div>
+                        <h4 className="text-sm font-medium">Site Visit {i + 1}</h4>
+                        <p className="text-xs text-muted-foreground mt-1">Industrial Facility</p>
+                      </div>
+                    </div>
+                  ))}
+                  {/* Duplicate for seamless loop */}
+                  {[...Array(12)].map((_, i) => (
+                    <div
+                      key={`duplicate-${i}`}
+                      className="flex-shrink-0 w-80 h-48 bg-gradient-to-br from-muted/50 to-muted/20 rounded-lg border border-border/50 flex items-center justify-center hover:scale-105 transition-transform duration-300"
+                    >
+                      <div className="text-center p-4">
+                        <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                          <Users className="w-8 h-8 text-primary" />
+                        </div>
+                        <h4 className="text-sm font-medium">Site Visit {i + 1}</h4>
+                        <p className="text-xs text-muted-foreground mt-1">Industrial Facility</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Partner Companies Carousel */}
+            <div>
+              <h3 className="text-xl font-medium mb-6 text-center">{t.visits.partnersCarousel}</h3>
+              <div className="relative overflow-hidden rounded-lg bg-card/20 backdrop-blur-sm p-4">
+                <div className="flex animate-scroll-right space-x-6 will-change-transform">
+                  {['Total', 'Chevron', 'Saipem', 'Subsea 7', 'Technip', 'Shell', 'BP', 'Equinor', 'Petrobras', 'TechnipFMC', 'Aker Solutions', 'McDermott'].map((company, i) => (
+                    <div
+                      key={i}
+                      className="flex-shrink-0 w-60 h-32 bg-gradient-to-br from-card to-card/50 rounded-lg border border-border flex items-center justify-center hover:scale-105 transition-transform duration-300 shadow-lg"
+                    >
+                      <div className="text-center p-4">
+                        <div className="text-lg font-semibold text-foreground">{company}</div>
+                        <div className="text-xs text-muted-foreground mt-2">Trusted Partner</div>
+                      </div>
+                    </div>
+                  ))}
+                  {/* Duplicate for seamless loop */}
+                  {['Total', 'Chevron', 'Saipem', 'Subsea 7', 'Technip', 'Shell', 'BP', 'Equinor', 'Petrobras', 'TechnipFMC', 'Aker Solutions', 'McDermott'].map((company, i) => (
+                    <div
+                      key={`duplicate-${i}`}
+                      className="flex-shrink-0 w-60 h-32 bg-gradient-to-br from-card to-card/50 rounded-lg border border-border flex items-center justify-center hover:scale-105 transition-transform duration-300 shadow-lg"
+                    >
+                      <div className="text-center p-4">
+                        <div className="text-lg font-semibold text-foreground">{company}</div>
+                        <div className="text-xs text-muted-foreground mt-2">Trusted Partner</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Certifications */}
         {/* <section id="certifications" className="scroll-mt-24 border-t border-border py-16 md:py-24">

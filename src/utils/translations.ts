@@ -132,6 +132,13 @@ export const translations = {
         }
       ]
     },
+    // Our Visits Section
+    visits: {
+      title: "Our Visits",
+      subtitle: "Showcasing our global presence and trusted partnerships",
+      visitsCarousel: "Previous Visits",
+      partnersCarousel: "Partner Companies"
+    },
     // Applications Section
     applications: {
       title: "Industry Applications",
