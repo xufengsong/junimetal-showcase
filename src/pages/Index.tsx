@@ -141,8 +141,8 @@ const Index = () => {
 
   const navItems = [
     { href: "#about", label: t.nav.aboutUs },
-    { href: "/products", label: "Our Products" },
-    { href: "#offerings", label: t.nav.productsServices },
+    { href: "#products", label: "Our Products" },
+    // { href: "#offerings", label: t.nav.productsServices },
     { href: "#expertise", label: t.nav.ourExpertise },
     { href: "#contact", label: t.nav.contactUs },
   ];
@@ -270,47 +270,47 @@ const Index = () => {
           </div>
         </section>
 
-      {/* Our Products Section */}
-      <section id="products" className="py-16 sm:py-20">
-        <div className="container mx-auto px-4">
-          <h2 className="mb-2 text-center text-3xl font-bold tracking-tight">
-            Our Products
-          </h2>
-          <p className="mb-10 text-center text-muted-foreground">
-            Explore our main product categories.???
-          </p>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {productCategories.map((category) => (
-              <Card
-                key={category.id}
-                className="overflow-hidden transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl"
-              >
-                <CardHeader>
-                  <CardTitle>{category.name}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    {category.description}
-                  </p>
-                  <Button asChild className="mt-4 w-full">
-                    <Link to={`/products#${category.id}`}>View Details</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
+        {/* Our Products Section */}
+        <section id="products" className="py-16 sm:py-20">
+          <div className="container mx-auto px-4">
+            <h2 className="mb-2 text-center text-3xl font-bold tracking-tight">
+              Our Products
+            </h2>
+            <p className="mb-10 text-center text-muted-foreground">
+              Explore our main product categories.???
+            </p>
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {productCategories.map((category) => (
+                <Card
+                  key={category.id}
+                  className="overflow-hidden transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl"
+                >
+                  <CardHeader>
+                    <CardTitle>{category.name}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">
+                      {category.description}
+                    </p>
+                    <Button asChild className="mt-4 w-full">
+                      <Link to={`/products#${category.id}`}>View Details</Link>
+                    </Button>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+            <div className="mt-12 text-center">
+              <Button asChild variant="outline">
+                <Link to="/products">
+                  More Products <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
           </div>
-          <div className="mt-12 text-center">
-            <Button asChild variant="outline">
-              <Link to="/products">
-                More Products <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+        </section>
 
         {/* Products & Services */}
-        <section id="offerings" className="scroll-mt-24 border-t border-border py-16 md:py-24">
+        {/* <section id="offerings" className="scroll-mt-24 border-t border-border py-16 md:py-24">
           <div className="container">
             <header className="mb-10">
               <h2 className="text-3xl font-semibold md:text-4xl">{t.offerings.title}</h2>
@@ -328,7 +328,7 @@ const Index = () => {
                 <Card className="p-8">
                   <div className="grid gap-8 lg:grid-cols-2 items-content">
                     {/* Text Column */}
-                    <div className="flex flex-col">
+                    {/* <div className="flex flex-col">
                       <div className="mb-4 flex items-center gap-3">
                         <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
                           <Layers className="text-sidebar-primary" />
@@ -358,7 +358,7 @@ const Index = () => {
                     </div>
 
                     {/* Image Column */}
-                    <div className="flex items-center justify-center">
+                    {/* <div className="flex items-center justify-center">
                         <picture>
                           <source srcSet={pipe6_webp} type="image/webp"></source>
                           <img
@@ -370,9 +370,9 @@ const Index = () => {
                     </div>
                   </div>
                 </Card>
-              </TabsContent>
+              </TabsContent> */}
 
-              <TabsContent value="fittings" className="mt-8">
+              {/* <TabsContent value="fittings" className="mt-8">
                 <Card className="p-8">
                   <div className="grid gap-8 lg:grid-cols-2 items-center">
                     <div className="flex flex-col">
@@ -503,7 +503,7 @@ const Index = () => {
 
             </Tabs>
           </div>
-        </section>
+        </section> */}
 
         {/* Our Expertise */}
         {/* <section id="expertise" className="scroll-mt-24 border-t border-border py-16 md:py-24">
