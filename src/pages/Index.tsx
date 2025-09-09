@@ -391,7 +391,7 @@ const Index = () => {
         </section>
 
         {/* Our Visits Section */}
-        <section className="scroll-mt-24 border-t border-border py-16 md:py-24 bg-gradient-to-br from-background to-background/50">
+        <section id='visits' className="scroll-mt-24 border-t border-border py-16 md:py-24 bg-gradient-to-br from-background to-background/50">
           <div className="container">
             <header className="mb-10 text-center">
               <h2 className="text-3xl font-semibold md:text-4xl mb-4">{t.visits.title}</h2>
