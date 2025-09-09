@@ -7,45 +7,15 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-// import pipe3 from "@/assets/pipe3.png"
-// import pipe3_webp from "@/assets/pipe3_webp.webp";
-import pipe6 from "@/assets/pipe6.png";
-import pipe6_webp from "@/assets/pipe6_webp.webp";
-
-import valves from "@/assets/valves3.png";
-import valves_webp from "@/assets/valves3_webp.webp";
-
-import fittings from "@/assets/fittings3.png";
-import fittings_webp from "@/assets/fittings3_webp.webp";
-
-import flange from "@/assets/flanges7.png";
-import flange_webp from "@/assets/flanges7_webp.webp";
-
-// import materials from "@/assets/materials3.png";
-// import materials_webp from "@/assets/materials3_webp.webp"
-// import materials2 from "@/assets/materials2.png";
-// import materials2_webp from "@/assets/materials2_webp.webp";
 import materials4 from "@/assets/materials4.png";
 import materials4_webp from "@/assets/materials4_webp.webp";
 
-// import heat from "@/assets/heat4.png";
-// import heat_webp from "@/assets/heat4_webp.webp";
-// import heated_pipe from "@/assets/heated_pipe.png";
-// import heated_pipe_webp from "@/assets/heated_pipe.webp";
 import heated_pipe3 from "@/assets/heated_pipe3.png";
 import heated_pipe3_webp from "@/assets/heated_pipe3_webp.webp";
 
-// import cold from "@/assets/cold2.png";
-// import cold_webp from "@/assets/cold2_webp.webp";
-// import cryogenic from "@/assets/cryogenic.png";
-// import cryogenic_webp from "@/assets/cryogenic_webp.webp";
 import cryogenic3 from "@/assets/cryogenic3.png";
 import cryogenic3_webp from "@/assets/cryogenic3_webp.webp";
 
-// import custom_design from "@/assets/custom_design3.png";
-// import custom_design_webp from "@/assets/custom_design3_webp.webp"
-// import custom_design2 from "@/assets/custom_design2.png";
-// import custom_design2_webp from "@/assets/custom_design2_webp.webp"
 import custom_design4 from "@/assets/custom4.png";
 import custom_design4_webp from "@/assets/custom4_webp.webp"
 
@@ -233,19 +203,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* About Us */}
-        {/* <section id="about" className="scroll-mt-24 border-t border-border py-16 md:py-24">
-          <div className="container">
-            <header className="mb-8">
-              <h2 className="text-3xl font-semibold md:text-4xl">Innovative Pipe & Tube Solutions</h2>
-            </header>
-            <p className="max-w-4xl text-muted-foreground">
-              Based in Seoul, South Korea, JUNIMETAL DEVELOPMENT (JMDU) operates a global main office and a
-              strategically located warehouse in Busan. We are a comprehensive pipe & fitting supplier
-              (full package) and a manufacturer of valves, subsea components, and special pieces.
-            </p>
-          </div>
-        </section> */}
         <section
           id="about"
           className="scroll-mt-24 border-t border-border w-full bg-gradient-to-r from-black via-[#0a0f2c] to-[#0a1a3c] shadow-lg"
@@ -310,291 +267,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Products & Services */}
-        {/* <section id="offerings" className="scroll-mt-24 border-t border-border py-16 md:py-24">
-          <div className="container">
-            <header className="mb-10">
-              <h2 className="text-3xl font-semibold md:text-4xl">{t.offerings.title}</h2>
-            </header>
-
-            <Tabs defaultValue="piping" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 h-auto">
-                <TabsTrigger value="piping">{t.offerings.tabs.pipeTube}</TabsTrigger>
-                <TabsTrigger value="fittings">{t.offerings.tabs.fittings}</TabsTrigger>
-                <TabsTrigger value="flanges">{t.offerings.tabs.flanges}</TabsTrigger>
-                <TabsTrigger value="fastners, gaskets, valves">{t.offerings.tabs.fasteners}</TabsTrigger>
-              </TabsList>
-
-              <TabsContent value="piping" className="mt-8">
-                <Card className="p-8">
-                  <div className="grid gap-8 lg:grid-cols-2 items-content">
-                    {/* Text Column */}
-                    {/* <div className="flex flex-col">
-                      <div className="mb-4 flex items-center gap-3">
-                        <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
-                          <Layers className="text-sidebar-primary" />
-                        </div>
-                        <h3 className="text-2xl font-semibold">{t.offerings.pipeTube.title}</h3>
-                      </div>
-
-                      <p className="text-muted-foreground">
-                        {t.offerings.pipeTube.description1}
-                      </p>
-
-                      <p className="mt-4 text-muted-foreground">
-                        {t.offerings.pipeTube.description2}
-                      </p>
-
-                      <ul className="mt-6 list-disc space-y-2 pl-5 text-muted-foreground">
-                        {t.offerings.pipeTube.features.map((feature, index) => (
-                          <li key={index}>{feature}</li>
-                        ))}
-                      </ul>
-                      
-                      <div className="mt-6">
-                        <Button asChild className="bg-sidebar-primary hover:bg-sidebar-primary/90">
-                          <a href="/products/pipes-tubes">View Details</a>
-                        </Button>
-                      </div>
-                    </div>
-
-                    {/* Image Column */}
-                    {/* <div className="flex items-center justify-center">
-                        <picture>
-                          <source srcSet={pipe6_webp} type="image/webp"></source>
-                          <img
-                            src={pipe6}
-                            alt="Pipe and Tube Distribution"
-                            className="h-full w-auto object-contain rounded-lg"
-                          />
-                        </picture>
-                    </div>
-                  </div>
-                </Card>
-              </TabsContent> */}
-
-              {/* <TabsContent value="fittings" className="mt-8">
-                <Card className="p-8">
-                  <div className="grid gap-8 lg:grid-cols-2 items-center">
-                    <div className="flex flex-col">
-                      <div className="mb-4 flex items-center gap-3">
-                        <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
-                          <Cog className="text-sidebar-primary" />
-                        </div>
-                        <h3 className="text-2xl font-semibold">{t.offerings.fittings.title}</h3>
-                      </div>
-                      <p className="text-muted-foreground">
-                        {t.offerings.fittings.description1}
-                      </p>
-                      <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
-                        {t.offerings.fittings.features.map((feature, index) => (
-                          <li key={index}>{feature}</li>
-                        ))}
-                      </ul>
-                      <p className="mt-4 text-muted-foreground">
-                        {t.offerings.fittings.description2}
-                      </p>
-                      
-                      <div className="mt-6">
-                        <Button asChild className="bg-sidebar-primary hover:bg-sidebar-primary/90">
-                          <a href="/products/fittings">View Details</a>
-                        </Button>
-                      </div>
-                    </div>
-                    <div className="flex items-center justify-center">
-                      <picture>
-                        <source srcSet={fittings_webp} type="image/webp"></source>
-                        <img
-                          src={fittings}
-                          alt="a picture of a fitting"
-                          className="w-full h-auto object-contain rounded-lg"
-                        />
-                      </picture>
-                    </div>
-                  </div>
-                </Card>
-              </TabsContent>
-
-              <TabsContent value="flanges" className="mt-8">
-                <Card className="p-8">
-                  <div className="grid gap-8 lg:grid-cols-2 items-center">
-                    <div className="flex flex-col">
-                      <div className="mb-4 flex items-center gap-3">
-                        <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
-                          <Hammer className="text-sidebar-primary" />
-                        </div>
-                        <h3 className="text-2xl font-semibold">{t.offerings.flanges.title}</h3>
-                      </div>
-                      <p className="text-muted-foreground">
-                        {t.offerings.flanges.description1}
-                      </p>
-                      <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
-                        {t.offerings.flanges.features.map((feature, index) => (
-                          <li key={index}>{feature}</li>
-                        ))}
-                      </ul>
-                      <p className="mt-4 text-muted-foreground">
-                        {t.offerings.flanges.description2}
-                      </p>
-                      
-                      <div className="mt-6">
-                        <Button asChild className="bg-sidebar-primary hover:bg-sidebar-primary/90">
-                          <a href="/products/flanges">View Details</a>
-                        </Button>
-                      </div>
-                    </div>
-                    <div className="flex items-center justify-center aspect-[4/3]">
-                      <picture>
-                        <source srcSet={flange_webp} type="image/webp"></source>
-                        <img
-                          src={flange}
-                          alt="industrial and subsea flange components"
-                          className="w-full h-auto object-contain rounded-lg"
-                        />              
-                      </picture>
-                    </div>
-                  </div>
-                </Card>
-              </TabsContent>
-
-              <TabsContent value="fastners, gaskets, valves" className="mt-8">
-                <Card className="p-8">
-                  <div className="grid gap-8 lg:grid-cols-2 items-center">
-                    <div className="flex flex-col">
-                      <div className="mb-4 flex items-center gap-3">
-                        <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
-                          <Wrench className="text-sidebar-primary" />
-                        </div>
-                        <h3 className="text-2xl font-semibold">{t.offerings.fasteners.title}</h3>
-                      </div>
-                      <p className="text-muted-foreground">
-                        {t.offerings.fasteners.description1}
-                      </p>
-                      <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
-                        {t.offerings.fasteners.features.map((feature, index) => (
-                          <li key={index}>{feature}</li>
-                        ))}
-                      </ul>
-                      <p className="mt-4 text-muted-foreground">
-                        {t.offerings.fasteners.description2}
-                      </p>
-                      
-                      <div className="mt-6 flex gap-4">
-                        <Button asChild className="bg-sidebar-primary hover:bg-sidebar-primary/90">
-                          <a href="/products/fasteners">View Details</a>
-                        </Button>
-                        <Button asChild variant="outline">
-                          <a href="/products/custom-solutions">Custom Solutions</a>
-                        </Button>
-                      </div>
-                    </div>
-                    <div className="flex items-center justify-center">
-                      <picture>
-                        <source srcSet={valves_webp} type="image/webp"></source>
-                        <img
-                          src={valves}
-                          alt="industrial fasteners, gaskets, and valves for onshore and subsea applications"
-                          className="w-full h-auto object-contain rounded-lg"
-                        />
-                      </picture>
-                    </div>
-                  </div>
-                </Card>
-              </TabsContent>
-
-            </Tabs>
-          </div>
-        </section> */}
-
         {/* Our Expertise */}
-        {/* <section id="expertise" className="scroll-mt-24 border-t border-border py-16 md:py-24">
-          <div className="container">
-            <header className="mb-10">
-              <h2 className="text-3xl font-semibold md:text-4xl">Unmatched Flexibility and Certified Quality</h2>
-            </header>
-
-            <div className="grid gap-6 lg:grid-cols-2">
-              <Card className="p-6">
-                <h3 className="mb-3 text-xl font-medium">Materials</h3>
-                <ul className="grid list-disc gap-2 pl-5 text-muted-foreground sm:grid-cols-2">
-                  {[
-                    "Carbon Steel",
-                    "Alloy Steel",
-                    "Stainless Steel",
-                    "Duplex",
-                    "Coated Pipes",
-                  ].map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </Card>
-
-              <Card className="p-6">
-                <h3 className="mb-3 text-xl font-medium">Heat Treatment</h3>
-                <ul className="grid list-disc gap-2 pl-5 text-muted-foreground sm:grid-cols-2">
-                  {["Stress Relief", "Quenching", "Corrosion-Resistant Annealing"].map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </Card>
-
-              <Card className="p-6">
-                <div className="mb-2 flex items-center gap-2">
-                  <Snowflake className="text-sidebar-primary" />
-                  <h3 className="text-xl font-medium">Cryogenic Service</h3>
-                </div>
-                <ul className="list-disc space-y-2 pl-5 text-muted-foreground">
-                  <li>In-house validation of cryogenic capabilities by testing @ -196°C</li>
-                  <li>Tightness testing with helium</li>
-                </ul>
-              </Card>
-
-              <Card className="p-6">
-                <div className="mb-2 flex items-center gap-2">
-                  <ShieldCheck className="text-sidebar-primary" />
-                  <h3 className="text-xl font-medium">Custom Designs & Special Forgings</h3>
-                </div>
-                <p className="mb-3 text-muted-foreground">
-                  Tailored components with adjustable radii angles and precise tolerances.
-                </p>
-                <ul className="grid list-disc gap-2 pl-5 text-muted-foreground sm:grid-cols-2">
-                  {[
-                    "Buckle Arrestors",
-                    "Pipe Anchors",
-                    "Hanger Flanges",
-                    "Tees and Barred Tees",
-                    "Wyes",
-                  ].map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </Card>
-
-              <Card className="p-6 lg:col-span-2">
-                <div className="mb-2 flex items-center gap-2">
-                  <Users className="text-sidebar-primary" />
-                  <h3 className="text-xl font-medium">Technical Skills</h3>
-                </div>
-                <div className="flex flex-wrap gap-3">
-                  {[
-                    "Welding engineers (I.W.E.)",
-                    "Safety officers",
-                    "Environmental experts",
-                    "Quality engineers",
-                    "Frosio III certified agent",
-                    "Cofrend II certified agents",
-                    "ACQPA level II and anticorrosive painting certified agent",
-                  ].map((skill) => (
-                    <Badge key={skill} variant="secondary" className="px-4 py-1">
-                      {skill}
-                    </Badge>
-                  ))}
-                </div>
-              </Card>
-            </div>
-          </div>
-        </section> */}
-
         {/* doubao support */}
         <section id="expertise" className="scroll-mt-24 border-t border-border py-16 md:py-24">
           <div className="container">
@@ -621,15 +294,6 @@ const Index = () => {
                 </div>
                 <div className="p-6">
                   <ul className="grid list-disc gap-2 pl-5 text-muted-foreground sm:grid-cols-2">
-                    {/* {[
-                      "Carbon Steel",
-                      "Alloy Steel",
-                      "Stainless Steel",
-                      "Duplex",
-                      "Coated Pipes",
-                    ].map((item) => (
-                      <li key={item}>{item}</li>
-                    ))} */}
                     {
                       t.expertise.materials.map((item) => <li key={item}>{item}</li>)
                     }
@@ -716,15 +380,6 @@ const Index = () => {
                     {t.expertise.custom_design_subtitle}
                   </p>
                   <ul className="grid list-disc gap-2 pl-5 text-muted-foreground sm:grid-cols-2">
-                    {/* {[
-                      "Buckle Arrestors",
-                      "Pipe Anchors",
-                      "Hanger Flanges",
-                      "Tees and Barred Tees",
-                      "Wyes",
-                    ].map((item) => (
-                      <li key={item}>{item}</li>
-                    ))} */}
                     {
                       t.expertise.custom_design.map((item) => <li key={item}>{item}</li>)                    
                     }
@@ -814,69 +469,6 @@ const Index = () => {
             </div>
           </div>
         </section>
-
-        {/* Certifications */}
-        {/* <section id="certifications" className="scroll-mt-24 border-t border-border py-16 md:py-24">
-          <div className="container">
-            <header className="mb-10">
-              <h2 className="text-3xl font-semibold md:text-4xl">Our Certifications</h2>
-            </header>
-
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {[
-                { title: "ISO 9001", desc: "Quality Management Systems" },
-                { title: "ISO 14001", desc: "Environmental Management Systems" },
-                { title: "ISO 45001", desc: "Health & Safety Management Systems" },
-                // { title: "PED 2014/68/EU", desc: "Pressure Equipment Directive" },
-                { title: "EAC (Russia)", desc: "Custom Union Technical Regulations" },
-                { title: "CE (European Conformity)", desc: "EC Directives for Related Products" },
-                { title: "Lloyd's Register\n PED 2014/68/EU", desc: "Pressure Equipment Directive" },
-              ].map((c) => (
-                <Card key={c.title} className="flex items-start gap-3 p-5">
-                  <BadgeCheck className="mt-0.5 text-sidebar-primary" />
-                  <div>
-                    <div className="font-medium">{c.title}</div>
-                    <div className="text-sm text-muted-foreground">{c.desc}</div>
-                  </div>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section> */}
-
-        {/* Partners and Clients */}
-        {/* <section className="scroll-mt-24 border-t border-border py-16 md:py-24">
-          <div className="container">
-            <header className="mb-10">
-              <h2 className="text-3xl font-semibold md:text-4xl">Our Trusted Partners</h2>
-            </header>
-
-            <div className="mb-8">
-              <h3 className="mb-4 text-xl font-medium">Partners</h3>
-              <div className="grid gap-4 sm:grid-cols-2">
-                {[
-                  "UK-Based Forgemaster",
-                  "Spain-Based Forgemaster",
-                ].map((name) => (
-                  <Card key={name} className="p-5 text-center text-muted-foreground">
-                    {name}
-                  </Card>
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <h3 className="mb-4 text-xl font-medium">Clients</h3>
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-                {["Total", "Chevron", "Saipem", "Subsea 7", "Technip"].map((client) => (
-                  <Card key={client} className="p-5 text-center text-muted-foreground">
-                    {client}
-                  </Card>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section> */}
 
         {/* Contact / Footer */}
         <footer id="contact" className="scroll-mt-24 border-t border-border bg-card/40 py-16">
