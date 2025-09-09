@@ -849,6 +849,7 @@ export const translations = {
   ru: {
     nav: {
       aboutUs: "О нас",
+      products: "Наша продукция",
       productsServices: "Продукты и услуги",
       ourExpertise: "Наш опыт",
       contactUs: "Связаться с нами"
