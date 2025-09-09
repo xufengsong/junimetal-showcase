@@ -4,17 +4,28 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, ArrowRight, ChevronRight } from "lucide-react";
-import { translations } from "@/utils/translations";
+import { translations, type Language } from "@/utils/translations";
 import { productCategories } from "@/data/productCategories";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Globe } from "lucide-react";
 
 const Products = () => {
   const [language, setLanguage] = useState<'en' | 'zh' | 'es' | 'ru'>('en');
   const t = translations[language];
 
+  const navItems = [
+    { href: "/#about", label: t.nav.aboutUs },
+    { href: "/#products", label: "Our Products" },
+    // { href: "#offerings", label: t.nav.productsServices },
+    { href: "/#expertise", label: t.nav.ourExpertise },
+    { href: "/#visits", label: t.visits.title },
+    { href: "/#contact", label: t.nav.contactUs },
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-background/95">
       {/* Navigation */}
-      <nav className="border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      {/* <nav className="border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="text-2xl font-bold text-primary">
@@ -66,7 +77,54 @@ const Products = () => {
             </div>
           </div>
         </div>
-      </nav>
+      </nav> */}
+      <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
+        <nav className="container flex h-16 items-center justify-between">
+          <div className="flex items-center gap-3">
+            {/* <div className="h-7 w-7 rounded-sm bg-sidebar-primary" aria-hidden />  This is the blue box before JUNIMETAL DEVELOPMENT */}
+            <span 
+              className="text-lg font-semibold tracking-wide"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
+              JUNIMETAL DEVELOPMENT (JMDU)
+            </span>
+          </div>
+          <ul className="hidden items-center gap-8 md:flex">
+            {navItems.map((item) => (
+              <li key={item.href}>
+                <a
+                  href={item.href}
+                  className="relative px-4 py-2 text-sm font-medium text-muted-foreground transition-all duration-300 hover:text-foreground hover:bg-secondary rounded-md border border-transparent hover:border-border hover:shadow-sm"
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <div className="flex items-center gap-4">
+            <Select value={language} onValueChange={(value) => setLanguage(value as Language)}>
+              <SelectTrigger className="w-[120px] h-8">
+                <Globe className="h-4 w-4 mr-2" />
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="en">English</SelectItem>
+                <SelectItem value="zh">中文</SelectItem>
+                {/* <SelectItem value="ko">한국어</SelectItem>
+                <SelectItem value="ja">日本語</SelectItem> */}
+                <SelectItem value="es">Español</SelectItem>
+                <SelectItem value="ru">Русский</SelectItem>
+              </SelectContent>
+            </Select>
+            <div className="md:hidden">
+              <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground">
+                {t.nav.contactUs}
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
 
       {/* Header */}
       <section className="py-16 px-4">

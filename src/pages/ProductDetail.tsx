@@ -6,94 +6,51 @@ import { Badge } from "@/components/ui/badge";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { ArrowLeft, Download, FileText, Mail } from "lucide-react";
 import { translations } from "@/utils/translations";
+import { productDetails } from "@/data/productDetails"; 
 
 const ProductDetail = () => {
-  const { categoryId, productId } = useParams();
+  const { productId } = useParams<{ productId: string }>(); // Added type for clarity
   const [language, setLanguage] = useState<'en' | 'zh' | 'es' | 'ru'>('en');
   const t = translations[language];
 
-  // Product data based on URL params
-  const getProductData = () => {
-    const productData: Record<string, any> = {
-      "304-304h": {
-        name: "304/304H",
-        category: "Stainless Steels",
-        description: "304/304H is the most widely used austenitic stainless steel. It provides excellent corrosion resistance, formability, and weldability. The 304H variant offers higher carbon content for improved high-temperature strength.",
-        applications: ["Food processing equipment", "Chemical processing", "Architectural applications", "Kitchen equipment", "Heat exchangers"],
-        chemicalComposition: {
-          C: "0.08 max (304) / 0.04-0.10 (304H)",
-          Mn: "2.00 max",
-          P: "0.045 max",
-          S: "0.030 max",
-          Si: "0.75 max",
-          Cr: "18.0-20.0",
-          Ni: "8.0-10.5",
-          N: "0.10 max"
-        },
-        standards: ["ASTM A312", "ASTM A213", "ASTM A269", "ASME SA312", "ASME SA213"],
-        forms: ["Seamless Pipe", "Welded Pipe", "Seamless Tube", "Welded Tube", "Fittings", "Flanges"],
-        sizes: "1/8\" to 24\" NPS for pipes, 1/8\" to 8\" OD for tubes"
-      },
-      "310s-310h": {
-        name: "310S/310H",
-        category: "Stainless Steels", 
-        description: "310S/310H is a high-temperature resistant austenitic stainless steel with excellent oxidation resistance up to 2100°F (1150°C). The low carbon 310S provides better corrosion resistance while 310H offers superior high-temperature strength.",
-        applications: ["Furnace parts", "Heat exchangers", "Kilns", "Gas turbine components", "Petrochemical processing"],
-        chemicalComposition: {
-          C: "0.08 max (310S) / 0.04-0.10 (310H)",
-          Mn: "2.00 max",
-          P: "0.045 max", 
-          S: "0.030 max",
-          Si: "1.50 max",
-          Cr: "24.0-26.0",
-          Ni: "19.0-22.0",
-          N: "0.25 max"
-        },
-        standards: ["ASTM A312", "ASTM A213", "ASTM A269", "ASME SA312", "ASME SA213"],
-        forms: ["Seamless Pipe", "Welded Pipe", "Seamless Tube", "Welded Tube", "Fittings", "Flanges"],
-        sizes: "1/8\" to 12\" NPS for pipes, 1/8\" to 6\" OD for tubes"
-      },
-      "inconel-625": {
-        name: "Inconel® 625",
-        category: "Nickel Alloys",
-        description: "Inconel® 625 is a nickel-chromium-molybdenum alloy with excellent fatigue strength and oxidation resistance up to 1800°F (980°C). It offers outstanding resistance to a wide range of corrosive environments.",
-        applications: ["Aerospace components", "Chemical processing", "Marine applications", "Nuclear reactors", "Gas turbine engines"],
-        chemicalComposition: {
-          C: "0.10 max",
-          Mn: "0.50 max",
-          P: "0.015 max",
-          S: "0.015 max", 
-          Si: "0.50 max",
-          Cr: "20.0-23.0",
-          Ni: "58.0 min",
-          Mo: "8.0-10.0",
-          Nb: "3.15-4.15",
-          Fe: "5.0 max"
-        },
-        standards: ["ASTM B444", "ASTM B446", "ASTM B564", "ASME SB444", "ASME SB446"],
-        forms: ["Seamless Pipe", "Welded Pipe", "Seamless Tube", "Welded Tube", "Fittings", "Flanges"],
-        sizes: "1/8\" to 8\" NPS for pipes, 1/8\" to 4\" OD for tubes"
-      }
-      // Add more products as needed
-    };
-
-    return productData[productId || ""] || {
-      name: "Product Not Found",
-      category: "Unknown",
-      description: "Product details not available.",
-      applications: [],
-      chemicalComposition: {},
-      standards: [],
-      forms: [],
-      sizes: ""
-    };
+  // --- MODIFICATION 2: Get product data from the imported object ---
+  const product = productDetails[productId || ""] || {
+    name: "Product Not Found",
+    category: "Unknown",
+    description: "The product details you are looking for are not available.",
+    applications: [],
+    chemicalComposition: {},
+    specifications: [],
+    forms: [],
+    standards: [],
+    sizes: ""
   };
 
-  const product = getProductData();
+  // Helper function to render the chemical composition table, handling nested objects
+  const renderChemicalComposition = (composition: Record<string, any>) => {
+    return Object.entries(composition).map(([key, value]) => {
+      if (typeof value === 'object' && value !== null) {
+        return (
+          <>
+            <TableRow key={key} className="bg-muted/50">
+              <TableCell colSpan={2} className="font-semibold text-primary">{key}</TableCell>
+            </TableRow>
+            {renderChemicalComposition(value)}
+          </>
+        );
+      }
+      return (
+        <TableRow key={key}>
+          <TableCell className="font-medium">{key}</TableCell>
+          <TableCell>{String(value)}</TableCell>
+        </TableRow>
+      );
+    });
+  };
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Navigation */}
+      {/* Navigation (Assumed to be correct) */}
       <nav className="border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
@@ -129,7 +86,7 @@ const ProductDetail = () => {
         </div>
       </div>
 
-      {/* Product Header */}
+      {/* Product Content */}
       <section className="py-8 px-4">
         <div className="container mx-auto">
           <div className="flex items-center gap-4 mb-6">
@@ -156,94 +113,133 @@ const ProductDetail = () => {
               </div>
 
               {/* Applications */}
-              <Card className="mb-6">
-                <CardHeader>
-                  <CardTitle>Typical Applications</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                    {product.applications.map((app: string, index: number) => (
-                      <div key={index} className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-primary rounded-full"></div>
-                        <span className="text-foreground/80">{app}</span>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
+              {product.applications && product.applications.length > 0 && (
+                <Card className="mb-6">
+                  <CardHeader>
+                    <CardTitle>Typical Applications</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                      {product.applications.map((app: string, index: number) => (
+                        <div key={index} className="flex items-center space-x-2">
+                          <div className="w-2 h-2 bg-primary rounded-full"></div>
+                          <span className="text-foreground/80">{app}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              )}
 
               {/* Chemical Composition */}
-              <Card className="mb-6">
-                <CardHeader>
-                  <CardTitle>Chemical Composition (%)</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <Table>
-                    <TableHeader>
-                      <TableRow>
-                        <TableHead>Element</TableHead>
-                        <TableHead>Composition</TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      {Object.entries(product.chemicalComposition).map(([element, composition]) => (
-                        <TableRow key={element}>
-                          <TableCell className="font-medium">{element}</TableCell>
-                          <TableCell>{composition}</TableCell>
+              {product.chemicalComposition && Object.keys(product.chemicalComposition).length > 0 && (
+                <Card className="mb-6">
+                  <CardHeader>
+                    <CardTitle>Chemical Composition (%)</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead>Element</TableHead>
+                          <TableHead>Composition</TableHead>
                         </TableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
-                </CardContent>
-              </Card>
+                      </TableHeader>
+                      <TableBody>
+                        {renderChemicalComposition(product.chemicalComposition)}
+                      </TableBody>
+                    </Table>
+                  </CardContent>
+                </Card>
+              )}
 
-              {/* Standards */}
-              <Card>
-                <CardHeader>
-                  <CardTitle>Standards & Specifications</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    {product.standards.map((standard: string, index: number) => (
-                      <Badge key={index} variant="outline">
-                        {standard}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
+              {product.specifications && product.specifications.length > 0 ? (
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Specifications</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead>Form</TableHead>
+                          <TableHead>Size</TableHead>
+                          <TableHead>Schedule / Rating</TableHead>
+                          <TableHead>Standard</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        {product.specifications.map((spec: any, index: number) => (
+                          <TableRow key={index}>
+                            <TableCell>{spec.form}</TableCell>
+                            <TableCell>{spec.size}</TableCell>
+                            <TableCell>{spec.schedule_rating}</TableCell>
+                            <TableCell>{spec.standard}</TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </CardContent>
+                </Card>
+              ) : (
+                // Fallback for products like Duplex 2205 that use a different structure
+                product.standards && product.standards.length > 0 && (
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Standards & Specifications</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="flex flex-wrap gap-2">
+                        {product.standards.map((standard: string, index: number) => (
+                          <Badge key={index} variant="outline">
+                            {standard}
+                          </Badge>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                )
+              )}
             </div>
 
             {/* Sidebar */}
             <div className="space-y-6">
-              {/* Forms Available */}
-              <Card>
-                <CardHeader>
-                  <CardTitle>Forms in Stock</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-2">
-                    {product.forms.map((form: string, index: number) => (
-                      <div key={index} className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                        <span className="text-foreground/80">{form}</span>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-
+              {/* Forms Available - Renders based on 'forms' or inferred from 'specifications' */}
+              {((product.forms && product.forms.length > 0) || (product.specifications && product.specifications.length > 0)) && (
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Forms in Stock</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-2">
+                      {/* Use unique forms from specifications if available, otherwise use product.forms */}
+                      {(product.specifications && product.specifications.length > 0 
+                        ? [...new Set(product.specifications.map((spec: any) => spec.form))]
+                        : product.forms
+                      ).map((form: string, index: number) => (
+                        <div key={index} className="flex items-center space-x-2">
+                          <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                          <span className="text-foreground/80">{form}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              )}
+              
               {/* Size Range */}
-              <Card>
-                <CardHeader>
-                  <CardTitle>Size Range</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-foreground/80">{product.sizes}</p>
-                </CardContent>
-              </Card>
+              {product.sizes && (
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Size Range</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-foreground/80">{product.sizes}</p>
+                  </CardContent>
+                </Card>
+              )}
 
-              {/* Downloads */}
+              {/* Downloads & CTA (Assumed to be correct) */}
               <Card>
                 <CardHeader>
                   <CardTitle>Downloads</CardTitle>
@@ -260,7 +256,6 @@ const ProductDetail = () => {
                 </CardContent>
               </Card>
 
-              {/* CTA */}
               <Card className="bg-gradient-to-br from-primary/10 to-primary/5">
                 <CardHeader>
                   <CardTitle>Request Quote</CardTitle>
@@ -271,7 +266,7 @@ const ProductDetail = () => {
                 <CardContent>
                   <Button className="w-full">
                     <Mail className="mr-2 h-4 w-4" />
-                    Request a Quote for This Product
+                    Request a Quote
                   </Button>
                 </CardContent>
               </Card>
@@ -280,7 +275,7 @@ const ProductDetail = () => {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Footer (Assumed to be correct) */}
       <footer className="bg-background/95 border-t border-border/40 py-12 px-4 mt-16">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
