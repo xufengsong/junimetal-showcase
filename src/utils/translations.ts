@@ -10,13 +10,13 @@ export const translations = {
     },
     // SEO
     seo: {
-      title: "JUNIMETAL DEVELOPMENT | Piping Solutions",
+      title: "JMDU | Piping Solutions",
       description: "Innovative pipe & tube solutions from Seoul and Busan. Full-package piping supplier and specialized manufacturer for valves, subsea & special pieces.",
       slogan: "Piping Solutions: With us every project is under reliable protection!"
     },
     // Hero Section
     hero: {
-      title: "JUNIMETAL DEVELOPMENT",
+      title: "JMDU",
       subtitle: "Piping Solutions: With us every project is under reliable protection!",
       exploreOfferings: "Explore Our Offerings",
       getInTouch: "Get in Touch",
@@ -25,7 +25,7 @@ export const translations = {
     // About Section
     about: {
       heading: "A sustainable and value-creating business model",
-      subheading: "JUNIMETAL DEVELOPMENT (JMDU) is a trusted global distributor of high value-added industrial products made from advanced stainless steels and special alloys — serving the multi-energy and mobility industries.",
+      subheading: "JMDU is a trusted global distributor of high value-added industrial products made from advanced stainless steels and special alloys — serving the multi-energy and mobility industries.",
       paragraph1: "As a full-package distributor, we provide seamless supply chain solutions by connecting manufacturers with clients worldwide.",
       paragraph2: "From sourcing and logistics to reliable delivery and after-sales support, we ensure every project is backed by the highest quality materials and on-time execution.",
       paragraph3: "Through strong partnerships with leading manufacturers, JMDU guarantees consistent access to advanced stainless steels and special alloys, engineered to excel in the most demanding environments.",
@@ -42,7 +42,7 @@ export const translations = {
       },
       pipeTube: {
         title: "Pipe & Tube Distribution",
-        description1: "As a trusted distributor, JUNIMETAL DEVELOPMENT provides a comprehensive range of pipes and tubes sourced from leading global manufacturers. We specialize in giving clients immediate access to both standard sizes and customized pipe and tube solutions for demanding industrial projects.",
+        description1: "As a trusted distributor, JMDU provides a comprehensive range of pipes and tubes sourced from leading global manufacturers. We specialize in giving clients immediate access to both standard sizes and customized pipe and tube solutions for demanding industrial projects.",
         description2: "With ready inventory and a reliable logistics network, we ensure timely delivery and consistent quality across every order — from urgent replacements to large-scale project supply contracts.",
         features: [
           "Carbon Steel & Alloy Steel Pipes",
@@ -53,8 +53,8 @@ export const translations = {
       },
       fittings: {
         title: "Fittings",
-        description1: "JUNIMETAL DEVELOPMENT delivers high-quality fittings for a wide range of industrial applications. With ready inventory and custom supply solutions, we ensure your operations stay on schedule and projects run smoothly.",
-        description2: "Trust JUNIMETAL DEVELOPMENT for reliable sourcing, logistics support, and tailored supply solutions for all your fitting needs.",
+        description1: "JMDU delivers high-quality fittings for a wide range of industrial applications. With ready inventory and custom supply solutions, we ensure your operations stay on schedule and projects run smoothly.",
+        description2: "Trust JMDU for reliable sourcing, logistics support, and tailored supply solutions for all your fitting needs.",
         features: [
           "Pipe Fittings – available for urgent replacements and project supply contracts",
           "Flanges & Couplings – backed by global sourcing and logistics expertise", 
@@ -64,7 +64,7 @@ export const translations = {
       },
       flanges: {
         title: "Flanges",
-        description1: "JUNIMETAL DEVELOPMENT delivers a comprehensive range of flanges for industrial, subsea, and high-spec applications. With deep market expertise and global sourcing capabilities, we provide clients with immediate access to both standard and custom flange solutions.",
+        description1: "JMDU delivers a comprehensive range of flanges for industrial, subsea, and high-spec applications. With deep market expertise and global sourcing capabilities, we provide clients with immediate access to both standard and custom flange solutions.",
         description2: "From forged steel to exotic alloys, our flange portfolio supports projects across energy, maritime, and processing industries — ensuring reliable connections under the most demanding conditions.",
         features: [
           "Weld Neck & Slip-On Flanges – forged steel and alloy steel variants",
@@ -75,7 +75,7 @@ export const translations = {
       },
       fasteners: {
         title: "Fastners, Gaskets, Valves",
-        description1: "Complete your piping systems with our comprehensive range of fasteners, gaskets, and valves. JUNIMETAL DEVELOPMENT ensures every component meets the highest standards for reliability and performance.",
+        description1: "Complete your piping systems with our comprehensive range of fasteners, gaskets, and valves. JMDU ensures every component meets the highest standards for reliability and performance.",
         description2: "From standard industrial applications to specialized subsea environments, our product range supports complete project delivery with consistent quality and on-time performance.",
         features: [
           "High-Tensile Bolts & Fasteners – marine-grade and subsea-rated options",
@@ -336,13 +336,13 @@ export const translations = {
     },
     // SEO
     seo: {
-      title: "JUNIMETAL DEVELOPMENT | 钢管解决方案",
+      title: "JMDU | 钢管解决方案",
       description: "来自首尔和釜山的创新钢管解决方案。全套钢管供应商和阀门、海底及特殊部件的专业制造商。",
       slogan: "钢管解决方案：与我们合作，每个项目都在可靠保护之下！"
     },
     // Hero Section
     hero: {
-      title: "JUNIMETAL DEVELOPMENT",
+      title: "JMDU",
       subtitle: "钢管解决方案：与我们合作，每个项目都在可靠保护之下！",
       exploreOfferings: "探索我们的产品",
       getInTouch: "联系我们",
@@ -351,7 +351,7 @@ export const translations = {
     // About Section
     about: {
       heading: "可持续且创造价值的商业模式",
-      subheading: "JUNIMETAL DEVELOPMENT (JMDU) 是全球可信赖的高附加值工业产品分销商，专门经营先进不锈钢和特殊合金制品——为多能源和交通行业提供服务。",
+      subheading: "JMDU 是全球可信赖的高附加值工业产品分销商，专门经营先进不锈钢和特殊合金制品——为多能源和交通行业提供服务。",
       paragraph1: "作为全套分销商，我们通过连接制造商与全球客户，提供无缝供应链解决方案。",
       paragraph2: "从采购和物流到可靠交付和售后支持，我们确保每个项目都得到最高质量材料和准时执行的支持。",
       paragraph3: "通过与领先制造商的强力合作伙伴关系，JMDU 保证持续获得先进不锈钢和特殊合金，这些材料经过工程设计，在最苛刻的环境中表现卓越。",
@@ -368,7 +368,7 @@ export const translations = {
       },
       pipeTube: {
         title: "钢管分销",
-        description1: "作为可信赖的分销商，JUNIMETAL DEVELOPMENT 提供来自全球领先制造商的全面钢管、管件系列。我们的优势在于为客户提供标准产品和满足苛刻项目要求的定制解决方案的即时访问。",
+        description1: "作为可信赖的分销商，JMDU 提供来自全球领先制造商的全面钢管、管件系列。我们的优势在于为客户提供标准产品和满足苛刻项目要求的定制解决方案的即时访问。",
         description2: "凭借管理良好的库存和可靠的物流网络，我们确保每个订单的及时交付和一致质量——从紧急更换到大型工业供应合同。",
         features: [
           "碳钢和合金钢钢管",
@@ -379,8 +379,8 @@ export const translations = {
       },
       fittings: {
         title: "管件",
-        description1: "JUNIMETAL DEVELOPMENT 为广泛的工业应用提供高质量管件。凭借现货库存和定制供应解决方案，我们确保您的运营按计划进行，项目顺利运行。",
-        description2: "信赖 JUNIMETAL DEVELOPMENT 提供可靠的采购、物流支持和为您所有管件需求量身定制的供应解决方案。",
+        description1: "JMDU 为广泛的工业应用提供高质量管件。凭借现货库存和定制供应解决方案，我们确保您的运营按计划进行，项目顺利运行。",
+        description2: "信赖 JMDU 提供可靠的采购、物流支持和为您所有管件需求量身定制的供应解决方案。",
         features: [
           "钢管配件——可用于紧急更换和项目供应合同",
           "法兰和联轴器——由全球采购和物流专业知识支持",
@@ -390,7 +390,7 @@ export const translations = {
       },
       flanges: {
         title: "法兰",
-        description1: "JUNIMETAL DEVELOPMENT 为工业、海底和高规格应用提供全面的法兰系列。凭借深厚的市场专业知识和全球采购能力，我们为客户提供标准和定制法兰解决方案的即时访问。",
+        description1: "JMDU 为工业、海底和高规格应用提供全面的法兰系列。凭借深厚的市场专业知识和全球采购能力，我们为客户提供标准和定制法兰解决方案的即时访问。",
         description2: "从锻钢到特殊合金，我们的法兰产品组合支持能源、海事和加工行业的项目——确保在最苛刻条件下的可靠连接。",
         features: [
           "对焊颈和滑套法兰——锻钢和合金钢变型",
@@ -401,7 +401,7 @@ export const translations = {
       },
       fasteners: {
         title: "紧固件、垫片、阀门",
-        description1: "用我们全面的紧固件、垫片和阀门系列完善您的钢管系统。JUNIMETAL DEVELOPMENT 确保每个组件都符合可靠性和性能的最高标准。",
+        description1: "用我们全面的紧固件、垫片和阀门系列完善您的钢管系统。JMDU 确保每个组件都符合可靠性和性能的最高标准。",
         description2: "从标准工业应用到专门的海底环境，我们的产品系列支持完整项目交付，具有一致的质量和准时性能。",
         features: [
           "高强度螺栓和紧固件——船用级和海底级选项",
@@ -658,12 +658,12 @@ export const translations = {
       contactUs: "Contáctenos"
     },
     seo: {
-      title: "JUNIMETAL DEVELOPMENT | Soluciones de Tuberías",
+      title: "JMDU | Soluciones de Tuberías",
       description: "Soluciones innovadoras de tuberías y tubos desde Seúl y Busan. Proveedor completo de tuberías y fabricante especializado de válvulas, piezas submarinas y especiales.",
       slogan: "Soluciones de Tuberías: ¡Con nosotros cada proyecto está bajo una protección fiable!"
     },
     hero: {
-      title: "JUNIMETAL DEVELOPMENT",
+      title: "JMDU",
       subtitle: "Soluciones de Tuberías: ¡Con nosotros cada proyecto está bajo una protección fiable!",
       exploreOfferings: "Explore Nuestros Productos",
       getInTouch: "Póngase en Contacto",
@@ -671,7 +671,7 @@ export const translations = {
     },
     about: {
       heading: "Un modelo de negocio sostenible y que crea valor",
-      subheading: "JUNIMETAL DEVELOPMENT (JMDU) es un distribuidor global de confianza de productos industriales de alto valor añadido, fabricados con aceros inoxidables avanzados y aleaciones especiales, que atiende a las industrias de multi-energía y movilidad.",
+      subheading: "JMDU es un distribuidor global de confianza de productos industriales de alto valor añadido, fabricados con aceros inoxidables avanzados y aleaciones especiales, que atiende a las industrias de multi-energía y movilidad.",
       paragraph1: "Como distribuidor de paquete completo, proporcionamos soluciones de cadena de suministro sin fisuras conectando a los fabricantes con clientes en todo el mundo.",
       paragraph2: "Desde el abastecimiento y la logística hasta la entrega fiable y el soporte post-venta, nos aseguramos de que cada proyecto esté respaldado por materiales de la más alta calidad y una ejecución a tiempo.",
       paragraph3: "A través de sólidas asociaciones con fabricantes líderes, JMDU garantiza un acceso constante a aceros inoxidables avanzados y aleaciones especiales, diseñados para sobresalir en los entornos más exigentes.",
@@ -687,7 +687,7 @@ export const translations = {
       },
       pipeTube: {
         title: "Distribución de Tubería y Tubos",
-        description1: "Como distribuidor de confianza, JUNIMETAL DEVELOPMENT ofrece una amplia gama de tuberías y tubos procedentes de los principales fabricantes globales. Nos especializamos en dar a los clientes acceso inmediato tanto a tamaños estándar como a soluciones personalizadas de tubería y tubos para proyectos industriales exigentes.",
+        description1: "Como distribuidor de confianza, JMDU ofrece una amplia gama de tuberías y tubos procedentes de los principales fabricantes globales. Nos especializamos en dar a los clientes acceso inmediato tanto a tamaños estándar como a soluciones personalizadas de tubería y tubos para proyectos industriales exigentes.",
         description2: "Con inventario disponible y una red logística fiable, aseguramos la entrega a tiempo y la calidad constante en cada pedido, desde reemplazos urgentes hasta contratos de suministro para proyectos a gran escala.",
         features: [
           "Tuberías de Acero al Carbono y Acero Aleado",
@@ -698,8 +698,8 @@ export const translations = {
       },
       fittings: {
         title: "Accesorios",
-        description1: "JUNIMETAL DEVELOPMENT suministra accesorios de alta calidad para una amplia gama de aplicaciones industriales. Con inventario disponible y soluciones de suministro personalizadas, nos aseguramos de que sus operaciones se mantengan a tiempo y los proyectos se desarrollen sin problemas.",
-        description2: "Confíe en JUNIMETAL DEVELOPMENT para un abastecimiento fiable, soporte logístico y soluciones de suministro a medida para todas sus necesidades de accesorios.",
+        description1: "JMDU suministra accesorios de alta calidad para una amplia gama de aplicaciones industriales. Con inventario disponible y soluciones de suministro personalizadas, nos aseguramos de que sus operaciones se mantengan a tiempo y los proyectos se desarrollen sin problemas.",
+        description2: "Confíe en JMDU para un abastecimiento fiable, soporte logístico y soluciones de suministro a medida para todas sus necesidades de accesorios.",
         features: [
           "Accesorios de Tubería – disponibles para reemplazos urgentes y contratos de suministro para proyectos",
           "Bridas y Acoplamientos – respaldados por nuestra experiencia en abastecimiento y logística global",
@@ -709,7 +709,7 @@ export const translations = {
       },
       flanges: {
         title: "Bridas",
-        description1: "JUNIMETAL DEVELOPMENT suministra una amplia gama de bridas para aplicaciones industriales, submarinas y de alta especificación. Con una profunda experiencia en el mercado y capacidades de abastecimiento global, ofrecemos a los clientes acceso inmediato a soluciones de bridas tanto estándar como personalizadas.",
+        description1: "JMDU suministra una amplia gama de bridas para aplicaciones industriales, submarinas y de alta especificación. Con una profunda experiencia en el mercado y capacidades de abastecimiento global, ofrecemos a los clientes acceso inmediato a soluciones de bridas tanto estándar como personalizadas.",
         description2: "Desde acero forjado hasta aleaciones exóticas, nuestra cartera de bridas apoya proyectos en las industrias de energía, marítima y de procesamiento, garantizando conexiones fiables bajo las condiciones más exigentes.",
         features: [
           "Bridas de Cuello de Soldadura y Deslizantes – variantes de acero forjado y acero aleado",
@@ -720,7 +720,7 @@ export const translations = {
       },
       fasteners: {
         title: "Sujetadores, Juntas, Válvulas",
-        description1: "Complete sus sistemas de tuberías con nuestra amplia gama de sujetadores, juntas y válvulas. JUNIMETAL DEVELOPMENT asegura que cada componente cumpla con los más altos estándares de fiabilidad y rendimiento.",
+        description1: "Complete sus sistemas de tuberías con nuestra amplia gama de sujetadores, juntas y válvulas. JMDU asegura que cada componente cumpla con los más altos estándares de fiabilidad y rendimiento.",
         description2: "Desde aplicaciones industriales estándar hasta entornos submarinos especializados, nuestra gama de productos soporta la entrega completa de proyectos con calidad consistente y rendimiento a tiempo.",
         features: [
           "Tornillos y Sujetadores de Alta Resistencia – opciones de grado marino y para uso submarino",
@@ -855,12 +855,12 @@ export const translations = {
       contactUs: "Связаться с нами"
     },
     seo: {
-      title: "JUNIMETAL DEVELOPMENT | Трубопроводные решения",
+      title: "JMDU | Трубопроводные решения",
       description: "Инновационные решения для труб и трубопроводов из Сеула и Пусана. Поставщик полного спектра трубопроводной продукции и специализированный производитель клапанов, подводных и специальных изделий.",
       slogan: "Трубопроводные решения: С нами каждый проект в сфере трубопроводов – под надёжной защитой"
     },                                   
     hero: {
-      title: "JUNIMETAL DEVELOPMENT",
+      title: "JMDU",
       subtitle: "Трубопроводные решения: С нами каждый проект в сфере трубопроводов – под надёжной защитой",
       exploreOfferings: "Изучите наши предложения",
       getInTouch: "Связаться",
@@ -868,7 +868,7 @@ export const translations = {
     },
     about: {
       heading: "Устойчивая и создающая ценность бизнес-модель",
-      subheading: "JUNIMETAL DEVELOPMENT (JMDU) — это надежный глобальный дистрибьютор высокоценной промышленной продукции из передовых нержавеющих сталей и специальных сплавов, обслуживающий многоэнергетическую и мобильную отрасли.",
+      subheading: "JMDU — это надежный глобальный дистрибьютор высокоценной промышленной продукции из передовых нержавеющих сталей и специальных сплавов, обслуживающий многоэнергетическую и мобильную отрасли.",
       paragraph1: "Как дистрибьютор полного пакета, мы предоставляем бесшовные решения для цепочки поставок, соединяя производителей с клиентами по всему миру.",
       paragraph2: "От поиска и логистики до надежной доставки и послепродажной поддержки, мы гарантируем, что каждый проект будет обеспечен материалами высочайшего качества и выполнен в срок.",
       paragraph3: "Благодаря прочным партнерским отношениям с ведущими производителями, JMDU гарантирует постоянный доступ к передовым нержавеющим сталям и специальным сплавам, разработанным для превосходной работы в самых требовательных средах.",
@@ -884,7 +884,7 @@ export const translations = {
       },
       pipeTube: {
         title: "Поставка труб и трубопроводов",
-        description1: "Как надежный дистрибьютор, JUNIMETAL DEVELOPMENT предоставляет широкий ассортимент труб и трубопроводов, поставляемых от ведущих мировых производителей. Мы специализируемся на предоставлении клиентам немедленного доступа как к стандартным размерам, так и к индивидуальным решениям для труб и трубопроводов для требовательных промышленных проектов.",
+        description1: "Как надежный дистрибьютор, JMDU предоставляет широкий ассортимент труб и трубопроводов, поставляемых от ведущих мировых производителей. Мы специализируемся на предоставлении клиентам немедленного доступа как к стандартным размерам, так и к индивидуальным решениям для труб и трубопроводов для требовательных промышленных проектов.",
         description2: "С готовым запасом и надежной логистической сетью, мы обеспечиваем своевременную доставку и постоянное качество по каждому заказу — от срочных замен до крупномасштабных контрактов на поставку для проектов.",
         features: [
           "Трубы из углеродистой и легированной стали",
@@ -895,8 +895,8 @@ export const translations = {
       },
       fittings: {
         title: "Фитинги",
-        description1: "JUNIMETAL DEVELOPMENT поставляет высококачественные фитинги для широкого спектра промышленных применений. С готовым запасом и индивидуальными решениями для поставок, мы гарантируем, что ваши операции будут идти по графику, а проекты будут выполняться без сбоев.",
-        description2: "Доверьтесь JUNIMETAL DEVELOPMENT для надежного поиска, логистической поддержки и индивидуальных решений для всех ваших потребностей в фитингах.",
+        description1: "JMDU поставляет высококачественные фитинги для широкого спектра промышленных применений. С готовым запасом и индивидуальными решениями для поставок, мы гарантируем, что ваши операции будут идти по графику, а проекты будут выполняться без сбоев.",
+        description2: "Доверьтесь JMDU для надежного поиска, логистической поддержки и индивидуальных решений для всех ваших потребностей в фитингах.",
         features: [
           "Трубные фитинги – доступны для срочной замены и контрактов на поставку для проектов",
           "Фланцы и муфты – поддерживаются глобальным опытом в поиске и логистике",
@@ -906,7 +906,7 @@ export const translations = {
       },
       flanges: {
         title: "Фланцы",
-        description1: "JUNIMETAL DEVELOPMENT поставляет широкий ассортимент фланцев для промышленных, подводных и высокоспециализированных применений. Обладая глубоким знанием рынка и глобальными возможностями по поиску, мы предоставляем клиентам немедленный доступ как к стандартным, так и к индивидуальным решениям для фланцев.",
+        description1: "JMDU поставляет широкий ассортимент фланцев для промышленных, подводных и высокоспециализированных применений. Обладая глубоким знанием рынка и глобальными возможностями по поиску, мы предоставляем клиентам немедленный доступ как к стандартным, так и к индивидуальным решениям для фланцев.",
         description2: "От кованой стали до экзотических сплавов, наш портфель фланцев поддерживает проекты в энергетической, морской и перерабатывающей отраслях, обеспечивая надежные соединения в самых требовательных условиях.",
         features: [
           "Приварные встык и накладные фланцы – варианты из кованой и легированной стали",
@@ -917,7 +917,7 @@ export const translations = {
       },
       fasteners: {
         title: "Крепеж, прокладки, клапаны",
-        description1: "Завершите свои трубопроводные системы с нашим широким ассортиментом крепежа, прокладок и клапанов. JUNIMETAL DEVELOPMENT гарантирует, что каждый компонент соответствует самым высоким стандартам надежности и производительности.",
+        description1: "Завершите свои трубопроводные системы с нашим широким ассортиментом крепежа, прокладок и клапанов. JMDU гарантирует, что каждый компонент соответствует самым высоким стандартам надежности и производительности.",
         description2: "От стандартных промышленных применений до специализированных подводных сред, наш ассортимент продукции поддерживает полную поставку проектов с постоянным качеством и своевременным выполнением.",
         features: [
           "Высокопрочные болты и крепеж – морского и подводного классов",

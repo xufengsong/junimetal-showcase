@@ -55,7 +55,7 @@ const ProductDetail = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="text-2xl font-bold text-primary">
-              JUNIMETAL DEVELOPMENT
+              JMDU
             </Link>
             <div className="flex items-center space-x-6">
               <Link to="/" className="text-foreground/80 hover:text-foreground transition-colors">
@@ -153,7 +153,7 @@ const ProductDetail = () => {
                 </Card>
               )}
 
-              {product.specifications && product.specifications.length > 0 ? (
+              {/* {product.specifications && product.specifications.length > 0 ? (
                 <Card>
                   <CardHeader>
                     <CardTitle>Specifications</CardTitle>
@@ -199,7 +199,7 @@ const ProductDetail = () => {
                     </CardContent>
                   </Card>
                 )
-              )}
+              )} */}
             </div>
 
             {/* Sidebar */}
@@ -240,7 +240,7 @@ const ProductDetail = () => {
               )}
 
               {/* Downloads & CTA (Assumed to be correct) */}
-              <Card>
+              {/* <Card>
                 <CardHeader>
                   <CardTitle>Downloads</CardTitle>
                 </CardHeader>
@@ -254,7 +254,7 @@ const ProductDetail = () => {
                     Specifications PDF
                   </Button>
                 </CardContent>
-              </Card>
+              </Card> */}
 
               <Card className="bg-gradient-to-br from-primary/10 to-primary/5">
                 <CardHeader>
@@ -280,7 +280,7 @@ const ProductDetail = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-lg font-semibold text-foreground mb-4">JUNIMETAL DEVELOPMENT</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-4">JMDU</h3>
               <p className="text-foreground/70 text-sm">
                 Trusted global distributor of high value-added industrial products made from advanced stainless steels and special alloys.
               </p>
@@ -321,13 +321,13 @@ const ProductDetail = () => {
               <div className="space-y-2 text-sm text-foreground/70">
                 <p>Seoul & Busan, South Korea</p>
                 <p>Email: jmd@jmd.by-works.com</p>
-                <p>Phone: +82-10-XXXX-XXXX</p>
+                <p>Phone: +82-10-7624-7557</p>
               </div>
             </div>
           </div>
           <div className="border-t border-border/40 mt-8 pt-8 text-center">
             <p className="text-foreground/60 text-sm">
-              © 2025 JUNIMETAL DEVELOPMENT. All rights reserved.
+              © 2025 JMDU. All rights reserved.
             </p>
           </div>
         </div>

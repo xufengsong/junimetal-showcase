@@ -29,7 +29,7 @@ const Products = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="text-2xl font-bold text-primary">
-              JUNIMETAL DEVELOPMENT
+              JMDU
             </Link>
             <div className="flex items-center space-x-6">
               <Link to="/" className="text-foreground/80 hover:text-foreground transition-colors">
@@ -81,12 +81,12 @@ const Products = () => {
       <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
         <nav className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-3">
-            {/* <div className="h-7 w-7 rounded-sm bg-sidebar-primary" aria-hidden />  This is the blue box before JUNIMETAL DEVELOPMENT */}
+            {/* <div className="h-7 w-7 rounded-sm bg-sidebar-primary" aria-hidden />  This is the blue box before JMDU */}
             <span 
               className="text-lg font-semibold tracking-wide"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
-              JUNIMETAL DEVELOPMENT (JMDU)
+              JMDU
             </span>
           </div>
           <ul className="hidden items-center gap-8 md:flex">
@@ -226,7 +226,7 @@ const Products = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-lg font-semibold text-foreground mb-4">JUNIMETAL DEVELOPMENT</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-4">JMDU</h3>
               <p className="text-foreground/70 text-sm">
                 Trusted global distributor of high value-added industrial products made from advanced stainless steels and special alloys.
               </p>
@@ -267,13 +267,13 @@ const Products = () => {
               <div className="space-y-2 text-sm text-foreground/70">
                 <p>Seoul & Busan, South Korea</p>
                 <p>Email: jmd@jmd.by-works.com</p>
-                <p>Phone: +82-2-XXXX-XXXX</p>
+                <p>Phone: +82-10-7624-7557</p>
               </div>
             </div>
           </div>
           <div className="border-t border-border/40 mt-8 pt-8 text-center">
             <p className="text-foreground/60 text-sm">
-              © 2025 JUNIMETAL DEVELOPMENT. All rights reserved.
+              © 2025 JMDU. All rights reserved.
             </p>
           </div>
         </div>
