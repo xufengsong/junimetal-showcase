@@ -4,6 +4,7 @@ import heroImage from "@/assets/hero-industrial-night.jpg";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import { Mail } from "lucide-react";
 
 import materials4 from "@/assets/materials4.png";
 import materials4_webp from "@/assets/materials4_webp.webp";
@@ -17,7 +18,6 @@ import cryogenic3_webp from "@/assets/cryogenic3_webp.webp";
 import custom_design4 from "@/assets/custom4.png";
 import custom_design4_webp from "@/assets/custom4_webp.webp"
 
-import customer from "@/assets/second_try.png";
 import show_tube from "@/assets/tube.jpg";
 import show_tube1 from "@/assets/tube1.jpg";
 import show_tube2 from "@/assets/tube2.jpg";
@@ -31,7 +31,9 @@ import show_coil1 from "@/assets/coil1.jpg";
 import show_fittings from "@/assets/show_fittings.jpg";
 import show_flanges from "@/assets/show_flanges.jpg";
 import heat_exchange from "@/assets/heat_exchange.jpg";
-import helium_button from "@/assets/helium_button.jpg"
+import helium_button from "@/assets/helium_button.jpg";
+
+
 import { Button } from "@/components/ui/button";
 // import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -39,6 +41,8 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Wrench, Cog, Layers, Snowflake, ShieldCheck, Hammer, BadgeCheck, Users, Globe } from "lucide-react";
 import { productCategories } from "@/data/productCategories";
+import { productDetails } from "@/data/productDetails";
+
 
 const Index = () => {
   const [language, setLanguage] = useState<Language>("en");
@@ -125,7 +129,6 @@ const Index = () => {
   const navItems = [
     { href: "#about", label: t.nav.aboutUs },
     { href: "#products", label: t.nav.products },
-    // { href: "#offerings", label: t.nav.productsServices },
     { href: "#expertise", label: t.nav.ourExpertise },
     { href: "#visits", label: t.visits.title },
     { href: "#contact", label: t.nav.contactUs },
@@ -221,7 +224,7 @@ const Index = () => {
             </p>
             <div className="mt-4 flex flex-wrap gap-4">
               <Button asChild variant="accent" size="xl">
-                <a href="#offerings">{t.hero.exploreOfferings}</a>
+                <a href="#products">{t.hero.exploreOfferings}</a>
               </Button>
               <Button asChild variant="outline" size="xl">
                 <a href="#contact">{t.hero.getInTouch}</a>
@@ -256,43 +259,86 @@ const Index = () => {
         </section>
 
         {/* Our Products Section */}
+
         <section id="products" className="py-16 sm:py-20">
           <div className="container mx-auto px-4">
             <h2 className="mb-2 text-center text-3xl font-bold tracking-tight">
               Our Products
             </h2>
             <p className="mb-10 text-center text-muted-foreground">
-              Explore our main product categories.???
+              Explore our extensive inventory of stainless steels and specialty alloys
             </p>
+
+            {/* 2. Map over the productDetails object */}
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {productCategories.map((category) => (
+              {Object.entries(productDetails).map(([key, product]) => (
+                // <Card
+                //   key={key}
+                //   className="flex flex-col overflow-hidden transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl"
+                // >
+                //   {/* 1. Make the CardHeader the main container for the top row */}
+                //   <CardHeader className="flex flex-row items-start justify-between gap-4">
+                //     {/* Title on the left */}
+                //     <CardTitle className="leading-tight">{product.name}</CardTitle>
+
+                //     {/* 2. Actions block is now inside the header, on the right */}
+                //     <div className="flex flex-col items-end flex-shrink-0">
+                //       <Badge variant="secondary" className="text-xs mb-4">
+                //         {product.category.split(" ")[0]}
+                //       </Badge>
+                //       <Button asChild>
+                //         <Link to={`/products/${product.category}/${key}`}>
+                //           View Details
+                //         </Link>
+                //       </Button>
+                //     </div>
+                //   </CardHeader>
+                  
+                //   {/* CardContent is now optional, for extra info like a description */}
+                //   {/* <CardContent>
+                //       <p>Optional description here...</p>
+                //   </CardContent> */}
+                // </Card>
+
+                
                 <Card
-                  key={category.id}
-                  className="overflow-hidden transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl"
+                  key={key}
+                  className="flex flex-col overflow-hidden transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl"
                 >
-                  <CardHeader>
-                    <CardTitle>{category.name}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground">
-                      {category.description}
-                    </p>
-                    <Button asChild className="mt-4 w-full">
-                      <Link to={`/products#${category.id}`}>View Details</Link>
-                    </Button>
+                  {/* 1. We combine everything into CardContent for layout control */}
+                  <CardContent className="flex flex-1 flex-row items-start justify-between gap-4 p-6">
+                    
+                    {/* 2. Left column for text content */}
+                    <div className="flex flex-col">
+                      {/* We use a standard heading tag here for the title */}
+                      <h3 className="font-semibold leading-tight text-card-foreground">
+                        {product.name}
+                      </h3>
+
+                      {/* 3. The description with line-clamping */}
+                      <p className="mt-2 text-sm text-muted-foreground line-clamp-3">
+                        {product.short_description}
+                      </p>
+                    </div>
+
+                    {/* 4. Right column for actions (unchanged) */}
+                    <div className="flex flex-col items-end flex-shrink-0">
+                      <Badge variant="secondary" className="text-xs mb-4">
+                        {product.category.split(" ")[0]}
+                      </Badge>
+                      <Button asChild>
+                        <Link to={`/products/${product.category}/${key}`}>
+                          View Details
+                        </Link>
+                      </Button>
+                    </div>
                   </CardContent>
                 </Card>
-              ))}
-            </div>
-            <div className="mt-12 text-center">
-              <Button asChild variant="outline">
-                <Link to="/products">
-                  More Products <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
+            ))}
             </div>
           </div>
         </section>
+
 
         {/* Our Expertise */}
         {/* doubao support */}
@@ -511,10 +557,11 @@ const Index = () => {
               </p>
               <div className="mt-6 flex gap-3">
                 <Button asChild variant="accent">
+                  {/* <Mail className="mr-2 h-4 w-4"/> */}
                   <a href="mailto:jmd@jmd.by-works.com">jmd@jmd.by-works.com</a>
                 </Button>
                 <Button asChild variant="outline">
-                  <a href="#offerings">{t.hero.exploreOfferings}</a>
+                  <a href="#products">{t.hero.exploreOfferings}</a>
                 </Button>
               </div>
             </div>
