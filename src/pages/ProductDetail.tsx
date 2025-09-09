@@ -265,8 +265,8 @@ const ProductDetail = () => {
                 </CardHeader>
                 <CardContent>
                   <Button className="w-full">
-                    <Mail className="mr-2 h-4 w-4" />
-                    Request a Quote
+                    <Mail className="mr-2 h-4 w-4"/>
+                    <a href="mailto:jmd@jmd.by-works.com">Request a Quote</a>
                   </Button>
                 </CardContent>
               </Card>
