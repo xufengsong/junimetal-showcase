@@ -3,9 +3,7 @@ import { translations, type Language } from "@/utils/translations";
 import heroImage from "@/assets/hero-industrial-night.jpg";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import {
-  ArrowRight,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 import materials4 from "@/assets/materials4.png";
 import materials4_webp from "@/assets/materials4_webp.webp";
