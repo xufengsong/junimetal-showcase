@@ -17,6 +17,21 @@ import cryogenic3_webp from "@/assets/cryogenic3_webp.webp";
 import custom_design4 from "@/assets/custom4.png";
 import custom_design4_webp from "@/assets/custom4_webp.webp"
 
+import customer from "@/assets/second_try.png";
+import show_tube from "@/assets/tube.jpg";
+import show_tube1 from "@/assets/tube1.jpg";
+import show_tube2 from "@/assets/tube2.jpg";
+import show_tube3 from "@/assets/tube3.jpg";
+import show_tube4 from "@/assets/tube4.jpg";
+import show_tube5 from "@/assets/tube5.jpg";
+import show_tube6 from "@/assets/tube6.jpg";
+import show_tube7 from "@/assets/tube7.jpg";
+import show_coil from "@/assets/coil.jpg";
+import show_coil1 from "@/assets/coil1.jpg";
+import show_fittings from "@/assets/show_fittings.jpg";
+import show_flanges from "@/assets/show_flanges.jpg";
+import heat_exchange from "@/assets/heat_exchange.jpg";
+import helium_button from "@/assets/helium_button.jpg"
 import { Button } from "@/components/ui/button";
 // import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -74,7 +89,7 @@ const Index = () => {
     const jsonLd = {
       "@context": "https://schema.org",
       "@type": "Organization",
-      name: "JUNIMETAL DEVELOPMENT",
+      name: "JMDU",
       url: window.location.origin,
       slogan: t.seo.slogan,
       address: {
@@ -116,6 +131,23 @@ const Index = () => {
     { href: "#contact", label: t.nav.contactUs },
   ];
 
+  const show_iamge = [
+    show_tube,
+    show_tube1,
+    show_tube2,
+    show_tube3,
+    show_tube4,
+    show_tube5,
+    show_tube6,
+    show_tube7,
+    show_coil,
+    show_coil1,
+    heat_exchange,
+    show_fittings,
+    show_flanges,
+    helium_button
+  ]
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50">
@@ -125,12 +157,11 @@ const Index = () => {
       <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
         <nav className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-3">
-            {/* <div className="h-7 w-7 rounded-sm bg-sidebar-primary" aria-hidden />  This is the blue box before JUNIMETAL DEVELOPMENT */}
             <span 
               className="text-lg font-semibold tracking-wide"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
-              JUNIMETAL DEVELOPMENT (JMDU)
+              JMDU
             </span>
           </div>
           <ul className="hidden items-center gap-8 md:flex">
@@ -182,7 +213,7 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background/90" />
 
           <div className="relative z-10 container flex min-h-[100svh] flex-col items-start justify-center gap-6 py-24">
-            <h1 className="max-w-3xl text-4xl font-bold tracking-tight md:text-6xl">
+            <h1 style={{fontSize: '120px'}} className="max-w-3xl text-4xl font-bold tracking-tight md:text-6xl">
               {t.hero.title}
             </h1>
             <p className="max-w-2xl text-lg text-muted-foreground md:text-xl">
@@ -344,8 +375,6 @@ const Index = () => {
                 </div>
                 <div className="p-6">
                   <ul className="list-disc space-y-2 pl-5 text-muted-foreground">
-                    {/* <li>In-house validation of cryogenic capabilities by testing @ -196°C</li>
-                    <li>Tightness testing with helium</li> */}
                     {
                       t.expertise.cryogenic.map((item) => <li key={item}>{item}</li>)
                     }
@@ -399,15 +428,21 @@ const Index = () => {
               <h3 className="text-xl font-medium mb-6 text-center">{t.visits.visitsCarousel}</h3>
               <div className="relative overflow-hidden rounded-lg bg-card/20 backdrop-blur-sm p-4">
                 <div className="flex animate-scroll-left space-x-6 will-change-transform">
-                  {[...Array(12)].map((_, i) => (
+                  {/* {[...Array(12)].map((_, i) => ( */}
+                  {show_iamge.map((k, i) => (
                     <div
                       key={i}
                       className="flex-shrink-0 w-80 h-48 bg-gradient-to-br from-muted/50 to-muted/20 rounded-lg border border-border/50 flex items-center justify-center hover:scale-105 transition-transform duration-300"
                     >
                       <div className="text-center p-4">
-                        <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                        {/* <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-3">
                           <Users className="w-8 h-8 text-primary" />
-                        </div>
+
+                        </div> */}
+                          <img
+                            src={k}
+                            className="h-full w-full"
+                          />
                         <h4 className="text-sm font-medium">Site Visit {i + 1}</h4>
                         <p className="text-xs text-muted-foreground mt-1">Industrial Facility</p>
                       </div>
@@ -499,7 +534,7 @@ const Index = () => {
               <h3 className="mb-3 text-lg font-medium">{t.footer.office_location}</h3>
               <div className="overflow-hidden rounded-md border">
                 <iframe
-                  title="Map of JUNIMETAL DEVELOPMENT Seoul Office"
+                  title="Map of JMDU Seoul Office"
                   src="https://www.google.com/maps?q=Office%20%23804%2C%2025%2C%20Yeonmujang%205%20Ga-Gil%2C%20Seongdong-Gu%2C%20Seoul%2C%20South%20Korea&output=embed"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -509,7 +544,7 @@ const Index = () => {
             </div>
           </div>
           <div className="container mt-10 border-t border-border py-6 text-center text-sm text-muted-foreground">
-            © 2025 JUNIMETAL DEVELOPMENT. {t.footer.allRightsReserved}
+            © 2025 JMDU. {t.footer.allRightsReserved}
           </div>
         </footer>
       </main>
