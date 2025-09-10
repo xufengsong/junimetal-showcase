@@ -2,6 +2,7 @@ export const productDetails : Record<string, any> = {
     "304-304h": {
         name: "304/304H",
         category: "Stainless Steels",
+        short_description: "General purpose austenitic stainless steel",
         description: "304/304H is the most widely used austenitic stainless steel. It provides excellent corrosion resistance, formability, and weldability. The 304H variant offers higher carbon content for improved high-temperature strength.",
         applications: ["Food processing equipment", "Chemical processing", "Architectural applications", "Kitchen equipment", "Heat exchangers"],
         chemicalComposition: {

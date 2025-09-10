@@ -201,7 +201,7 @@ const mockApi = {
 // ============================================================================
 
 /**
- * Generates all sitemap files for JUNIMETAL DEVELOPMENT.
+ * Generates all sitemap files for JMDU.
  * @returns An object where keys are filenames and values are the XML content.
  */
 export async function generateJunimetalSitemaps(baseUrl: string): Promise<{ [filename: string]: string }> {

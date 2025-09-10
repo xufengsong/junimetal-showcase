@@ -16,7 +16,6 @@ const Products = () => {
   const navItems = [
     { href: "/#about", label: t.nav.aboutUs },
     { href: "/#products", label: t.nav.products },
-    // { href: "#offerings", label: t.nav.productsServices },
     { href: "/#expertise", label: t.nav.ourExpertise },
     { href: "/#visits", label: t.visits.title },
     { href: "/#contact", label: t.nav.contactUs },
@@ -81,7 +80,6 @@ const Products = () => {
       <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
         <nav className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-3">
-            {/* <div className="h-7 w-7 rounded-sm bg-sidebar-primary" aria-hidden />  This is the blue box before JMDU */}
             <span 
               className="text-lg font-semibold tracking-wide"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -143,7 +141,7 @@ const Products = () => {
       <section className="py-16 px-4">
         <div className="container mx-auto">
           {productCategories.map((category, categoryIndex) => (
-            <div key={category.id} className="mb-16">
+            <div key={category.id} className="mb-16" id={category.id}>
               <div className="text-center mb-8">
                 <h2 className="text-3xl font-bold text-foreground mb-4">
                   {category.name}
@@ -207,16 +205,16 @@ const Products = () => {
             tailored to your specific requirements.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/products/custom-solutions">
+            {/* <Link to="/products/custom-solutions"> */}
               <Button size="lg" className="min-w-[200px]">
-                Custom Solutions
+                <a href="mailto:jmd@jmd.by-works.com">Contact Engineering</a>
               </Button>
-            </Link>
-            <Link to="/#contact">
+            {/* </Link> */}
+            {/* <Link to="/#contact">
               <Button variant="outline" size="lg" className="min-w-[200px]">
                 Contact Engineering
               </Button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
@@ -237,7 +235,7 @@ const Products = () => {
                 <Link to="/" className="block text-foreground/70 hover:text-foreground transition-colors text-sm">
                   {t.nav.aboutUs}
                 </Link>
-                <Link to="/products" className="block text-primary hover:text-primary/80 transition-colors text-sm">
+                <Link to="#products" className="block text-primary hover:text-primary/80 transition-colors text-sm">
                   {t.nav.products}
                 </Link>
                 <Link to="/#expertise" className="block text-foreground/70 hover:text-foreground transition-colors text-sm">
@@ -250,17 +248,17 @@ const Products = () => {
             </div>
             <div>
               <h4 className="text-md font-semibold text-foreground mb-4">Products</h4>
-              <div className="space-y-2">
-                <Link to="/products#stainless-steels" className="block text-foreground/70 hover:text-foreground transition-colors text-sm">
-                  Stainless Steels
-                </Link>
-                <Link to="/products#specialty-alloys" className="block text-foreground/70 hover:text-foreground transition-colors text-sm">
-                  Specialty Alloys
-                </Link>
-                <Link to="/products#nickel-alloys" className="block text-foreground/70 hover:text-foreground transition-colors text-sm">
-                  Nickel Alloys
-                </Link>
-              </div>
+                <div className="flex flex-col space-y-2 items-start">
+                  <Button className="bg-gray-800 hover:bg-gray-700 text-gray-100 py-2 px-4 rounded-lg">
+                    <a href="#stainless-steels">Stainless Steels</a>
+                  </Button>
+                  <Button className="bg-gray-800 hover:bg-gray-700 text-gray-100 py-2 px-4 rounded-lg">
+                    <a href="#specialty-alloys">Specialty Alloys</a>
+                  </Button>
+                  <Button className="bg-gray-800 hover:bg-gray-700 text-gray-100 py-2 px-4 rounded-lg">
+                    <a href="#nickel-alloys">Nickel Alloys</a>
+                  </Button>
+                </div>
             </div>
             <div>
               <h4 className="text-md font-semibold text-foreground mb-4">Contact</h4>
