@@ -25,7 +25,7 @@ dist-ssr
 
 
 #SEO
-utils/generateSitemap.ts
-utils/performance.ts
-components/ui/Analytics.ts
-components/ui/SEOhead.tsx
+src/utils/generateSitemap.ts
+src/utils/performance.ts
+src/components/ui/Analytics.ts
+src/components/ui/SEOhead.tsx
