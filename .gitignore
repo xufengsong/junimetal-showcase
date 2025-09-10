@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+#SEO
+utils/generateSitemap.ts
+utils/performance.ts
+components/ui/Analytics.ts
+components/ui/SEOhead.tsx
