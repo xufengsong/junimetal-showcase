@@ -8,6 +8,7 @@ import { translations, type Language } from "@/utils/translations";
 import { productCategories } from "@/data/productCategories";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Globe } from "lucide-react";
+import ScrollToHashElement from "@/components/ui/ScrollToHashElement"
 
 const Products = () => {
   const [language, setLanguage] = useState<'en' | 'zh' | 'es' | 'ru'>('en');

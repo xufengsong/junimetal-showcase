@@ -57,7 +57,7 @@ const ProductDetail = () => {
             <Link to="/" className="text-2xl font-bold text-primary">
               JMDU
             </Link>
-            <div className="flex items-center space-x-6">
+            {/* <div className="flex items-center space-x-6">
               <Link to="/" className="text-foreground/80 hover:text-foreground transition-colors">
                 {t.nav.aboutUs}
               </Link>
@@ -70,7 +70,7 @@ const ProductDetail = () => {
               <Link to="/#contact" className="text-foreground/80 hover:text-foreground transition-colors">
                 {t.nav.contactUs}
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </nav>
@@ -78,7 +78,7 @@ const ProductDetail = () => {
       {/* Breadcrumb */}
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center space-x-2 text-sm text-foreground/60">
-          <Link to="/products" className="hover:text-foreground transition-colors">
+          <Link to="/#products" className="hover:text-foreground transition-colors">
             Products
           </Link>
           <span>/</span>
@@ -90,7 +90,7 @@ const ProductDetail = () => {
       <section className="py-8 px-4">
         <div className="container mx-auto">
           <div className="flex items-center gap-4 mb-6">
-            <Link to="/products">
+            <Link to="/#products">
               <Button variant="outline" size="sm">
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Back to Products
@@ -291,7 +291,7 @@ const ProductDetail = () => {
                 <Link to="/" className="block text-foreground/70 hover:text-foreground transition-colors text-sm">
                   {t.nav.aboutUs}
                 </Link>
-                <Link to="/products" className="block text-primary hover:text-primary/80 transition-colors text-sm">
+                <Link to="/#products" className="block text-primary hover:text-primary/80 transition-colors text-sm">
                   {t.nav.products}
                 </Link>
                 <Link to="/#expertise" className="block text-foreground/70 hover:text-foreground transition-colors text-sm">
@@ -302,7 +302,7 @@ const ProductDetail = () => {
                 </Link>
               </div>
             </div>
-            <div>
+            {/* <div>
               <h4 className="text-md font-semibold text-foreground mb-4">Products</h4>
               <div className="space-y-2">
                 <Link to="/products#stainless-steels" className="block text-foreground/70 hover:text-foreground transition-colors text-sm">
@@ -315,7 +315,7 @@ const ProductDetail = () => {
                   Nickel Alloys
                 </Link>
               </div>
-            </div>
+            </div> */}
             <div>
               <h4 className="text-md font-semibold text-foreground mb-4">Contact</h4>
               <div className="space-y-2 text-sm text-foreground/70">

@@ -161,7 +161,7 @@ const Index = () => {
         <nav className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-3">
             <span 
-              className="text-lg font-semibold tracking-wide"
+              className="text-2xl font-bold text-primary"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
               JMDU
