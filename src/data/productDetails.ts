@@ -56,7 +56,7 @@ export const productDetails : Record<string, any> = {
         description: "310S/310H is a high-temperature resistant austenitic stainless steel with excellent oxidation resistance up to 2100°F (1150°C). The low carbon 310S provides better corrosion resistance while 310H offers superior high-temperature strength.",
         applications: ["Furnace parts", "Heat exchangers", "Kilns", "Gas turbine components", "Petrochemical processing"],
         chemicalComposition: {
-            C: "0.08 max (310S) / 0.04-0.10 (310H)?",
+            C: "0.08 max (310S) / 0.04-0.10 (310H)",
             Mn: "2.00 max",
             P: "0.045 max", 
             S: "0.03 max",
