@@ -272,56 +272,16 @@ const Index = () => {
             {/* 2. Map over the productDetails object */}
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {Object.entries(productDetails).map(([key, product]) => (
-                // <Card
-                //   key={key}
-                //   className="flex flex-col overflow-hidden transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl"
-                // >
-                //   {/* 1. Make the CardHeader the main container for the top row */}
-                //   <CardHeader className="flex flex-row items-start justify-between gap-4">
-                //     {/* Title on the left */}
-                //     <CardTitle className="leading-tight">{product.name}</CardTitle>
-
-                //     {/* 2. Actions block is now inside the header, on the right */}
-                //     <div className="flex flex-col items-end flex-shrink-0">
-                //       <Badge variant="secondary" className="text-xs mb-4">
-                //         {product.category.split(" ")[0]}
-                //       </Badge>
-                //       <Button asChild>
-                //         <Link to={`/products/${product.category}/${key}`}>
-                //           View Details
-                //         </Link>
-                //       </Button>
-                //     </div>
-                //   </CardHeader>
-                  
-                //   {/* CardContent is now optional, for extra info like a description */}
-                //   {/* <CardContent>
-                //       <p>Optional description here...</p>
-                //   </CardContent> */}
-                // </Card>
-
-                
                 <Card
                   key={key}
                   className="flex flex-col overflow-hidden transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl"
                 >
-                  {/* 1. We combine everything into CardContent for layout control */}
-                  <CardContent className="flex flex-1 flex-row items-start justify-between gap-4 p-6">
-                    
-                    {/* 2. Left column for text content */}
-                    <div className="flex flex-col">
-                      {/* We use a standard heading tag here for the title */}
-                      <h3 className="font-semibold leading-tight text-card-foreground">
-                        {product.name}
-                      </h3>
+                  {/* 1. Make the CardHeader the main container for the top row */}
+                  <CardHeader className="flex flex-row items-start justify-between gap-4">
+                    {/* Title on the left */}
+                    <CardTitle className="leading-tight">{product.name}</CardTitle>
 
-                      {/* 3. The description with line-clamping */}
-                      <p className="mt-2 text-sm text-muted-foreground line-clamp-3">
-                        {product.short_description}
-                      </p>
-                    </div>
-
-                    {/* 4. Right column for actions (unchanged) */}
+                    {/* 2. Actions block is now inside the header, on the right */}
                     <div className="flex flex-col items-end flex-shrink-0">
                       <Badge variant="secondary" className="text-xs mb-4">
                         {product.category.split(" ")[0]}
@@ -332,8 +292,48 @@ const Index = () => {
                         </Link>
                       </Button>
                     </div>
-                  </CardContent>
+                  </CardHeader>
+                  
+                  {/* CardContent is now optional, for extra info like a description */}
+                  {/* <CardContent>
+                      <p>Optional description here...</p>
+                  </CardContent> */}
                 </Card>
+
+                
+                // <Card
+                //   key={key}
+                //   className="flex flex-col overflow-hidden transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl"
+                // >
+                //   {/* 1. We combine everything into CardContent for layout control */}
+                //   <CardContent className="flex flex-1 flex-row items-start justify-between gap-4 p-6">
+                    
+                //     {/* 2. Left column for text content */}
+                //     <div className="flex flex-col">
+                //       {/* We use a standard heading tag here for the title */}
+                //       <h3 className="font-semibold leading-tight text-card-foreground">
+                //         {product.name}
+                //       </h3>
+
+                //       {/* 3. The description with line-clamping */}
+                //       <p className="mt-2 text-sm text-muted-foreground line-clamp-3">
+                //         {product.short_description}
+                //       </p>
+                //     </div>
+
+                //     {/* 4. Right column for actions (unchanged) */}
+                //     <div className="flex flex-col items-end flex-shrink-0">
+                //       <Badge variant="secondary" className="text-xs mb-4">
+                //         {product.category.split(" ")[0]}
+                //       </Badge>
+                //       <Button asChild>
+                //         <Link to={`/products/${product.category}/${key}`}>
+                //           View Details
+                //         </Link>
+                //       </Button>
+                //     </div>
+                //   </CardContent>
+                // </Card>
             ))}
             </div>
           </div>
@@ -460,31 +460,66 @@ const Index = () => {
             </div>
           </div>
         </section>
+        
 
         {/* Our Visits Section */}
         <section id='visits' className="scroll-mt-24 border-t border-border py-16 md:py-24 bg-gradient-to-br from-background to-background/50">
           <div className="container">
+            {/* Previous Visits Carousel */}
+            <div className="mb-12">
+              <div className="relative overflow-hidden rounded-lg bg-card/20 backdrop-blur-sm p-4">
+                <div className="flex animate-scroll-left space-x-6 will-change-transform">
+                  {/* Main images */}
+                  {show_iamge.map((k, i) => (
+                    <div
+                      key={i}
+                      className="flex-shrink-0 w-[28rem] h-[17.5rem] hover:scale-105 transition-transform duration-300 overflow-hidden" // Added overflow-hidden to ensure internal image rounding works
+                    >
+                      <img
+                        src={k}
+                        alt={`Site ${i + 1}`}
+                        className="h-full w-full object-cover rounded-md"
+                      />
+                    </div>
+                  ))}
+                  {/* Duplicate for seamless loop */}
+                  {show_iamge.map((k, i) => (
+                    <div
+                      key={`duplicate-${i}`}
+                      className="flex-shrink-0 w-[28rem] h-[17.5rem] hover:scale-105 transition-transform duration-300 overflow-hidden" // Added overflow-hidden
+                    >
+                      <img
+                        src={k}
+                        alt={`Site ${i + 1} (Duplicate)`}
+                        className="h-full w-full object-cover rounded-md"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Our Visits Section */}
+        {/* <section id='visits' className="scroll-mt-24 border-t border-border py-16 md:py-24 bg-gradient-to-br from-background to-background/50">
+          <div className="container">
             <header className="mb-10 text-center">
               <h2 className="text-3xl font-semibold md:text-4xl mb-4">{t.visits.title}</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">{t.visits.subtitle}</p>
-            </header>
+            </header> */}
 
             {/* Previous Visits Carousel */}
-            <div className="mb-12">
+            {/* <div className="mb-12">
               <h3 className="text-xl font-medium mb-6 text-center">{t.visits.visitsCarousel}</h3>
               <div className="relative overflow-hidden rounded-lg bg-card/20 backdrop-blur-sm p-4">
                 <div className="flex animate-scroll-left space-x-6 will-change-transform">
-                  {/* {[...Array(12)].map((_, i) => ( */}
                   {show_iamge.map((k, i) => (
                     <div
                       key={i}
                       className="flex-shrink-0 w-80 h-48 bg-gradient-to-br from-muted/50 to-muted/20 rounded-lg border border-border/50 flex items-center justify-center hover:scale-105 transition-transform duration-300"
                     >
                       <div className="text-center p-4">
-                        {/* <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                          <Users className="w-8 h-8 text-primary" />
-
-                        </div> */}
                           <img
                             src={k}
                             className="h-full w-full"
@@ -493,9 +528,9 @@ const Index = () => {
                         <p className="text-xs text-muted-foreground mt-1">Industrial Facility</p>
                       </div>
                     </div>
-                  ))}
+                  ))} */}
                   {/* Duplicate for seamless loop */}
-                  {[...Array(12)].map((_, i) => (
+                  {/* {[...Array(12)].map((_, i) => (
                     <div
                       key={`duplicate-${i}`}
                       className="flex-shrink-0 w-80 h-48 bg-gradient-to-br from-muted/50 to-muted/20 rounded-lg border border-border/50 flex items-center justify-center hover:scale-105 transition-transform duration-300"
@@ -511,10 +546,10 @@ const Index = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Partner Companies Carousel */}
-            <div>
+            {/* <div>
               <h3 className="text-xl font-medium mb-6 text-center">{t.visits.partnersCarousel}</h3>
               <div className="relative overflow-hidden rounded-lg bg-card/20 backdrop-blur-sm p-4">
                 <div className="flex animate-scroll-right space-x-6 will-change-transform">
@@ -528,9 +563,9 @@ const Index = () => {
                         <div className="text-xs text-muted-foreground mt-2">Trusted Partner</div>
                       </div>
                     </div>
-                  ))}
+                  ))} */}
                   {/* Duplicate for seamless loop */}
-                  {['Total', 'Chevron', 'Saipem', 'Subsea 7', 'Technip', 'Shell', 'BP', 'Equinor', 'Petrobras', 'TechnipFMC', 'Aker Solutions', 'McDermott'].map((company, i) => (
+                  {/* {['Total', 'Chevron', 'Saipem', 'Subsea 7', 'Technip', 'Shell', 'BP', 'Equinor', 'Petrobras', 'TechnipFMC', 'Aker Solutions', 'McDermott'].map((company, i) => (
                     <div
                       key={`duplicate-${i}`}
                       className="flex-shrink-0 w-60 h-32 bg-gradient-to-br from-card to-card/50 rounded-lg border border-border flex items-center justify-center hover:scale-105 transition-transform duration-300 shadow-lg"
@@ -545,7 +580,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Contact / Footer */}
         <footer id="contact" className="scroll-mt-24 border-t border-border bg-card/40 py-16">
