@@ -5,6 +5,17 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Mail } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay"
+
+// Import the shadcn/ui Carousel components
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi
+} from "@/components/ui/carousel" // Adjust path if needed
 
 import materials4 from "@/assets/materials4.png";
 import materials4_webp from "@/assets/materials4_webp.webp";
@@ -150,6 +161,24 @@ const Index = () => {
     show_flanges,
     helium_button
   ]
+
+  const plugin = React.useRef(
+    Autoplay({
+      delay: 2000,
+      stopOnInteraction: true,
+    })
+  )
+
+  const [api, setApi] = React.useState<CarouselApi>()
+
+  React.useEffect(() => {
+    if (!api) {
+      return
+    }
+
+    api.plugins().autoplay?.play()
+
+  }, [api])
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -460,7 +489,41 @@ const Index = () => {
             </div>
           </div>
         </section>
-        
+
+
+
+        {/* <section id='visits' className="scroll-mt-24 border-t border-border py-16 md:py-24 bg-gradient-to-br from-background to-background/50">
+          <div className="container"> */}
+            {/* header content */}
+            
+            {/* <div className="w-full max-w-full mx-auto">
+              <Carousel
+                setApi={setApi}
+                plugins={[plugin.current]}
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+              >
+                <CarouselContent className="-ml-6">
+                  {show_iamge.map((k, i) => (
+                    <CarouselItem key={i} className="pl-6 basis-full md:basis-1/2 lg:basis-1/2 xl:basis-1/3">
+                      <div className="overflow-hidden aspect-[16/10]">
+                        <img
+                          src={k}
+                          alt={`Site ${i + 1}`}
+                          className="h-full w-full object-contain rounded-lg" 
+                        />
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </div>
+          </div>
+        </section> */}
 
         {/* Our Visits Section */}
         <section id='visits' className="scroll-mt-24 border-t border-border py-16 md:py-24 bg-gradient-to-br from-background to-background/50">
