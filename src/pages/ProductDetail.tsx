@@ -57,20 +57,6 @@ const ProductDetail = () => {
             <Link to="/" className="text-2xl font-bold text-primary">
               JMDU
             </Link>
-            {/* <div className="flex items-center space-x-6">
-              <Link to="/" className="text-foreground/80 hover:text-foreground transition-colors">
-                {t.nav.aboutUs}
-              </Link>
-              <Link to="/products" className="text-primary font-medium">
-                {t.nav.products}
-              </Link>
-              <Link to="/#expertise" className="text-foreground/80 hover:text-foreground transition-colors">
-                {t.nav.ourExpertise}
-              </Link>
-              <Link to="/#contact" className="text-foreground/80 hover:text-foreground transition-colors">
-                {t.nav.contactUs}
-              </Link>
-            </div> */}
           </div>
         </div>
       </nav>
@@ -296,6 +282,9 @@ const ProductDetail = () => {
                 </Link>
                 <Link to="/#expertise" className="block text-foreground/70 hover:text-foreground transition-colors text-sm">
                   {t.nav.ourExpertise}
+                </Link>
+                <Link to="/#expertise" className="block text-foreground/70 hover:text-foreground transition-colors text-sm">
+                  {t.nav.ourWork}
                 </Link>
                 <Link to="/#contact" className="block text-foreground/70 hover:text-foreground transition-colors text-sm">
                   {t.nav.contactUs}

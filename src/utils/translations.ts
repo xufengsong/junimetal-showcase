@@ -1,3 +1,15 @@
+// nav
+// seo
+// hero
+// about
+// expertise
+// visits
+// applications
+// contact
+// form
+// products
+// footer
+
 export const translations = {
   en: {
     // Navigation
@@ -6,6 +18,7 @@ export const translations = {
       products: "Our Products",
       productsServices: "Products & Services", 
       ourExpertise: "Our Expertise",
+      ourWork: "Our Work",
       contactUs: "Contact Us"
     },
     // SEO
@@ -30,60 +43,6 @@ export const translations = {
       paragraph2: "From sourcing and logistics to reliable delivery and after-sales support, we ensure every project is backed by the highest quality materials and on-time execution.",
       paragraph3: "Through strong partnerships with leading manufacturers, JMDU guarantees consistent access to advanced stainless steels and special alloys, engineered to excel in the most demanding environments.",
       paragraph4: "Our distribution model is built on reliability, flexibility, and long-term value creation for our clients across the globe."
-    },
-    // Offerings Section
-    offerings: {
-      title: "Our Offerings",
-      tabs: {
-        pipeTube: "Pipe & Tube",
-        fittings: "Fittings", 
-        flanges: "Flanges",
-        fasteners: "Fastners, Gaskets, Valves"
-      },
-      pipeTube: {
-        title: "Pipe & Tube Distribution",
-        description1: "As a trusted distributor, JMDU provides a comprehensive range of pipes and tubes sourced from leading global manufacturers. We specialize in giving clients immediate access to both standard sizes and customized pipe and tube solutions for demanding industrial projects.",
-        description2: "With ready inventory and a reliable logistics network, we ensure timely delivery and consistent quality across every order — from urgent replacements to large-scale project supply contracts.",
-        features: [
-          "Carbon Steel & Alloy Steel Pipes",
-          "Stainless Steel & Duplex Tubes",
-          "Flanges, Elbows & Connectors",
-          "Custom Pipe & Tube Configurations"
-        ]
-      },
-      fittings: {
-        title: "Fittings",
-        description1: "JMDU delivers high-quality fittings for a wide range of industrial applications. With ready inventory and custom supply solutions, we ensure your operations stay on schedule and projects run smoothly.",
-        description2: "Trust JMDU for reliable sourcing, logistics support, and tailored supply solutions for all your fitting needs.",
-        features: [
-          "Pipe Fittings – available for urgent replacements and project supply contracts",
-          "Flanges & Couplings – backed by global sourcing and logistics expertise", 
-          "Specialty Fittings – ready for immediate deployment in challenging environments",
-          "Adapters & Reducers – scalable solutions for large project requirements"
-        ]
-      },
-      flanges: {
-        title: "Flanges",
-        description1: "JMDU delivers a comprehensive range of flanges for industrial, subsea, and high-spec applications. With deep market expertise and global sourcing capabilities, we provide clients with immediate access to both standard and custom flange solutions.",
-        description2: "From forged steel to exotic alloys, our flange portfolio supports projects across energy, maritime, and processing industries — ensuring reliable connections under the most demanding conditions.",
-        features: [
-          "Weld Neck & Slip-On Flanges – forged steel and alloy steel variants",
-          "Blind & Threaded Flanges – immediate availability for urgent requirements",
-          "RTJ & Flat Face Flanges – engineered for high-pressure subsea applications", 
-          "Custom Flange Packages – tailored solutions for specialized project needs"
-        ]
-      },
-      fasteners: {
-        title: "Fastners, Gaskets, Valves",
-        description1: "Complete your piping systems with our comprehensive range of fasteners, gaskets, and valves. JMDU ensures every component meets the highest standards for reliability and performance.",
-        description2: "From standard industrial applications to specialized subsea environments, our product range supports complete project delivery with consistent quality and on-time performance.",
-        features: [
-          "High-Tensile Bolts & Fasteners – marine-grade and subsea-rated options",
-          "Gaskets & Sealing Solutions – engineered for extreme pressure and temperature",
-          "Industrial & Subsea Valves – ball, gate, and specialty valve configurations",
-          "Complete Assembly Packages – coordinated supply for turnkey project delivery"
-        ]
-      }
     },
     // Expertise Section
     expertise: {
@@ -177,11 +136,11 @@ export const translations = {
       offices: {
         title: "Our Offices",
         seoul: {
-          title: "Seoul Office (Main)",
+          title: "Seoul Office (Korea)",
           address: "Office #804, 25, Yeonmujang 5 Ga-Gil, Seongdong-Gu, Seoul, South Korea"
         },
-        busan: {
-          title: "Busan Warehouse", 
+        shanghai: {
+          title: "Shanghai Office (China)", 
           address: "32, Garisae 2-ro 13 Beon-gil, Gangseo-gu, Busan, South Korea"
         }
       },
@@ -198,122 +157,19 @@ export const translations = {
     },
     // Product Pages
     products: {
+      title: "Our Products",
+      subtitle: "Explore our extensive inventory of stainless steels and specialty alloys",
       viewDetails: "View Details",
-      requestQuote: "Request a Quote for This Product",
-      downloadDatasheet: "Download Datasheet",
-      specifications: "Specifications",
+      requestQuote: "Request a Quote",
       materials: "Materials",
       sizes: "Sizes",
       pressureClass: "Pressure Class",
       standards: "Standards",
       applications: "Applications",
       features: "Key Features",
-      
-      pipestubes: {
-        title: "Pipes & Tubes",
-        subtitle: "Comprehensive range of high-quality pipes and tubes for industrial applications",
-        description: "Our extensive pipe and tube inventory covers everything from standard carbon steel to exotic alloys, serving diverse industrial needs with reliable quality and prompt delivery.",
-        specifications: {
-          materials: ["Carbon Steel", "Stainless Steel", "Alloy Steel", "Duplex Steel", "Super Duplex", "Inconel", "Hastelloy"],
-          diameters: ["1/8\" to 60\" NPS", "Custom sizes available"],
-          pressureRating: ["150# to 2500#", "PN6 to PN420"],
-          standards: ["ASTM", "ASME", "API", "EN", "JIS", "KS"],
-          wallThickness: ["SCH 10 to XXS", "Custom thickness"],
-          lengths: ["Standard 6m/12m", "Custom lengths available"]
-        },
-        applications: ["Oil & Gas", "Petrochemical", "Power Generation", "Marine & Offshore", "Chemical Processing"],
-        features: [
-          "Wide range of materials and sizes",
-          "Fast delivery from stock",
-          "Custom fabrication available",
-          "Full mill test certificates",
-          "Quality assurance testing"
-        ]
-      },
-      
-      fittings: {
-        title: "Fittings",
-        subtitle: "Precision-engineered fittings for reliable pipe connections",
-        description: "Complete range of butt weld, socket weld, and threaded fittings manufactured to international standards, ensuring perfect fit and long-lasting performance.",
-        specifications: {
-          materials: ["Carbon Steel", "Stainless Steel", "Alloy Steel", "Duplex Steel", "Inconel", "Monel"],
-          sizes: ["1/8\" to 60\" NPS", "DN6 to DN1500"],
-          pressureRating: ["150# to 2500#", "PN6 to PN420"],
-          standards: ["ASME B16.9", "ASME B16.11", "MSS SP-75", "EN 10253", "JIS B2311"],
-          types: ["Elbows", "Tees", "Reducers", "Caps", "Crosses", "Stub Ends"]
-        },
-        applications: ["Pipeline Systems", "Process Plants", "Offshore Platforms", "Refineries", "Chemical Plants"],
-        features: [
-          "Full range of connection types",
-          "Precision manufacturing",
-          "Extensive inventory",
-          "Custom configurations",
-          "Certified to international standards"
-        ]
-      },
-      
-      flanges: {
-        title: "Flanges",
-        subtitle: "High-performance flanges for critical applications",
-        description: "Comprehensive flange portfolio including standard and exotic materials, engineered for demanding applications in energy, marine, and process industries.",
-        specifications: {
-          materials: ["Carbon Steel", "Stainless Steel", "Alloy Steel", "Duplex", "Super Duplex", "Inconel", "Hastelloy", "Monel"],
-          sizes: ["1/2\" to 60\" NPS", "DN15 to DN1500"],
-          pressureRating: ["150# to 2500#", "PN6 to PN420"],
-          standards: ["ASME B16.5", "ASME B16.47", "EN 1092", "JIS B2220", "DIN", "GOST"],
-          types: ["Weld Neck", "Slip-On", "Blind", "Socket Weld", "Threaded", "Lap Joint"],
-          facing: ["RF", "FF", "RTJ", "Custom"]
-        },
-        applications: ["High Pressure Systems", "Subsea Applications", "Chemical Processing", "Power Plants", "Offshore Platforms"],
-        features: [
-          "Wide pressure and temperature range",
-          "Custom facing and drilling",
-          "Exotic material availability",
-          "Subsea qualified products",
-          "Full traceability documentation"
-        ]
-      },
-      
-      fasteners: {
-        title: "Fasteners, Gaskets & Valves",
-        subtitle: "Complete system solutions for piping integrity",
-        description: "Comprehensive range of fasteners, gaskets, and valves to complete your piping systems with components that ensure reliability and performance.",
-        specifications: {
-          fastenerMaterials: ["Carbon Steel", "Stainless Steel", "Super Duplex", "Inconel", "Monel", "Hastelloy"],
-          gasketTypes: ["Spiral Wound", "RTJ", "Sheet Gaskets", "O-Rings", "Custom Gaskets"],
-          valveTypes: ["Ball Valves", "Gate Valves", "Globe Valves", "Check Valves", "Butterfly Valves"],
-          standards: ["ASTM", "ASME", "API", "EN", "JIS", "MSS"],
-          sizes: ["1/4\" to 24\" for valves", "All bolt sizes available"]
-        },
-        applications: ["Complete Piping Systems", "Maintenance & Repair", "New Construction", "Subsea Systems"],
-        features: [
-          "Complete system packages",
-          "Quality assured components",
-          "Fast delivery programs",
-          "Technical support included",
-          "Custom assembly services"
-        ]
-      },
-      
-      custom: {
-        title: "Custom Solutions",
-        subtitle: "Tailored engineering solutions for unique requirements",
-        description: "Specialized custom fabrication and engineering services for unique project requirements, including special forgings, custom fittings, and engineered solutions.",
-        specifications: {
-          capabilities: ["Custom Forgings", "Special Fittings", "Engineered Solutions", "Prototype Development"],
-          materials: ["All Standard & Exotic Alloys", "Customer Specified Materials"],
-          standards: ["Customer Specifications", "Industry Standards", "Custom Requirements"],
-          services: ["Design Engineering", "Manufacturing", "Testing", "Documentation", "Installation Support"]
-        },
-        applications: ["Unique Project Requirements", "Prototype Development", "Specialized Industries", "R&D Projects"],
-        features: [
-          "Full engineering support",
-          "Rapid prototyping capability",
-          "Custom material selection",
-          "Comprehensive testing",
-          "Complete documentation package"
-        ]
-      }
+    },
+    detailed_products: {
+
     },
     // Footer
     footer: {
@@ -332,6 +188,7 @@ export const translations = {
       products: "我们的产品",
       productsServices: "产品与服务",
       ourExpertise: "我们的专业",
+      ourWork: "工作展示",
       contactUs: "联系我们"
     },
     // SEO
@@ -356,60 +213,6 @@ export const translations = {
       paragraph2: "从采购和物流到可靠交付和售后支持，我们确保每个项目都得到最高质量材料和准时执行的支持。",
       paragraph3: "通过与领先制造商的强力合作伙伴关系，JMDU 保证持续获得先进不锈钢和特殊合金，这些材料经过工程设计，在最苛刻的环境中表现卓越。",
       paragraph4: "我们的分销模式建立在可靠性、灵活性和为全球客户创造长期价值的基础上。"
-    },
-    // Offerings Section
-    offerings: {
-      title: "我们的产品",
-      tabs: {
-        pipeTube: "钢管",
-        fittings: "管件",
-        flanges: "法兰",
-        fasteners: "紧固件、垫片、阀门"
-      },
-      pipeTube: {
-        title: "钢管分销",
-        description1: "作为可信赖的分销商，JMDU 提供来自全球领先制造商的全面钢管、管件系列。我们的优势在于为客户提供标准产品和满足苛刻项目要求的定制解决方案的即时访问。",
-        description2: "凭借管理良好的库存和可靠的物流网络，我们确保每个订单的及时交付和一致质量——从紧急更换到大型工业供应合同。",
-        features: [
-          "碳钢和合金钢钢管",
-          "不锈钢和双相钢管件",
-          "法兰、弯头和连接器",
-          "定制钢管配置和项目包"
-        ]
-      },
-      fittings: {
-        title: "管件",
-        description1: "JMDU 为广泛的工业应用提供高质量管件。凭借现货库存和定制供应解决方案，我们确保您的运营按计划进行，项目顺利运行。",
-        description2: "信赖 JMDU 提供可靠的采购、物流支持和为您所有管件需求量身定制的供应解决方案。",
-        features: [
-          "钢管配件——可用于紧急更换和项目供应合同",
-          "法兰和联轴器——由全球采购和物流专业知识支持",
-          "专用配件——准备在挑战性环境中立即部署",
-          "适配器和异径管——大型项目需求的可扩展解决方案"
-        ]
-      },
-      flanges: {
-        title: "法兰",
-        description1: "JMDU 为工业、海底和高规格应用提供全面的法兰系列。凭借深厚的市场专业知识和全球采购能力，我们为客户提供标准和定制法兰解决方案的即时访问。",
-        description2: "从锻钢到特殊合金，我们的法兰产品组合支持能源、海事和加工行业的项目——确保在最苛刻条件下的可靠连接。",
-        features: [
-          "对焊颈和滑套法兰——锻钢和合金钢变型",
-          "盲板和螺纹法兰——紧急需求的即时可用性",
-          "RTJ 和平面法兰——为高压海底应用而设计",
-          "定制法兰包——专门项目需求的定制解决方案"
-        ]
-      },
-      fasteners: {
-        title: "紧固件、垫片、阀门",
-        description1: "用我们全面的紧固件、垫片和阀门系列完善您的钢管系统。JMDU 确保每个组件都符合可靠性和性能的最高标准。",
-        description2: "从标准工业应用到专门的海底环境，我们的产品系列支持完整项目交付，具有一致的质量和准时性能。",
-        features: [
-          "高强度螺栓和紧固件——船用级和海底级选项",
-          "垫片和密封解决方案——为极端压力和温度而设计",
-          "工业和海底阀门——球阀、闸阀和专用阀门配置",
-          "完整组装包——交钥匙项目交付的协调供应"
-        ]
-      }
     },
     // Expertise Section
     expertise: {
@@ -501,11 +304,11 @@ export const translations = {
       offices: {
         title: "我们的办公室",
         seoul: {
-          title: "首尔办公室（总部）",
+          title: "首尔办公室（韩国）",
           address: "韩国首尔城东区延武场5街25号804室"
         },
-        busan: {
-          title: "釜山仓库",
+        shanghai: {
+          title: "上海办公室（中国）",
           address: "韩国釜山市江西区加里峰二路13番街32"
         }
       },
@@ -522,6 +325,8 @@ export const translations = {
     },
     // Product Pages
     products: {
+      title: "我们的产品",
+      subtitle: "探索我们丰富的不锈钢与特种合金产品",
       viewDetails: "查看详情",
       requestQuote: "申请此产品报价",
       downloadDatasheet: "下载数据表",
@@ -532,112 +337,7 @@ export const translations = {
       standards: "标准",
       applications: "应用",
       features: "主要特点",
-      
-      pipestubes: {
-        title: "钢管",
-        subtitle: "工业应用的全面高质量钢管系列",
-        description: "我们广泛的钢管库存涵盖从标准碳钢到特殊合金的所有产品，以可靠的质量和及时的交付服务于各种工业需求。",
-        specifications: {
-          materials: ["碳钢", "不锈钢", "合金钢", "双相钢", "超级双相钢", "因科镍合金", "哈氏合金"],
-          diameters: ["1/8\" 至 60\" NPS", "可定制尺寸"],
-          pressureRating: ["150# 至 2500#", "PN6 至 PN420"],
-          standards: ["ASTM", "ASME", "API", "EN", "JIS", "KS"],
-          wallThickness: ["SCH 10 至 XXS", "定制厚度"],
-          lengths: ["标准6m/12m", "可定制长度"]
-        },
-        applications: ["石油天然气", "石化", "发电", "海事和海上", "化学加工"],
-        features: [
-          "广泛的材料和尺寸范围",
-          "库存快速交付",
-          "可定制制造",
-          "完整的轧机测试证书",
-          "质量保证测试"
-        ]
-      },
-      
-      fittings: {
-        title: "管件",
-        subtitle: "精密工程管件，确保可靠的管道连接",
-        description: "完整的对焊、承插焊和螺纹管件系列，按国际标准制造，确保完美配合和持久性能。",
-        specifications: {
-          materials: ["碳钢", "不锈钢", "合金钢", "双相钢", "因科镍合金", "蒙乃尔合金"],
-          sizes: ["1/8\" 至 60\" NPS", "DN6 至 DN1500"],
-          pressureRating: ["150# 至 2500#", "PN6 至 PN420"],
-          standards: ["ASME B16.9", "ASME B16.11", "MSS SP-75", "EN 10253", "JIS B2311"],
-          types: ["弯头", "三通", "异径管", "管帽", "四通", "短管"]
-        },
-        applications: ["管道系统", "工艺设备", "海上平台", "炼油厂", "化工厂"],
-        features: [
-          "全系列连接类型",
-          "精密制造",
-          "广泛库存",
-          "定制配置",
-          "国际标准认证"
-        ]
-      },
-      
-      flanges: {
-        title: "法兰",
-        subtitle: "关键应用的高性能法兰",
-        description: "全面的法兰产品组合，包括标准和特殊材料，专为能源、海事和工艺行业的苛刻应用而设计。",
-        specifications: {
-          materials: ["碳钢", "不锈钢", "合金钢", "双相钢", "超级双相钢", "因科镍合金", "哈氏合金", "蒙乃尔合金"],
-          sizes: ["1/2\" 至 60\" NPS", "DN15 至 DN1500"],
-          pressureRating: ["150# 至 2500#", "PN6 至 PN420"],
-          standards: ["ASME B16.5", "ASME B16.47", "EN 1092", "JIS B2220", "DIN", "GOST"],
-          types: ["对焊法兰", "滑套法兰", "盲板法兰", "承插焊法兰", "螺纹法兰", "搭接法兰"],
-          facing: ["RF", "FF", "RTJ", "定制"]
-        },
-        applications: ["高压系统", "海底应用", "化学加工", "发电厂", "海上平台"],
-        features: [
-          "宽压力和温度范围",
-          "定制密封面和钻孔",
-          "特殊材料可用性",
-          "海底合格产品",
-          "完整可追溯文档"
-        ]
-      },
-      
-      fasteners: {
-        title: "紧固件、垫片和阀门",
-        subtitle: "管道完整性的完整系统解决方案",
-        description: "全面的紧固件、垫片和阀门系列，以确保可靠性和性能的组件完善您的管道系统。",
-        specifications: {
-          fastenerMaterials: ["碳钢", "不锈钢", "超级双相钢", "因科镍合金", "蒙乃尔合金", "哈氏合金"],
-          gasketTypes: ["缠绕垫片", "RTJ", "板式垫片", "O型圈", "定制垫片"],
-          valveTypes: ["球阀", "闸阀", "截止阀", "止回阀", "蝶阀"],
-          standards: ["ASTM", "ASME", "API", "EN", "JIS", "MSS"],
-          sizes: ["阀门1/4\" 至 24\"", "所有螺栓尺寸可用"]
-        },
-        applications: ["完整管道系统", "维护和修理", "新建工程", "海底系统"],
-        features: [
-          "完整系统包",
-          "质量保证组件",
-          "快速交付程序",
-          "包含技术支持",
-          "定制装配服务"
-        ]
-      },
-      
-      custom: {
-        title: "定制解决方案",
-        subtitle: "独特需求的定制工程解决方案",
-        description: "针对独特项目需求的专业定制制造和工程服务，包括特殊锻件、定制管件和工程解决方案。",
-        specifications: {
-          capabilities: ["定制锻件", "特殊管件", "工程解决方案", "原型开发"],
-          materials: ["所有标准和特殊合金", "客户指定材料"],
-          standards: ["客户规格", "行业标准", "定制要求"],
-          services: ["设计工程", "制造", "测试", "文档", "安装支持"]
-        },
-        applications: ["独特项目需求", "原型开发", "专业行业", "研发项目"],
-        features: [
-          "全面工程支持",
-          "快速原型制作能力",
-          "定制材料选择",
-          "全面测试",
-          "完整文档包"
-        ]
-      }
+  
     },
     // Footer
     footer: {
@@ -655,6 +355,7 @@ export const translations = {
       products: "Nuestros Productos",
       productsServices: "Productos y Servicios",
       ourExpertise: "Nuestra Experiencia",
+      ourWork: "Nuestro Trabajo",
       contactUs: "Contáctenos"
     },
     seo: {
@@ -676,59 +377,6 @@ export const translations = {
       paragraph2: "Desde el abastecimiento y la logística hasta la entrega fiable y el soporte post-venta, nos aseguramos de que cada proyecto esté respaldado por materiales de la más alta calidad y una ejecución a tiempo.",
       paragraph3: "A través de sólidas asociaciones con fabricantes líderes, JMDU garantiza un acceso constante a aceros inoxidables avanzados y aleaciones especiales, diseñados para sobresalir en los entornos más exigentes.",
       paragraph4: "Nuestro modelo de distribución se basa en la fiabilidad, la flexibilidad y la creación de valor a largo plazo para nuestros clientes en todo el mundo."
-    },
-    offerings: {
-      title: "Nuestros Productos",
-      tabs: {
-        pipeTube: "Tubería y Tubos",
-        fittings: "Accesorios",
-        flanges: "Bridas",
-        fasteners: "Sujetadores, Juntas, Válvulas"
-      },
-      pipeTube: {
-        title: "Distribución de Tubería y Tubos",
-        description1: "Como distribuidor de confianza, JMDU ofrece una amplia gama de tuberías y tubos procedentes de los principales fabricantes globales. Nos especializamos en dar a los clientes acceso inmediato tanto a tamaños estándar como a soluciones personalizadas de tubería y tubos para proyectos industriales exigentes.",
-        description2: "Con inventario disponible y una red logística fiable, aseguramos la entrega a tiempo y la calidad constante en cada pedido, desde reemplazos urgentes hasta contratos de suministro para proyectos a gran escala.",
-        features: [
-          "Tuberías de Acero al Carbono y Acero Aleado",
-          "Tubos de Acero Inoxidable y Dúplex",
-          "Bridas, Codos y Conectores",
-          "Configuraciones de Tubería y Tubos Personalizadas"
-        ]
-      },
-      fittings: {
-        title: "Accesorios",
-        description1: "JMDU suministra accesorios de alta calidad para una amplia gama de aplicaciones industriales. Con inventario disponible y soluciones de suministro personalizadas, nos aseguramos de que sus operaciones se mantengan a tiempo y los proyectos se desarrollen sin problemas.",
-        description2: "Confíe en JMDU para un abastecimiento fiable, soporte logístico y soluciones de suministro a medida para todas sus necesidades de accesorios.",
-        features: [
-          "Accesorios de Tubería – disponibles para reemplazos urgentes y contratos de suministro para proyectos",
-          "Bridas y Acoplamientos – respaldados por nuestra experiencia en abastecimiento y logística global",
-          "Accesorios Especiales – listos para su despliegue inmediato en entornos desafiantes",
-          "Adaptadores y Reductores – soluciones escalables para requisitos de proyectos grandes"
-        ]
-      },
-      flanges: {
-        title: "Bridas",
-        description1: "JMDU suministra una amplia gama de bridas para aplicaciones industriales, submarinas y de alta especificación. Con una profunda experiencia en el mercado y capacidades de abastecimiento global, ofrecemos a los clientes acceso inmediato a soluciones de bridas tanto estándar como personalizadas.",
-        description2: "Desde acero forjado hasta aleaciones exóticas, nuestra cartera de bridas apoya proyectos en las industrias de energía, marítima y de procesamiento, garantizando conexiones fiables bajo las condiciones más exigentes.",
-        features: [
-          "Bridas de Cuello de Soldadura y Deslizantes – variantes de acero forjado y acero aleado",
-          "Bridas Ciega y Roscadas – disponibilidad inmediata para requisitos urgentes",
-          "Bridas RTJ y de Cara Plana – diseñadas para aplicaciones submarinas de alta presión",
-          "Paquetes de Bridas Personalizados – soluciones a medida para necesidades de proyectos especializados"
-        ]
-      },
-      fasteners: {
-        title: "Sujetadores, Juntas, Válvulas",
-        description1: "Complete sus sistemas de tuberías con nuestra amplia gama de sujetadores, juntas y válvulas. JMDU asegura que cada componente cumpla con los más altos estándares de fiabilidad y rendimiento.",
-        description2: "Desde aplicaciones industriales estándar hasta entornos submarinos especializados, nuestra gama de productos soporta la entrega completa de proyectos con calidad consistente y rendimiento a tiempo.",
-        features: [
-          "Tornillos y Sujetadores de Alta Resistencia – opciones de grado marino y para uso submarino",
-          "Juntas y Soluciones de Sellado – diseñadas para presiones y temperaturas extremas",
-          "Válvulas Industriales y Submarinas – configuraciones de válvula de bola, compuerta y especializadas",
-          "Paquetes de Ensamblaje Completos – suministro coordinado para la entrega de proyectos llave en mano"
-        ]
-      }
     },
     expertise: {
       title: "Nuestra Experiencia",
@@ -818,11 +466,11 @@ export const translations = {
       offices: {
         title: "Nuestras Oficinas",
         seoul: {
-          title: "Oficina de Seúl (Principal)",
+          title: "Oficina de Seúl (Corea del Sur)",
           address: "Office #804, 25, Yeonmujang 5 Ga-Gil, Seongdong-Gu, Seoul, South Korea"
         },
-        busan: {
-          title: "Almacén de Busan",
+        shanghai: {
+          title: "Oficina de Shanghái (China)",
           address: "32, Garisae 2-ro 13 Beon-gil, Gangseo-gu, Busan, South Korea"
         }
       },
@@ -836,6 +484,18 @@ export const translations = {
         emailRequired: "Por favor, introduzca un correo electrónico válido",
         messageRequired: "Se requiere el mensaje"
       }
+    },
+    products: {  /////////////SPANISH!!!!!
+      title: "Nuestros Productos",
+      subtitle: "Consulte nuestro extenso catálogo de aceros inoxidables y aleaciones especiales.",
+      viewDetails: "Más información",
+      requestQuote: "Request a Quote",
+      materials: "Materials",
+      sizes: "Sizes",
+      pressureClass: "Pressure Class",
+      standards: "Standards",
+      applications: "Applications",
+      features: "Key Features",
     },
     footer: {
       description: "Distribuidor líder de soluciones de tuberías y componentes industriales de alta calidad para las industrias globales de energía y movilidad.",
@@ -852,6 +512,7 @@ export const translations = {
       products: "Наша продукция",
       productsServices: "Продукты и услуги",
       ourExpertise: "Наш опыт",
+      ourWork: "Наши работы",
       contactUs: "Связаться с нами"
     },
     seo: {
@@ -873,59 +534,6 @@ export const translations = {
       paragraph2: "От поиска и логистики до надежной доставки и послепродажной поддержки, мы гарантируем, что каждый проект будет обеспечен материалами высочайшего качества и выполнен в срок.",
       paragraph3: "Благодаря прочным партнерским отношениям с ведущими производителями, JMDU гарантирует постоянный доступ к передовым нержавеющим сталям и специальным сплавам, разработанным для превосходной работы в самых требовательных средах.",
       paragraph4: "Наша модель дистрибуции построена на надежности, гибкости и создании долгосрочной ценности для наших клиентов по всему миру."
-    },
-    offerings: {
-      title: "Наши предложения",
-      tabs: {
-        pipeTube: "Трубы и трубки",
-        fittings: "Фитинги",
-        flanges: "Фланцы",
-        fasteners: "Крепеж, прокладки, клапаны"
-      },
-      pipeTube: {
-        title: "Поставка труб и трубопроводов",
-        description1: "Как надежный дистрибьютор, JMDU предоставляет широкий ассортимент труб и трубопроводов, поставляемых от ведущих мировых производителей. Мы специализируемся на предоставлении клиентам немедленного доступа как к стандартным размерам, так и к индивидуальным решениям для труб и трубопроводов для требовательных промышленных проектов.",
-        description2: "С готовым запасом и надежной логистической сетью, мы обеспечиваем своевременную доставку и постоянное качество по каждому заказу — от срочных замен до крупномасштабных контрактов на поставку для проектов.",
-        features: [
-          "Трубы из углеродистой и легированной стали",
-          "Трубки из нержавеющей стали и дуплекса",
-          "Фланцы, отводы и соединители",
-          "Индивидуальные конфигурации труб и трубопроводов"
-        ]
-      },
-      fittings: {
-        title: "Фитинги",
-        description1: "JMDU поставляет высококачественные фитинги для широкого спектра промышленных применений. С готовым запасом и индивидуальными решениями для поставок, мы гарантируем, что ваши операции будут идти по графику, а проекты будут выполняться без сбоев.",
-        description2: "Доверьтесь JMDU для надежного поиска, логистической поддержки и индивидуальных решений для всех ваших потребностей в фитингах.",
-        features: [
-          "Трубные фитинги – доступны для срочной замены и контрактов на поставку для проектов",
-          "Фланцы и муфты – поддерживаются глобальным опытом в поиске и логистике",
-          "Специальные фитинги – готовы к немедленному использованию в сложных средах",
-          "Адаптеры и редукторы – масштабируемые решения для крупных проектов"
-        ]
-      },
-      flanges: {
-        title: "Фланцы",
-        description1: "JMDU поставляет широкий ассортимент фланцев для промышленных, подводных и высокоспециализированных применений. Обладая глубоким знанием рынка и глобальными возможностями по поиску, мы предоставляем клиентам немедленный доступ как к стандартным, так и к индивидуальным решениям для фланцев.",
-        description2: "От кованой стали до экзотических сплавов, наш портфель фланцев поддерживает проекты в энергетической, морской и перерабатывающей отраслях, обеспечивая надежные соединения в самых требовательных условиях.",
-        features: [
-          "Приварные встык и накладные фланцы – варианты из кованой и легированной стали",
-          "Глухие и резьбовые фланцы – немедленная доступность для срочных требований",
-          "Фланцы RTJ и с плоской поверхностью – разработаны для подводных применений с высоким давлением",
-          "Индивидуальные комплекты фланцев – решения, специально разработанные для нужд специализированных проектов"
-        ]
-      },
-      fasteners: {
-        title: "Крепеж, прокладки, клапаны",
-        description1: "Завершите свои трубопроводные системы с нашим широким ассортиментом крепежа, прокладок и клапанов. JMDU гарантирует, что каждый компонент соответствует самым высоким стандартам надежности и производительности.",
-        description2: "От стандартных промышленных применений до специализированных подводных сред, наш ассортимент продукции поддерживает полную поставку проектов с постоянным качеством и своевременным выполнением.",
-        features: [
-          "Высокопрочные болты и крепеж – морского и подводного классов",
-          "Прокладки и уплотнительные решения – разработаны для экстремальных давлений и температур",
-          "Промышленные и подводные клапаны – шаровые, задвижки и специализированные конфигурации клапанов",
-          "Полные комплекты для сборки – скоординированная поставка для выполнения проектов «под ключ»"
-        ]
-      }
     },
     expertise: {
       title: "Наш опыт",
@@ -1015,12 +623,12 @@ export const translations = {
       offices: {
         title: "Наши офисы",
         seoul: {
-          title: "Офис в Сеуле (Главный)",
+          title: "Офис в Сеуле (Yuzhnaya Koreya)",
           address: "Office #804, 25, Yeonmujang 5 Ga-Gil, Seongdong-Gu, Seoul, South Korea"
         },
-        busan: {
-          title: "Склад в Пусане",
-          address: "32, Garisae 2-ro 13 Beon-gil, Gangseo-gu, Busan, South Korea"
+        shanghai: {
+          title: "Шанхайский офис（Китай）",
+          address: "32, Garisae 2-ro 13 Beon-gil, Gangseo-gu, Shanghai, China"
         }
       },
       form: {
@@ -1033,6 +641,18 @@ export const translations = {
         emailRequired: "Пожалуйста, введите действительный адрес электронной почты",
         messageRequired: "Сообщение обязательно"
       }
+    },
+    products: {  /////////////////// RUSSIAN!!!!!
+      title: "Наша продукция",
+      subtitle: "Предлагаем вам ознакомиться с нашим обширным ассортиментом нержавеющих сталей и специальных сплавов.",
+      viewDetails: "Подробнее",
+      requestQuote: "Request a Quote",
+      materials: "Materials",
+      sizes: "Sizes",
+      pressureClass: "Pressure Class",
+      standards: "Standards",
+      applications: "Applications",
+      features: "Key Features",
     },
     footer: {
       description: "Ведущий дистрибьютор высококачественных трубопроводных решений и промышленных компонентов для глобальных энергетической и мобильной отраслей.",

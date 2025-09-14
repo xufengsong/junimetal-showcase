@@ -141,7 +141,8 @@ const Index = () => {
     { href: "#about", label: t.nav.aboutUs },
     { href: "#products", label: t.nav.products },
     { href: "#expertise", label: t.nav.ourExpertise },
-    { href: "#visits", label: t.visits.title },
+    { href: "#works", label: t.nav.ourWork },
+    // { href: "#visits", label: t.visits.title },
     { href: "#contact", label: t.nav.contactUs },
   ];
 
@@ -292,10 +293,10 @@ const Index = () => {
         <section id="products" className="py-16 sm:py-20">
           <div className="container mx-auto px-4">
             <h2 className="mb-2 text-center text-3xl font-bold tracking-tight">
-              Our Products
+              { t.products.title }
             </h2>
             <p className="mb-10 text-center text-muted-foreground">
-              Explore our extensive inventory of stainless steels and specialty alloys
+              { t.products.subtitle }
             </p>
 
             {/* 2. Map over the productDetails object */}
@@ -317,7 +318,7 @@ const Index = () => {
                       </Badge>
                       <Button asChild>
                         <Link to={`/products/${product.category}/${key}`}>
-                          View Details
+                          { t.products.viewDetails }
                         </Link>
                       </Button>
                     </div>
@@ -328,41 +329,6 @@ const Index = () => {
                       <p>Optional description here...</p>
                   </CardContent> */}
                 </Card>
-
-                
-                // <Card
-                //   key={key}
-                //   className="flex flex-col overflow-hidden transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl"
-                // >
-                //   {/* 1. We combine everything into CardContent for layout control */}
-                //   <CardContent className="flex flex-1 flex-row items-start justify-between gap-4 p-6">
-                    
-                //     {/* 2. Left column for text content */}
-                //     <div className="flex flex-col">
-                //       {/* We use a standard heading tag here for the title */}
-                //       <h3 className="font-semibold leading-tight text-card-foreground">
-                //         {product.name}
-                //       </h3>
-
-                //       {/* 3. The description with line-clamping */}
-                //       <p className="mt-2 text-sm text-muted-foreground line-clamp-3">
-                //         {product.short_description}
-                //       </p>
-                //     </div>
-
-                //     {/* 4. Right column for actions (unchanged) */}
-                //     <div className="flex flex-col items-end flex-shrink-0">
-                //       <Badge variant="secondary" className="text-xs mb-4">
-                //         {product.category.split(" ")[0]}
-                //       </Badge>
-                //       <Button asChild>
-                //         <Link to={`/products/${product.category}/${key}`}>
-                //           View Details
-                //         </Link>
-                //       </Button>
-                //     </div>
-                //   </CardContent>
-                // </Card>
             ))}
             </div>
           </div>
@@ -492,7 +458,7 @@ const Index = () => {
 
 
         {/* Our Visits Section */}
-        <section id='visits' className="scroll-mt-24 border-t border-border py-16 md:py-24 bg-gradient-to-br from-background to-background/50">
+        <section id='works' className="scroll-mt-24 border-t border-border py-16 md:py-24 bg-gradient-to-br from-background to-background/50">
           <div className="container">
             <div className="w-full max-w-full mx-auto">
               <Carousel
@@ -625,13 +591,13 @@ const Index = () => {
             </div>
 
             <div>
+              <h3 className="mb-3 mt-6 text-lg font-medium">{t.contact.offices.shanghai.title}</h3>
+              <address className="not-italic text-sm text-muted-foreground">
+                {t.contact.offices.shanghai.address}
+              </address>
               <h3 className="mb-3 text-lg font-medium">{t.contact.offices.seoul.title}</h3>
               <address className="not-italic text-sm text-muted-foreground">
                 {t.contact.offices.seoul.address}
-              </address>
-              <h3 className="mb-3 mt-6 text-lg font-medium">{t.contact.offices.busan.title}</h3>
-              <address className="not-italic text-sm text-muted-foreground">
-                {t.contact.offices.busan.address}
               </address>
             </div>
 
