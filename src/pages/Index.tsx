@@ -596,11 +596,11 @@ const Index = () => {
             </div>
 
             <div>
-              <h3 className="mb-3 mt-6 text-lg font-medium">{t.contact.offices.shanghai.title}</h3>
+              <h3 className="mb-3 text-lg font-medium">{t.contact.offices.shanghai.title}</h3>
               <address className="not-italic text-sm text-muted-foreground">
                 {t.contact.offices.shanghai.address}
               </address>
-              <h3 className="mb-3 text-lg font-medium">{t.contact.offices.seoul.title}</h3>
+              <h3 className="mb-3 mt-6 text-lg font-medium">{t.contact.offices.seoul.title}</h3>
               <address className="not-italic text-sm text-muted-foreground">
                 {t.contact.offices.seoul.address}
               </address>
