@@ -56,6 +56,8 @@ import { productDetails } from "@/data/productDetails";
 
 
 const Index = () => {
+  const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+  const mapUrl = `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=Gwangnaru-ro+323,Seongdong-gu,Seoul`;
   const [language, setLanguage] = useState<Language>("en");
   
   const t = translations[language];
@@ -609,13 +611,13 @@ const Index = () => {
             <div>
               <h3 className="mb-3 text-lg font-medium">{t.footer.office_location}</h3>
               <div className="overflow-hidden rounded-md border">
-                <iframe
-                  title="Map of JMDU Seoul Office"
-                  src="https://www.google.com/maps?q=Office%20%23804%2C%2025%2C%20Yeonmujang%205%20Ga-Gil%2C%20Seongdong-Gu%2C%20Seoul%2C%20South%20Korea&output=embed"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="h-64 w-full"
-                />
+              <iframe
+                title="Map of JMDU Seoul Office"
+                src={ mapUrl } 
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="h-64 w-full"
+              />
               </div>
             </div>
           </div>
