@@ -165,7 +165,7 @@ const Index = () => {
 
   const plugin = React.useRef(
     Autoplay({
-      delay: 2000,
+      delay: 1000,
       stopOnInteraction: true,
     })
   )
@@ -457,10 +457,15 @@ const Index = () => {
         </section>
 
 
-        {/* Our Visits Section */}
+        {/* Our Works Section */}
         <section id='works' className="scroll-mt-24 border-t border-border py-16 md:py-24 bg-gradient-to-br from-background to-background/50">
           <div className="container">
-            <div className="w-full max-w-full mx-auto">
+            {/* 1. Add event handlers to the carousel's wrapper div 👇 */}
+            <div 
+              className="w-full max-w-full mx-auto"
+              onMouseEnter={() => plugin.current.stop()}
+              onMouseLeave={() => plugin.current.play()}
+            >
               <Carousel
                 setApi={setApi}
                 plugins={[plugin.current]}
@@ -476,8 +481,8 @@ const Index = () => {
                         <img
                           src={k}
                           alt={`Site ${i + 1}`}
-                          // Change 'object-contain' to 'object-cover' on this line 👇
-                          className="h-full w-full object-cover rounded-lg" 
+                          // 2. Add transition and hover effect classes to the image 👇
+                          className="h-full w-full object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-105" 
                         />
                       </div>
                     </CarouselItem>

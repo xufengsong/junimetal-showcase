@@ -18,7 +18,7 @@ export const translations = {
       products: "Our Products",
       productsServices: "Products & Services", 
       ourExpertise: "Our Expertise",
-      ourWork: "Our Work",
+      ourWork: "Our Works",
       contactUs: "Contact Us"
     },
     // SEO
