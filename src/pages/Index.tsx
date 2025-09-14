@@ -491,12 +491,10 @@ const Index = () => {
         </section>
 
 
-
-        {/* <section id='visits' className="scroll-mt-24 border-t border-border py-16 md:py-24 bg-gradient-to-br from-background to-background/50">
-          <div className="container"> */}
-            {/* header content */}
-            
-            {/* <div className="w-full max-w-full mx-auto">
+        {/* Our Visits Section */}
+        <section id='visits' className="scroll-mt-24 border-t border-border py-16 md:py-24 bg-gradient-to-br from-background to-background/50">
+          <div className="container">
+            <div className="w-full max-w-full mx-auto">
               <Carousel
                 setApi={setApi}
                 plugins={[plugin.current]}
@@ -512,7 +510,8 @@ const Index = () => {
                         <img
                           src={k}
                           alt={`Site ${i + 1}`}
-                          className="h-full w-full object-contain rounded-lg" 
+                          // Change 'object-contain' to 'object-cover' on this line 👇
+                          className="h-full w-full object-cover rounded-lg" 
                         />
                       </div>
                     </CarouselItem>
@@ -521,45 +520,6 @@ const Index = () => {
                 <CarouselPrevious />
                 <CarouselNext />
               </Carousel>
-            </div>
-          </div>
-        </section> */}
-
-        {/* Our Visits Section */}
-        <section id='visits' className="scroll-mt-24 border-t border-border py-16 md:py-24 bg-gradient-to-br from-background to-background/50">
-          <div className="container">
-            {/* Previous Visits Carousel */}
-            <div className="mb-12">
-              <div className="relative overflow-hidden rounded-lg bg-card/20 backdrop-blur-sm p-4">
-                <div className="flex animate-scroll-left space-x-6 will-change-transform">
-                  {/* Main images */}
-                  {show_iamge.map((k, i) => (
-                    <div
-                      key={i}
-                      className="flex-shrink-0 w-[28rem] h-[17.5rem] hover:scale-105 transition-transform duration-300 overflow-hidden" // Added overflow-hidden to ensure internal image rounding works
-                    >
-                      <img
-                        src={k}
-                        alt={`Site ${i + 1}`}
-                        className="h-full w-full object-cover rounded-md"
-                      />
-                    </div>
-                  ))}
-                  {/* Duplicate for seamless loop */}
-                  {show_iamge.map((k, i) => (
-                    <div
-                      key={`duplicate-${i}`}
-                      className="flex-shrink-0 w-[28rem] h-[17.5rem] hover:scale-105 transition-transform duration-300 overflow-hidden" // Added overflow-hidden
-                    >
-                      <img
-                        src={k}
-                        alt={`Site ${i + 1} (Duplicate)`}
-                        className="h-full w-full object-cover rounded-md"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
         </section>
