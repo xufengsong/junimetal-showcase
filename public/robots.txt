@@ -1,61 +1,14 @@
-# Robots.txt for JMDU
-# Generated for optimal SEO performance
-
-User-agent: *
-Allow: /
-
-# Allow all major search engines
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
 
-User-agent: Slurp
+User-agent: Twitterbot
 Allow: /
-Crawl-delay: 2
 
-User-agent: DuckDuckBot
+User-agent: facebookexternalhit
 Allow: /
-Crawl-delay: 1
 
-User-agent: Baiduspider
+User-agent: *
 Allow: /
-Crawl-delay: 2
-
-User-agent: YandexBot
-Allow: /
-Crawl-delay: 1
-
-# Block problematic bots
-User-agent: AhrefsBot
-Disallow: /
-
-User-agent: MJ12bot
-Disallow: /
-
-User-agent: DotBot
-Disallow: /
-
-# Disallow admin and private areas (if any)
-Disallow: /admin/
-Disallow: /private/
-Disallow: /.well-known/
-Disallow: /api/
-Disallow: /temp/
-Disallow: /cache/
-
-# Allow important files
-Allow: /sitemap.xml
-Allow: /robots.txt
-Allow: /.well-known/security.txt
-
-# Sitemap location
-Sitemap: https://yourdomain.com/sitemap.xml
-Sitemap: https://yourdomain.com/sitemap-images.xml
-Sitemap: https://yourdomain.com/sitemap-news.xml
-
-# Host directive (replace with your actual domain)
-Host: https://yourdomain.com
