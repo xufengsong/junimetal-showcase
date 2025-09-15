@@ -185,9 +185,9 @@ export const translations = {
     // Navigation
     nav: {
       aboutUs: "关于我们",
-      products: "我们的产品",
+      products: "产品介绍",
       productsServices: "产品与服务",
-      ourExpertise: "我们的专业",
+      ourExpertise: "专业领域",
       ourWork: "工作展示",
       contactUs: "联系我们"
     },
@@ -195,12 +195,12 @@ export const translations = {
     seo: {
       title: "JMDU | 钢管解决方案",
       description: "来自首尔和釜山的创新钢管解决方案。全套钢管供应商和阀门、海底及特殊部件的专业制造商。",
-      slogan: "钢管解决方案：与我们合作，每个项目都在可靠保护之下！"
+      slogan: "钢管解决方案：我们承诺，为您的每个项目提供坚实可靠的安全保障。"
     },
     // Hero Section
     hero: {
       title: "JMDU",
-      subtitle: "钢管解决方案：与我们合作，每个项目都在可靠保护之下！",
+      subtitle: "钢管解决方案：我们承诺，为您的每个项目提供坚实可靠的安全保障。",
       exploreOfferings: "探索我们的产品",
       getInTouch: "联系我们",
       skipToContent: "跳转到内容"
