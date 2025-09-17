@@ -141,7 +141,7 @@ export const translations = {
         },
         shanghai: {
           title: "Shanghai Office (China)", 
-          address: "32, Garisae 2-ro 13 Beon-gil, Gangseo-gu, Busan, South Korea"
+          address: "3211, 100 Century Avenue, Pudong New Area, Shanghai, China"
         }
       },
       form: {
@@ -309,7 +309,7 @@ export const translations = {
         },
         shanghai: {
           title: "上海办公室（中国）",
-          address: "韩国釜山市江西区加里峰二路13番街32"
+          address: "中国上海市浦东新区世纪大道100号3211"
         }
       },
       form: {
@@ -471,7 +471,7 @@ export const translations = {
         },
         shanghai: {
           title: "Oficina de Shanghái (China)",
-          address: "32, Garisae 2-ro 13 Beon-gil, Gangseo-gu, Busan, South Korea"
+          address: "3211, 100 Century Avenue, Pudong New Area, Shanghai, China"
         }
       },
       form: {
@@ -628,7 +628,7 @@ export const translations = {
         },
         shanghai: {
           title: "Шанхайский офис（Китай）",
-          address: "32, Garisae 2-ro 13 Beon-gil, Gangseo-gu, Shanghai, China"
+          address: "3211, 100 Century Avenue, Pudong New Area, Shanghai, China"
         }
       },
       form: {

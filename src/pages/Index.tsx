@@ -37,9 +37,30 @@ import show_tube4 from "@/assets/tube4.jpg";
 import show_tube5 from "@/assets/tube5.jpg";
 import show_tube6 from "@/assets/tube6.jpg";
 import show_tube7 from "@/assets/tube7.jpg";
+import show_tube8 from "@/assets/tube8.jpg";
+import show_tube9 from "@/assets/tube9.jpg";
+import show_tube10 from "@/assets/tube10.jpg";
+import show_tube11 from "@/assets/tube11.jpg";
+import show_tube12 from "@/assets/tube12.jpg";
+import show_tube13 from "@/assets/tube13.jpg";
+import show_tube14 from "@/assets/tube14.jpg";
+import show_tube15 from "@/assets/tube15.jpg";
+import show_tube16 from "@/assets/tube16.jpg";
+import show_tube17 from "@/assets/tube17.jpg";
+import show_tube18 from "@/assets/tube18.jpg";
+import show_tube19 from "@/assets/tube19.jpg";
+import show_tube20 from "@/assets/tube20.jpg";
+import show_tube21 from "@/assets/tube21.jpg";
+import show_tube22 from "@/assets/tube22.jpg";
+import show_tube23 from "@/assets/tube23.jpg";
 import show_coil from "@/assets/coil.jpg";
 import show_coil1 from "@/assets/coil1.jpg";
 import show_fittings from "@/assets/show_fittings.jpg";
+import show_fittings2 from "@/assets/show_fittings2.jpg";
+import show_fittings3 from "@/assets/show_fittings3.jpg";
+import show_fittings4 from "@/assets/show_fittings4.jpg";
+import show_fittings5 from "@/assets/show_fittings5.jpg";
+import show_big from "@/assets/big.jpg";
 import show_flanges from "@/assets/show_flanges.jpg";
 import heat_exchange from "@/assets/heat_exchange.jpg";
 import helium_button from "@/assets/helium_button.jpg";
@@ -157,10 +178,31 @@ const Index = () => {
     show_tube5,
     show_tube6,
     show_tube7,
+    show_tube8,
+    show_tube9,
+    show_tube10,
+    show_tube11,
+    show_tube12,
+    show_tube13,
+    show_tube14,
+    show_tube15,
+    show_tube16,
+    show_tube17,
+    show_tube18,
+    show_tube19,
+    show_tube20,
+    show_tube21,
+    show_tube22,
+    show_tube23,
     show_coil,
     show_coil1,
     heat_exchange,
     show_fittings,
+    show_fittings2,
+    show_fittings3,
+    show_fittings4,
+    show_fittings5,
+    show_big,
     show_flanges,
     helium_button
   ]
