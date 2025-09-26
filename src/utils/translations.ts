@@ -137,7 +137,7 @@ export const translations = {
         title: "Our Offices",
         seoul: {
           title: "Seoul Office (Korea)",
-          address: "Office , 323,  Gwangnaru-ro, Seongdong-Gu, Seoul, South Korea"
+          address: "Office 302, 323,  Gwangnaru-ro, Seongdong-Gu, Seoul, South Korea"
         },
         shanghai: {
           title: "Shanghai Office (China)", 
@@ -305,7 +305,7 @@ export const translations = {
         title: "我们的办公室",
         seoul: {
           title: "首尔办公室（韩国）",
-          address: "韩国首尔城东区光渡口路街323"
+          address: "韩国首尔城东区光渡口路街323, 302室"
         },
         shanghai: {
           title: "上海办公室（中国）",
@@ -467,7 +467,7 @@ export const translations = {
         title: "Nuestras Oficinas",
         seoul: {
           title: "Oficina de Seúl (Corea del Sur)",
-          address: "Office , 323,  Gwangnaru-ro, Seongdong-Gu, Seoul, South Korea"
+          address: "Office 302, 323,  Gwangnaru-ro, Seongdong-Gu, Seoul, South Korea"
         },
         shanghai: {
           title: "Oficina de Shanghái (China)",
@@ -624,7 +624,7 @@ export const translations = {
         title: "Наши офисы",
         seoul: {
           title: "Офис в Сеуле (Yuzhnaya Koreya)",
-          address: "Office , 323,  Gwangnaru-ro, Seongdong-Gu, Seoul, South Korea"
+          address: "Office 302, 323,  Gwangnaru-ro, Seongdong-Gu, Seoul, South Korea"
         },
         shanghai: {
           title: "Шанхайский офис（Китай）",

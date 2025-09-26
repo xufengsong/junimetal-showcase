@@ -53,15 +53,86 @@ import show_tube20 from "@/assets/tube20.jpg";
 import show_tube21 from "@/assets/tube21.jpg";
 import show_tube22 from "@/assets/tube22.jpg";
 import show_tube23 from "@/assets/tube23.jpg";
+import show_tube24 from "@/assets/tube24.jpg";
+import show_tube25 from "@/assets/tube25.jpg";
+import show_tube26 from "@/assets/tube26.jpg";
+import show_tube27 from "@/assets/tube27.jpg";
+import show_tube28 from "@/assets/tube28.jpg";
+import show_tube29 from "@/assets/tube29.jpg";
+import show_tube30 from "@/assets/tube30.jpg";
+import show_tube31 from "@/assets/tube31.jpg";
+import show_tube32 from "@/assets/tube32.jpg";
+import show_tube33 from "@/assets/tube33.jpg";
+import show_tube34 from "@/assets/tube34.jpg";
+import show_tube35 from "@/assets/tube35.jpg";
+import show_tube36 from "@/assets/tube36.jpg";
+import show_tube37 from "@/assets/tube37.jpg";
+import show_tube38 from "@/assets/tube38.jpg";
+import show_tube39 from "@/assets/tube39.jpg";
+import show_tube40 from "@/assets/tube40.jpg";
+// import show_tube41 from "@/assets/tube41.jpg";
+// import show_tube42 from "@/assets/tube42.jpg";
+// import show_tube43 from "@/assets/tube43.jpg";
+// import show_tube44 from "@/assets/tube44.jpg";
+import show_tube45 from "@/assets/tube45.jpg";
+import show_tube46 from "@/assets/tube46.jpg";
+import show_tube47 from "@/assets/tube47.jpg";
+import show_tube48 from "@/assets/tube48.jpg";
+import show_tube49 from "@/assets/tube49.jpg";
+import show_tube50 from "@/assets/tube50.jpg";
+import show_tube51 from "@/assets/tube51.jpg";
+import show_tube52 from "@/assets/tube52.jpg";
+import show_tube53 from "@/assets/tube53.jpg";
+import show_tube54 from "@/assets/tube54.jpg";
+import show_tube55 from "@/assets/tube55.jpg";
+import show_tube56 from "@/assets/tube56.jpg";
+import show_tube57 from "@/assets/tube57.jpg";
+import show_tube58 from "@/assets/tube58.jpg";
+// import show_tube59 from "@/assets/tube59.jpg";
+import show_tube60 from "@/assets/tube60.jpg";
+import show_tube61 from "@/assets/tube61.jpg";
+import show_tube62 from "@/assets/tube62.jpg";
+import show_tube63 from "@/assets/tube63.jpg";
+import show_tube64 from "@/assets/tube64.jpg";
+import show_tube65 from "@/assets/tube65.jpg";
+import show_tube66 from "@/assets/tube66.jpg";
+import show_tube67 from "@/assets/tube67.jpg";
+import show_tube68 from "@/assets/tube68.jpg";
+import show_tube69 from "@/assets/tube69.jpg";
+import show_tube70 from "@/assets/tube70.jpg";
+import show_tube71 from "@/assets/tube71.jpg";
+import show_tube72 from "@/assets/tube72.jpg";
+import show_tube73 from "@/assets/tube73.jpg";
+import show_tube74 from "@/assets/tube74.jpg";
+import show_tube75 from "@/assets/tube75.jpg";
+import show_tube76 from "@/assets/tube76.jpg";
+import show_tube77 from "@/assets/tube77.jpg";
+import show_tube78 from "@/assets/tube78.jpg";
+import show_tube79 from "@/assets/tube79.jpg";
 import show_coil from "@/assets/coil.jpg";
 import show_coil1 from "@/assets/coil1.jpg";
+import show_coil2 from "@/assets/coil2.jpg";
 import show_fittings from "@/assets/show_fittings.jpg";
 import show_fittings2 from "@/assets/show_fittings2.jpg";
 import show_fittings3 from "@/assets/show_fittings3.jpg";
 import show_fittings4 from "@/assets/show_fittings4.jpg";
 import show_fittings5 from "@/assets/show_fittings5.jpg";
+import show_fittings6 from "@/assets/show_fittings6.jpg";
+import show_fittings7 from "@/assets/show_fittings7.jpg";
+import show_fittings8 from "@/assets/show_fittings8.jpg";
+import show_fittings9 from "@/assets/show_fittings9.jpg";
+import show_fittings10 from "@/assets/show_fittings10.jpg";
+import show_fittings11 from "@/assets/show_fittings11.jpg";
+import show_fittings12 from "@/assets/show_fittings12.jpg";
+import show_fittings13 from "@/assets/show_fittings13.jpg";
 import show_big from "@/assets/big.jpg";
+import show_big2 from "@/assets/big2.jpg";
+import show_big3 from "@/assets/big3.jpg";
+import show_big4 from "@/assets/big4.jpg";
+import show_big5 from "@/assets/big5.jpg";
+import show_big6 from "@/assets/big6.jpg";
 import show_flanges from "@/assets/show_flanges.jpg";
+import show_f from "@/assets/show_f.jpg"
 import heat_exchange from "@/assets/heat_exchange.jpg";
 import helium_button from "@/assets/helium_button.jpg";
 
@@ -170,6 +241,12 @@ const Index = () => {
   ];
 
   const show_iamge = [
+    show_big2,
+    show_big3,
+    show_big4,
+    show_big5,
+    show_big6,
+    show_coil2,
     show_tube,
     show_tube1,
     show_tube2,
@@ -194,6 +271,62 @@ const Index = () => {
     show_tube21,
     show_tube22,
     show_tube23,
+    show_tube24,
+    show_tube25,
+    show_tube26,
+    show_tube27,
+    show_tube28,
+    show_tube29,
+    show_tube30,
+    show_tube31,
+    show_tube32,
+    show_tube33,
+    show_tube34,
+    show_tube35,
+    show_tube36,
+    show_tube37,
+    show_tube38,
+    show_tube39,
+    show_tube40,
+    // show_tube41,
+    // show_tube42,
+    // show_tube43,
+    // show_tube44,
+    show_tube45,
+    show_tube46,
+    show_tube47,
+    show_tube48,
+    show_tube49,
+    show_tube50,
+    show_tube51,
+    show_tube52,
+    show_tube53,
+    show_tube54,
+    show_tube55,
+    show_tube56,
+    show_tube57,
+    show_tube58,
+    // show_tube59,
+    show_tube60,
+    show_tube61,
+    show_tube62,
+    show_tube63,
+    show_tube64,
+    show_tube65,
+    show_tube66,
+    show_tube67,
+    show_tube68,
+    show_tube69,
+    show_tube70,
+    show_tube71,
+    show_tube72,
+    show_tube73,
+    show_tube74,
+    show_tube75,
+    show_tube76,
+    show_tube77,
+    show_tube78,
+    show_tube79,
     show_coil,
     show_coil1,
     heat_exchange,
@@ -202,8 +335,17 @@ const Index = () => {
     show_fittings3,
     show_fittings4,
     show_fittings5,
+    show_fittings6,
+    show_fittings7,
+    show_fittings8,
+    show_fittings9,
+    show_fittings10,
+    show_fittings11,
+    show_fittings12,
+    show_fittings13,
     show_big,
     show_flanges,
+    show_f,
     helium_button
   ]
 
