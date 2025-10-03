@@ -232,10 +232,10 @@ const Index = () => {
   }, [language, t]);
 
   const navItems = [
+    { href: "#works", label: t.nav.ourWork },
     { href: "#about", label: t.nav.aboutUs },
     { href: "#products", label: t.nav.products },
     { href: "#expertise", label: t.nav.ourExpertise },
-    { href: "#works", label: t.nav.ourWork },
     // { href: "#visits", label: t.visits.title },
     { href: "#contact", label: t.nav.contactUs },
   ];
@@ -449,6 +449,44 @@ const Index = () => {
           </div>
         </section>
 
+        <section id='works' className="scroll-mt-24 border-t border-border py-16 md:py-24 bg-gradient-to-br from-background to-background/50">
+          <div className="container">
+            {/* 1. Add event handlers to the carousel's wrapper div 👇 */}
+            <div 
+              className="w-full max-w-full mx-auto"
+              onMouseEnter={() => plugin.current.stop()}
+              onMouseLeave={() => plugin.current.play()}
+            >
+              <Carousel
+                setApi={setApi}
+                plugins={[plugin.current]}
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+              >
+                <CarouselContent className="-ml-6">
+                  {show_iamge.map((k, i) => (
+                    <CarouselItem key={i} className="pl-6 basis-full md:basis-1/2 lg:basis-1/2 xl:basis-1/3">
+                      <div className="overflow-hidden aspect-[16/10]">
+                        <img
+                          src={k}
+                          alt={`Site ${i + 1}`}
+                          // 2. Add transition and hover effect classes to the image 👇
+                          className="h-full w-full object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-105" 
+                        />
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </div>
+          </div>
+        </section>
+
+
         <section
           id="about"
           className="scroll-mt-24 border-t border-border w-full bg-gradient-to-r from-black via-[#0a0f2c] to-[#0a1a3c] shadow-lg"
@@ -638,45 +676,6 @@ const Index = () => {
                   </ul>
                 </div>
               </Card>
-            </div>
-          </div>
-        </section>
-
-
-        {/* Our Works Section */}
-        <section id='works' className="scroll-mt-24 border-t border-border py-16 md:py-24 bg-gradient-to-br from-background to-background/50">
-          <div className="container">
-            {/* 1. Add event handlers to the carousel's wrapper div 👇 */}
-            <div 
-              className="w-full max-w-full mx-auto"
-              onMouseEnter={() => plugin.current.stop()}
-              onMouseLeave={() => plugin.current.play()}
-            >
-              <Carousel
-                setApi={setApi}
-                plugins={[plugin.current]}
-                opts={{
-                  align: "start",
-                  loop: true,
-                }}
-              >
-                <CarouselContent className="-ml-6">
-                  {show_iamge.map((k, i) => (
-                    <CarouselItem key={i} className="pl-6 basis-full md:basis-1/2 lg:basis-1/2 xl:basis-1/3">
-                      <div className="overflow-hidden aspect-[16/10]">
-                        <img
-                          src={k}
-                          alt={`Site ${i + 1}`}
-                          // 2. Add transition and hover effect classes to the image 👇
-                          className="h-full w-full object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-105" 
-                        />
-                      </div>
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
-              </Carousel>
             </div>
           </div>
         </section>
