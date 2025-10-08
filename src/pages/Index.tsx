@@ -70,10 +70,10 @@ import show_tube37 from "@/assets/tube37.jpg";
 import show_tube38 from "@/assets/tube38.jpg";
 import show_tube39 from "@/assets/tube39.jpg";
 import show_tube40 from "@/assets/tube40.jpg";
-// import show_tube41 from "@/assets/tube41.jpg";
-// import show_tube42 from "@/assets/tube42.jpg";
-// import show_tube43 from "@/assets/tube43.jpg";
-// import show_tube44 from "@/assets/tube44.jpg";
+import show_tube41 from "@/assets/tube41.jpg";
+import show_tube42 from "@/assets/tube42.jpg";
+import show_tube43 from "@/assets/tube43.jpg";
+import show_tube44 from "@/assets/tube44.jpg";
 import show_tube45 from "@/assets/tube45.jpg";
 import show_tube46 from "@/assets/tube46.jpg";
 import show_tube47 from "@/assets/tube47.jpg";
@@ -88,7 +88,7 @@ import show_tube55 from "@/assets/tube55.jpg";
 import show_tube56 from "@/assets/tube56.jpg";
 import show_tube57 from "@/assets/tube57.jpg";
 import show_tube58 from "@/assets/tube58.jpg";
-// import show_tube59 from "@/assets/tube59.jpg";
+import show_tube59 from "@/assets/tube59.jpg";
 import show_tube60 from "@/assets/tube60.jpg";
 import show_tube61 from "@/assets/tube61.jpg";
 import show_tube62 from "@/assets/tube62.jpg";
@@ -288,10 +288,10 @@ const Index = () => {
     show_tube38,
     show_tube39,
     show_tube40,
-    // show_tube41,
-    // show_tube42,
-    // show_tube43,
-    // show_tube44,
+    show_tube41,
+    show_tube42,
+    show_tube43,
+    show_tube44,
     show_tube45,
     show_tube46,
     show_tube47,
@@ -306,7 +306,7 @@ const Index = () => {
     show_tube56,
     show_tube57,
     show_tube58,
-    // show_tube59,
+    show_tube59,
     show_tube60,
     show_tube61,
     show_tube62,
@@ -377,7 +377,7 @@ const Index = () => {
         <nav className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-3">
             <span 
-              className="text-2xl font-bold text-primary"
+              className="text-xl md:text-2xl lg:text-3xl font-bold text-primary cursor-pointer"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
               JMDU
