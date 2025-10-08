@@ -240,7 +240,7 @@ const Index = () => {
     { href: "#contact", label: t.nav.contactUs },
   ];
 
-  const show_iamge = [
+  const show_image = [
     show_big2,
     show_big3,
     show_big4,
@@ -466,7 +466,7 @@ const Index = () => {
                 }}
               >
                 <CarouselContent className="-ml-6">
-                  {show_iamge.map((k, i) => (
+                  {show_image.map((k, i) => (
                     <CarouselItem key={i} className="pl-6 basis-full md:basis-1/2 lg:basis-1/2 xl:basis-1/3">
                       <div className="overflow-hidden aspect-[16/10]">
                         <img
@@ -693,7 +693,7 @@ const Index = () => {
               <h3 className="text-xl font-medium mb-6 text-center">{t.visits.visitsCarousel}</h3>
               <div className="relative overflow-hidden rounded-lg bg-card/20 backdrop-blur-sm p-4">
                 <div className="flex animate-scroll-left space-x-6 will-change-transform">
-                  {show_iamge.map((k, i) => (
+                  {show_image.map((k, i) => (
                     <div
                       key={i}
                       className="flex-shrink-0 w-80 h-48 bg-gradient-to-br from-muted/50 to-muted/20 rounded-lg border border-border/50 flex items-center justify-center hover:scale-105 transition-transform duration-300"
