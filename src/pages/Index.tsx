@@ -71,7 +71,6 @@ import show_tube38 from "@/assets/tube38.jpg";
 import show_tube39 from "@/assets/tube39.jpg";
 import show_tube40 from "@/assets/tube40.jpg";
 import show_tube41 from "@/assets/tube41.jpg";
-import show_tube42 from "@/assets/tube42.jpg";
 import show_tube43 from "@/assets/tube43.jpg";
 import show_tube44 from "@/assets/tube44.jpg";
 import show_tube45 from "@/assets/tube45.jpg";
@@ -289,7 +288,6 @@ const Index = () => {
     show_tube39,
     show_tube40,
     show_tube41,
-    show_tube42,
     show_tube43,
     show_tube44,
     show_tube45,
