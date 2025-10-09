@@ -243,7 +243,7 @@ import helium_button_webp from "@/assets/helium_button.webp";
 
 // ====================  새로운 사진 가져오기 ============================
 // import example from "@/assets/example.jpg"
-
+// import example_webp from "@/assets/example_webp.webp"
 
 
 
@@ -776,7 +776,19 @@ const Index = () => {
     {
         jpg: helium_button,
         webp: helium_button_webp
-    }
+    },
+    // ===================== 새롭게 가져온 사진을 이런 형식으로 집어놓기 =========================================
+    // {
+    //     jpg: example,
+    //     webp: example_webp
+    // },
+
+
+
+
+
+
+    // =====================================================================================================
   ]
 
   const plugin = React.useRef(
