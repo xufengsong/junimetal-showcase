@@ -135,6 +135,122 @@ import show_f from "@/assets/show_f.jpg"
 import heat_exchange from "@/assets/heat_exchange.jpg";
 import helium_button from "@/assets/helium_button.jpg";
 
+import show_tube_webp from "@/assets/tube.webp";
+import show_tube1_webp from "@/assets/tube1.webp";
+import show_tube2_webp from "@/assets/tube2.webp";
+import show_tube3_webp from "@/assets/tube3.webp";
+import show_tube4_webp from "@/assets/tube4.webp";
+import show_tube5_webp from "@/assets/tube5.webp";
+import show_tube6_webp from "@/assets/tube6.webp";
+import show_tube7_webp from "@/assets/tube7.webp";
+import show_tube8_webp from "@/assets/tube8.webp";
+import show_tube9_webp from "@/assets/tube9.webp";
+import show_tube10_webp from "@/assets/tube10.webp";
+import show_tube11_webp from "@/assets/tube11.webp";
+import show_tube12_webp from "@/assets/tube12.webp";
+import show_tube13_webp from "@/assets/tube13.webp";
+import show_tube14_webp from "@/assets/tube14.webp";
+import show_tube15_webp from "@/assets/tube15.webp";
+import show_tube16_webp from "@/assets/tube16.webp";
+import show_tube17_webp from "@/assets/tube17.webp";
+import show_tube18_webp from "@/assets/tube18.webp";
+import show_tube19_webp from "@/assets/tube19.webp";
+import show_tube20_webp from "@/assets/tube20.webp";
+import show_tube21_webp from "@/assets/tube21.webp";
+import show_tube22_webp from "@/assets/tube22.webp";
+import show_tube23_webp from "@/assets/tube23.webp";
+import show_tube24_webp from "@/assets/tube24.webp";
+import show_tube25_webp from "@/assets/tube25.webp";
+import show_tube26_webp from "@/assets/tube26.webp";
+import show_tube27_webp from "@/assets/tube27.webp";
+import show_tube28_webp from "@/assets/tube28.webp";
+import show_tube29_webp from "@/assets/tube29.webp";
+import show_tube30_webp from "@/assets/tube30.webp";
+import show_tube31_webp from "@/assets/tube31.webp";
+import show_tube32_webp from "@/assets/tube32.webp";
+import show_tube33_webp from "@/assets/tube33.webp";
+import show_tube34_webp from "@/assets/tube34.webp";
+import show_tube35_webp from "@/assets/tube35.webp";
+import show_tube36_webp from "@/assets/tube36.webp";
+import show_tube37_webp from "@/assets/tube37.webp";
+import show_tube38_webp from "@/assets/tube38.webp";
+import show_tube39_webp from "@/assets/tube39.webp";
+import show_tube40_webp from "@/assets/tube40.webp";
+import show_tube41_webp from "@/assets/tube41.webp";
+import show_tube43_webp from "@/assets/tube43.webp";
+import show_tube44_webp from "@/assets/tube44.webp";
+import show_tube45_webp from "@/assets/tube45.webp";
+import show_tube46_webp from "@/assets/tube46.webp";
+import show_tube47_webp from "@/assets/tube47.webp";
+import show_tube48_webp from "@/assets/tube48.webp";
+import show_tube49_webp from "@/assets/tube49.webp";
+import show_tube50_webp from "@/assets/tube50.webp";
+import show_tube51_webp from "@/assets/tube51.webp";
+import show_tube52_webp from "@/assets/tube52.webp";
+import show_tube53_webp from "@/assets/tube53.webp";
+import show_tube54_webp from "@/assets/tube54.webp";
+import show_tube55_webp from "@/assets/tube55.webp";
+import show_tube56_webp from "@/assets/tube56.webp";
+import show_tube57_webp from "@/assets/tube57.webp";
+import show_tube58_webp from "@/assets/tube58.webp";
+import show_tube59_webp from "@/assets/tube59.webp";
+import show_tube60_webp from "@/assets/tube60.webp";
+import show_tube61_webp from "@/assets/tube61.webp";
+import show_tube62_webp from "@/assets/tube62.webp";
+import show_tube63_webp from "@/assets/tube63.webp";
+import show_tube64_webp from "@/assets/tube64.webp";
+import show_tube65_webp from "@/assets/tube65.webp";
+import show_tube66_webp from "@/assets/tube66.webp";
+import show_tube67_webp from "@/assets/tube67.webp";
+import show_tube68_webp from "@/assets/tube68.webp";
+import show_tube69_webp from "@/assets/tube69.webp";
+import show_tube70_webp from "@/assets/tube70.webp";
+import show_tube71_webp from "@/assets/tube71.webp";
+import show_tube72_webp from "@/assets/tube72.webp";
+import show_tube73_webp from "@/assets/tube73.webp";
+import show_tube74_webp from "@/assets/tube74.webp";
+import show_tube75_webp from "@/assets/tube75.webp";
+import show_tube76_webp from "@/assets/tube76.webp";
+import show_tube77_webp from "@/assets/tube77.webp";
+import show_tube78_webp from "@/assets/tube78.webp";
+import show_tube79_webp from "@/assets/tube79.webp";
+import show_coil_webp from "@/assets/coil.webp";
+import show_coil1_webp from "@/assets/coil1.webp";
+import show_coil2_webp from "@/assets/coil2.webp";
+import show_fittings_webp from "@/assets/show_fittings.webp";
+import show_fittings2_webp from "@/assets/show_fittings2.webp";
+import show_fittings3_webp from "@/assets/show_fittings3.webp";
+import show_fittings4_webp from "@/assets/show_fittings4.webp";
+import show_fittings5_webp from "@/assets/show_fittings5.webp";
+import show_fittings6_webp from "@/assets/show_fittings6.webp";
+import show_fittings7_webp from "@/assets/show_fittings7.webp";
+import show_fittings8_webp from "@/assets/show_fittings8.webp";
+import show_fittings9_webp from "@/assets/show_fittings9.webp";
+import show_fittings10_webp from "@/assets/show_fittings10.webp";
+import show_fittings11_webp from "@/assets/show_fittings11.webp";
+import show_fittings12_webp from "@/assets/show_fittings12.webp";
+import show_fittings13_webp from "@/assets/show_fittings13.webp";
+import show_big_webp from "@/assets/big.webp";
+import show_big2_webp from "@/assets/big2.webp";
+import show_big3_webp from "@/assets/big3.webp";
+import show_big4_webp from "@/assets/big4.webp";
+import show_big5_webp from "@/assets/big5.webp";
+import show_big6_webp from "@/assets/big6.webp";
+import show_flanges_webp from "@/assets/show_flanges.webp";
+import show_f_webp from "@/assets/show_f.webp"
+import heat_exchange_webp from "@/assets/heat_exchange.webp";
+import helium_button_webp from "@/assets/helium_button.webp";
+
+// ====================  새로운 사진 가져오기 ============================
+// import example from "@/assets/example.jpg"
+
+
+
+
+
+
+
+// ====================================================================
 
 import { Button } from "@/components/ui/button";
 // import { Card } from "@/components/ui/card";
@@ -239,112 +355,428 @@ const Index = () => {
     { href: "#contact", label: t.nav.contactUs },
   ];
 
+
   const show_image = [
-    show_big2,
-    show_big3,
-    show_big4,
-    show_big5,
-    show_big6,
-    show_coil2,
-    show_tube,
-    show_tube1,
-    show_tube2,
-    show_tube3,
-    show_tube4,
-    show_tube5,
-    show_tube6,
-    show_tube7,
-    show_tube8,
-    show_tube9,
-    show_tube10,
-    show_tube11,
-    show_tube12,
-    show_tube13,
-    show_tube14,
-    show_tube15,
-    show_tube16,
-    show_tube17,
-    show_tube18,
-    show_tube19,
-    show_tube20,
-    show_tube21,
-    show_tube22,
-    show_tube23,
-    show_tube24,
-    show_tube25,
-    show_tube26,
-    show_tube27,
-    show_tube28,
-    show_tube29,
-    show_tube30,
-    show_tube31,
-    show_tube32,
-    show_tube33,
-    show_tube34,
-    show_tube35,
-    show_tube36,
-    show_tube37,
-    show_tube38,
-    show_tube39,
-    show_tube40,
-    show_tube41,
-    show_tube43,
-    show_tube44,
-    show_tube45,
-    show_tube46,
-    show_tube47,
-    show_tube48,
-    show_tube49,
-    show_tube50,
-    show_tube51,
-    show_tube52,
-    show_tube53,
-    show_tube54,
-    show_tube55,
-    show_tube56,
-    show_tube57,
-    show_tube58,
-    show_tube59,
-    show_tube60,
-    show_tube61,
-    show_tube62,
-    show_tube63,
-    show_tube64,
-    show_tube65,
-    show_tube66,
-    show_tube67,
-    show_tube68,
-    show_tube69,
-    show_tube70,
-    show_tube71,
-    show_tube72,
-    show_tube73,
-    show_tube74,
-    show_tube75,
-    show_tube76,
-    show_tube77,
-    show_tube78,
-    show_tube79,
-    show_coil,
-    show_coil1,
-    heat_exchange,
-    show_fittings,
-    show_fittings2,
-    show_fittings3,
-    show_fittings4,
-    show_fittings5,
-    show_fittings6,
-    show_fittings7,
-    show_fittings8,
-    show_fittings9,
-    show_fittings10,
-    show_fittings11,
-    show_fittings12,
-    show_fittings13,
-    show_big,
-    show_flanges,
-    show_f,
-    helium_button
+    {
+        jpg: show_big2,
+        webp: show_big2_webp
+    },
+    {
+        jpg: show_big3,
+        webp: show_big3_webp
+    },
+    {
+        jpg: show_big4,
+        webp: show_big4_webp
+    },
+    {
+        jpg: show_big5,
+        webp: show_big5_webp
+    },
+    {
+        jpg: show_big6,
+        webp: show_big6_webp
+    },
+    {
+        jpg: show_coil2,
+        webp: show_coil2_webp
+    },
+    {
+        jpg: show_tube,
+        webp: show_tube_webp
+    },
+    {
+        jpg: show_tube1,
+        webp: show_tube1_webp
+    },
+    {
+        jpg: show_tube2,
+        webp: show_tube2_webp
+    },
+    {
+        jpg: show_tube3,
+        webp: show_tube3_webp
+    },
+    {
+        jpg: show_tube4,
+        webp: show_tube4_webp
+    },
+    {
+        jpg: show_tube5,
+        webp: show_tube5_webp
+    },
+    {
+        jpg: show_tube6,
+        webp: show_tube6_webp
+    },
+    {
+        jpg: show_tube7,
+        webp: show_tube7_webp
+    },
+    {
+        jpg: show_tube8,
+        webp: show_tube8_webp
+    },
+    {
+        jpg: show_tube9,
+        webp: show_tube9_webp
+    },
+    {
+        jpg: show_tube10,
+        webp: show_tube10_webp
+    },
+    {
+        jpg: show_tube11,
+        webp: show_tube11_webp
+    },
+    {
+        jpg: show_tube12,
+        webp: show_tube12_webp
+    },
+    {
+        jpg: show_tube13,
+        webp: show_tube13_webp
+    },
+    {
+        jpg: show_tube14,
+        webp: show_tube14_webp
+    },
+    {
+        jpg: show_tube15,
+        webp: show_tube15_webp
+    },
+    {
+        jpg: show_tube16,
+        webp: show_tube16_webp
+    },
+    {
+        jpg: show_tube17,
+        webp: show_tube17_webp
+    },
+    {
+        jpg: show_tube18,
+        webp: show_tube18_webp
+    },
+    {
+        jpg: show_tube19,
+        webp: show_tube19_webp
+    },
+    {
+        jpg: show_tube20,
+        webp: show_tube20_webp
+    },
+    {
+        jpg: show_tube21,
+        webp: show_tube21_webp
+    },
+    {
+        jpg: show_tube22,
+        webp: show_tube22_webp
+    },
+    {
+        jpg: show_tube23,
+        webp: show_tube23_webp
+    },
+    {
+        jpg: show_tube24,
+        webp: show_tube24_webp
+    },
+    {
+        jpg: show_tube25,
+        webp: show_tube25_webp
+    },
+    {
+        jpg: show_tube26,
+        webp: show_tube26_webp
+    },
+    {
+        jpg: show_tube27,
+        webp: show_tube27_webp
+    },
+    {
+        jpg: show_tube28,
+        webp: show_tube28_webp
+    },
+    {
+        jpg: show_tube29,
+        webp: show_tube29_webp
+    },
+    {
+        jpg: show_tube30,
+        webp: show_tube30_webp
+    },
+    {
+        jpg: show_tube31,
+        webp: show_tube31_webp
+    },
+    {
+        jpg: show_tube32,
+        webp: show_tube32_webp
+    },
+    {
+        jpg: show_tube33,
+        webp: show_tube33_webp
+    },
+    {
+        jpg: show_tube34,
+        webp: show_tube34_webp
+    },
+    {
+        jpg: show_tube35,
+        webp: show_tube35_webp
+    },
+    {
+        jpg: show_tube36,
+        webp: show_tube36_webp
+    },
+    {
+        jpg: show_tube37,
+        webp: show_tube37_webp
+    },
+    {
+        jpg: show_tube38,
+        webp: show_tube38_webp
+    },
+    {
+        jpg: show_tube39,
+        webp: show_tube39_webp
+    },
+    {
+        jpg: show_tube40,
+        webp: show_tube40_webp
+    },
+    {
+        jpg: show_tube41,
+        webp: show_tube41_webp
+    },
+    {
+        jpg: show_tube43,
+        webp: show_tube43_webp
+    },
+    {
+        jpg: show_tube44,
+        webp: show_tube44_webp
+    },
+    {
+        jpg: show_tube45,
+        webp: show_tube45_webp
+    },
+    {
+        jpg: show_tube46,
+        webp: show_tube46_webp
+    },
+    {
+        jpg: show_tube47,
+        webp: show_tube47_webp
+    },
+    {
+        jpg: show_tube48,
+        webp: show_tube48_webp
+    },
+    {
+        jpg: show_tube49,
+        webp: show_tube49_webp
+    },
+    {
+        jpg: show_tube50,
+        webp: show_tube50_webp
+    },
+    {
+        jpg: show_tube51,
+        webp: show_tube51_webp
+    },
+    {
+        jpg: show_tube52,
+        webp: show_tube52_webp
+    },
+    {
+        jpg: show_tube53,
+        webp: show_tube53_webp
+    },
+    {
+        jpg: show_tube54,
+        webp: show_tube54_webp
+    },
+    {
+        jpg: show_tube55,
+        webp: show_tube55_webp
+    },
+    {
+        jpg: show_tube56,
+        webp: show_tube56_webp
+    },
+    {
+        jpg: show_tube57,
+        webp: show_tube57_webp
+    },
+    {
+        jpg: show_tube58,
+        webp: show_tube58_webp
+    },
+    {
+        jpg: show_tube59,
+        webp: show_tube59_webp
+    },
+    {
+        jpg: show_tube60,
+        webp: show_tube60_webp
+    },
+    {
+        jpg: show_tube61,
+        webp: show_tube61_webp
+    },
+    {
+        jpg: show_tube62,
+        webp: show_tube62_webp
+    },
+    {
+        jpg: show_tube63,
+        webp: show_tube63_webp
+    },
+    {
+        jpg: show_tube64,
+        webp: show_tube64_webp
+    },
+    {
+        jpg: show_tube65,
+        webp: show_tube65_webp
+    },
+    {
+        jpg: show_tube66,
+        webp: show_tube66_webp
+    },
+    {
+        jpg: show_tube67,
+        webp: show_tube67_webp
+    },
+    {
+        jpg: show_tube68,
+        webp: show_tube68_webp
+    },
+    {
+        jpg: show_tube69,
+        webp: show_tube69_webp
+    },
+    {
+        jpg: show_tube70,
+        webp: show_tube70_webp
+    },
+    {
+        jpg: show_tube71,
+        webp: show_tube71_webp
+    },
+    {
+        jpg: show_tube72,
+        webp: show_tube72_webp
+    },
+    {
+        jpg: show_tube73,
+        webp: show_tube73_webp
+    },
+    {
+        jpg: show_tube74,
+        webp: show_tube74_webp
+    },
+    {
+        jpg: show_tube75,
+        webp: show_tube75_webp
+    },
+    {
+        jpg: show_tube76,
+        webp: show_tube76_webp
+    },
+    {
+        jpg: show_tube77,
+        webp: show_tube77_webp
+    },
+    {
+        jpg: show_tube78,
+        webp: show_tube78_webp
+    },
+    {
+        jpg: show_tube79,
+        webp: show_tube79_webp
+    },
+    {
+        jpg: show_coil,
+        webp: show_coil_webp
+    },
+    {
+        jpg: show_coil1,
+        webp: show_coil1_webp
+    },
+    {
+        jpg: heat_exchange,
+        webp: heat_exchange_webp
+    },
+    {
+        jpg: show_fittings,
+        webp: show_fittings_webp
+    },
+    {
+        jpg: show_fittings2,
+        webp: show_fittings2_webp
+    },
+    {
+        jpg: show_fittings3,
+        webp: show_fittings3_webp
+    },
+    {
+        jpg: show_fittings4,
+        webp: show_fittings4_webp
+    },
+    {
+        jpg: show_fittings5,
+        webp: show_fittings5_webp
+    },
+    {
+        jpg: show_fittings6,
+        webp: show_fittings6_webp
+    },
+    {
+        jpg: show_fittings7,
+        webp: show_fittings7_webp
+    },
+    {
+        jpg: show_fittings8,
+        webp: show_fittings8_webp
+    },
+    {
+        jpg: show_fittings9,
+        webp: show_fittings9_webp
+    },
+    {
+        jpg: show_fittings10,
+        webp: show_fittings10_webp
+    },
+    {
+        jpg: show_fittings11,
+        webp: show_fittings11_webp
+    },
+    {
+        jpg: show_fittings12,
+        webp: show_fittings12_webp
+    },
+    {
+        jpg: show_fittings13,
+        webp: show_fittings13_webp
+    },
+    {
+        jpg: show_big,
+        webp: show_big_webp
+    },
+    {
+        jpg: show_flanges,
+        webp: show_flanges_webp
+    },
+    {
+        jpg: show_f,
+        webp: show_f_webp
+    },
+    {
+        jpg: helium_button,
+        webp: helium_button_webp
+    }
   ]
 
   const plugin = React.useRef(
@@ -467,12 +899,15 @@ const Index = () => {
                   {show_image.map((k, i) => (
                     <CarouselItem key={i} className="pl-6 basis-full md:basis-1/2 lg:basis-1/2 xl:basis-1/3">
                       <div className="overflow-hidden aspect-[16/10]">
-                        <img
-                          src={k}
-                          alt={`Site ${i + 1}`}
-                          // 2. Add transition and hover effect classes to the image 👇
-                          className="h-full w-full object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-105" 
-                        />
+                        <picture>
+                          <source srcSet={k.webp} type="image/webp"></source>
+                          <img
+                            src={k.jpg}
+                            alt={`Site ${i + 1}`}
+                            // 2. Add transition and hover effect classes to the image 👇
+                            className="h-full w-full object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-105" 
+                          />
+                        </picture>
                       </div>
                     </CarouselItem>
                   ))}
