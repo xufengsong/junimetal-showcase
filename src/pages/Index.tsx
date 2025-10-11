@@ -916,8 +916,9 @@ const Index = () => {
                           <img
                             src={k.jpg}
                             alt={`Site ${i + 1}`}
-                            // 2. Add transition and hover effect classes to the image 👇
-                            className="h-full w-full object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-105" 
+                            loading={i < 6 ? "eager" : "lazy"} // Eager load the first 3, lazy load the rest
+                            decoding="async" // Helps the browser render the page faster
+                            className="h-full w-full object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-105"                             
                           />
                         </picture>
                       </div>
