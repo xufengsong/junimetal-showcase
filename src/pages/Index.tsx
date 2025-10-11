@@ -29,217 +29,217 @@ import cryogenic3_webp from "@/assets/cryogenic3_webp.webp";
 import custom_design4 from "@/assets/custom4.png";
 import custom_design4_webp from "@/assets/custom4_webp.webp"
 
-import show_tube from "@/assets/tube.jpg";
-import show_tube1 from "@/assets/tube1.jpg";
-import show_tube2 from "@/assets/tube2.jpg";
-import show_tube3 from "@/assets/tube3.jpg";
-import show_tube4 from "@/assets/tube4.jpg";
-import show_tube5 from "@/assets/tube5.jpg";
-import show_tube6 from "@/assets/tube6.jpg";
-import show_tube7 from "@/assets/tube7.jpg";
-import show_tube8 from "@/assets/tube8.jpg";
-import show_tube9 from "@/assets/tube9.jpg";
-import show_tube10 from "@/assets/tube10.jpg";
-import show_tube11 from "@/assets/tube11.jpg";
-import show_tube12 from "@/assets/tube12.jpg";
-import show_tube13 from "@/assets/tube13.jpg";
-import show_tube14 from "@/assets/tube14.jpg";
-import show_tube15 from "@/assets/tube15.jpg";
-import show_tube16 from "@/assets/tube16.jpg";
-import show_tube17 from "@/assets/tube17.jpg";
-import show_tube18 from "@/assets/tube18.jpg";
-import show_tube19 from "@/assets/tube19.jpg";
-import show_tube20 from "@/assets/tube20.jpg";
-import show_tube21 from "@/assets/tube21.jpg";
-import show_tube22 from "@/assets/tube22.jpg";
-import show_tube23 from "@/assets/tube23.jpg";
-import show_tube24 from "@/assets/tube24.jpg";
-import show_tube25 from "@/assets/tube25.jpg";
-import show_tube26 from "@/assets/tube26.jpg";
-import show_tube27 from "@/assets/tube27.jpg";
-import show_tube28 from "@/assets/tube28.jpg";
-import show_tube29 from "@/assets/tube29.jpg";
-import show_tube30 from "@/assets/tube30.jpg";
-import show_tube31 from "@/assets/tube31.jpg";
-import show_tube32 from "@/assets/tube32.jpg";
-import show_tube33 from "@/assets/tube33.jpg";
-import show_tube34 from "@/assets/tube34.jpg";
-import show_tube35 from "@/assets/tube35.jpg";
-import show_tube36 from "@/assets/tube36.jpg";
-import show_tube37 from "@/assets/tube37.jpg";
-import show_tube38 from "@/assets/tube38.jpg";
-import show_tube39 from "@/assets/tube39.jpg";
-import show_tube40 from "@/assets/tube40.jpg";
-import show_tube41 from "@/assets/tube41.jpg";
-import show_tube43 from "@/assets/tube43.jpg";
-import show_tube44 from "@/assets/tube44.jpg";
-import show_tube45 from "@/assets/tube45.jpg";
-import show_tube46 from "@/assets/tube46.jpg";
-import show_tube47 from "@/assets/tube47.jpg";
-import show_tube48 from "@/assets/tube48.jpg";
-import show_tube49 from "@/assets/tube49.jpg";
-import show_tube50 from "@/assets/tube50.jpg";
-import show_tube51 from "@/assets/tube51.jpg";
-import show_tube52 from "@/assets/tube52.jpg";
-import show_tube53 from "@/assets/tube53.jpg";
-import show_tube54 from "@/assets/tube54.jpg";
-import show_tube55 from "@/assets/tube55.jpg";
-import show_tube56 from "@/assets/tube56.jpg";
-import show_tube57 from "@/assets/tube57.jpg";
-import show_tube58 from "@/assets/tube58.jpg";
-import show_tube59 from "@/assets/tube59.jpg";
-import show_tube60 from "@/assets/tube60.jpg";
-import show_tube61 from "@/assets/tube61.jpg";
-import show_tube62 from "@/assets/tube62.jpg";
-import show_tube63 from "@/assets/tube63.jpg";
-import show_tube64 from "@/assets/tube64.jpg";
-import show_tube65 from "@/assets/tube65.jpg";
-import show_tube66 from "@/assets/tube66.jpg";
-import show_tube67 from "@/assets/tube67.jpg";
-import show_tube68 from "@/assets/tube68.jpg";
-import show_tube69 from "@/assets/tube69.jpg";
-import show_tube70 from "@/assets/tube70.jpg";
-import show_tube71 from "@/assets/tube71.jpg";
-import show_tube72 from "@/assets/tube72.jpg";
-import show_tube73 from "@/assets/tube73.jpg";
-import show_tube74 from "@/assets/tube74.jpg";
-import show_tube75 from "@/assets/tube75.jpg";
-import show_tube76 from "@/assets/tube76.jpg";
-import show_tube77 from "@/assets/tube77.jpg";
-import show_tube78 from "@/assets/tube78.jpg";
-import show_tube79 from "@/assets/tube79.jpg";
-import show_coil from "@/assets/coil.jpg";
-import show_coil1 from "@/assets/coil1.jpg";
-import show_coil2 from "@/assets/coil2.jpg";
-import show_fittings from "@/assets/show_fittings.jpg";
-import show_fittings2 from "@/assets/show_fittings2.jpg";
-import show_fittings3 from "@/assets/show_fittings3.jpg";
-import show_fittings4 from "@/assets/show_fittings4.jpg";
-import show_fittings5 from "@/assets/show_fittings5.jpg";
-import show_fittings6 from "@/assets/show_fittings6.jpg";
-import show_fittings7 from "@/assets/show_fittings7.jpg";
-import show_fittings8 from "@/assets/show_fittings8.jpg";
-import show_fittings9 from "@/assets/show_fittings9.jpg";
-import show_fittings10 from "@/assets/show_fittings10.jpg";
-import show_fittings11 from "@/assets/show_fittings11.jpg";
-import show_fittings12 from "@/assets/show_fittings12.jpg";
-import show_fittings13 from "@/assets/show_fittings13.jpg";
-import show_big from "@/assets/big.jpg";
-import show_big2 from "@/assets/big2.jpg";
-import show_big3 from "@/assets/big3.jpg";
-import show_big4 from "@/assets/big4.jpg";
-import show_big5 from "@/assets/big5.jpg";
-import show_big6 from "@/assets/big6.jpg";
-import show_flanges from "@/assets/show_flanges.jpg";
-import show_f from "@/assets/show_f.jpg"
-import heat_exchange from "@/assets/heat_exchange.jpg";
-import helium_button from "@/assets/helium_button.jpg";
+// import show_tube from "@/assets/tube.jpg";
+// import show_tube1 from "@/assets/tube1.jpg";
+// import show_tube2 from "@/assets/tube2.jpg";
+// import show_tube3 from "@/assets/tube3.jpg";
+// import show_tube4 from "@/assets/tube4.jpg";
+// import show_tube5 from "@/assets/tube5.jpg";
+// import show_tube6 from "@/assets/tube6.jpg";
+// import show_tube7 from "@/assets/tube7.jpg";
+// import show_tube8 from "@/assets/tube8.jpg";
+// import show_tube9 from "@/assets/tube9.jpg";
+// import show_tube10 from "@/assets/tube10.jpg";
+// import show_tube11 from "@/assets/tube11.jpg";
+// import show_tube12 from "@/assets/tube12.jpg";
+// import show_tube13 from "@/assets/tube13.jpg";
+// import show_tube14 from "@/assets/tube14.jpg";
+// import show_tube15 from "@/assets/tube15.jpg";
+// import show_tube16 from "@/assets/tube16.jpg";
+// import show_tube17 from "@/assets/tube17.jpg";
+// import show_tube18 from "@/assets/tube18.jpg";
+// import show_tube19 from "@/assets/tube19.jpg";
+// import show_tube20 from "@/assets/tube20.jpg";
+// import show_tube21 from "@/assets/tube21.jpg";
+// import show_tube22 from "@/assets/tube22.jpg";
+// import show_tube23 from "@/assets/tube23.jpg";
+// import show_tube24 from "@/assets/tube24.jpg";
+// import show_tube25 from "@/assets/tube25.jpg";
+// import show_tube26 from "@/assets/tube26.jpg";
+// import show_tube27 from "@/assets/tube27.jpg";
+// import show_tube28 from "@/assets/tube28.jpg";
+// import show_tube29 from "@/assets/tube29.jpg";
+// import show_tube30 from "@/assets/tube30.jpg";
+// import show_tube31 from "@/assets/tube31.jpg";
+// import show_tube32 from "@/assets/tube32.jpg";
+// import show_tube33 from "@/assets/tube33.jpg";
+// import show_tube34 from "@/assets/tube34.jpg";
+// import show_tube35 from "@/assets/tube35.jpg";
+// import show_tube36 from "@/assets/tube36.jpg";
+// import show_tube37 from "@/assets/tube37.jpg";
+// import show_tube38 from "@/assets/tube38.jpg";
+// import show_tube39 from "@/assets/tube39.jpg";
+// import show_tube40 from "@/assets/tube40.jpg";
+// import show_tube41 from "@/assets/tube41.jpg";
+// import show_tube43 from "@/assets/tube43.jpg";
+// import show_tube44 from "@/assets/tube44.jpg";
+// import show_tube45 from "@/assets/tube45.jpg";
+// import show_tube46 from "@/assets/tube46.jpg";
+// import show_tube47 from "@/assets/tube47.jpg";
+// import show_tube48 from "@/assets/tube48.jpg";
+// import show_tube49 from "@/assets/tube49.jpg";
+// import show_tube50 from "@/assets/tube50.jpg";
+// import show_tube51 from "@/assets/tube51.jpg";
+// import show_tube52 from "@/assets/tube52.jpg";
+// import show_tube53 from "@/assets/tube53.jpg";
+// import show_tube54 from "@/assets/tube54.jpg";
+// import show_tube55 from "@/assets/tube55.jpg";
+// import show_tube56 from "@/assets/tube56.jpg";
+// import show_tube57 from "@/assets/tube57.jpg";
+// import show_tube58 from "@/assets/tube58.jpg";
+// import show_tube59 from "@/assets/tube59.jpg";
+// import show_tube60 from "@/assets/tube60.jpg";
+// import show_tube61 from "@/assets/tube61.jpg";
+// import show_tube62 from "@/assets/tube62.jpg";
+// import show_tube63 from "@/assets/tube63.jpg";
+// import show_tube64 from "@/assets/tube64.jpg";
+// import show_tube65 from "@/assets/tube65.jpg";
+// import show_tube66 from "@/assets/tube66.jpg";
+// import show_tube67 from "@/assets/tube67.jpg";
+// import show_tube68 from "@/assets/tube68.jpg";
+// import show_tube69 from "@/assets/tube69.jpg";
+// import show_tube70 from "@/assets/tube70.jpg";
+// import show_tube71 from "@/assets/tube71.jpg";
+// import show_tube72 from "@/assets/tube72.jpg";
+// import show_tube73 from "@/assets/tube73.jpg";
+// import show_tube74 from "@/assets/tube74.jpg";
+// import show_tube75 from "@/assets/tube75.jpg";
+// import show_tube76 from "@/assets/tube76.jpg";
+// import show_tube77 from "@/assets/tube77.jpg";
+// import show_tube78 from "@/assets/tube78.jpg";
+// import show_tube79 from "@/assets/tube79.jpg";
+// import show_coil from "@/assets/coil.jpg";
+// import show_coil1 from "@/assets/coil1.jpg";
+// import show_coil2 from "@/assets/coil2.jpg";
+// import show_fittings from "@/assets/show_fittings.jpg";
+// import show_fittings2 from "@/assets/show_fittings2.jpg";
+// import show_fittings3 from "@/assets/show_fittings3.jpg";
+// import show_fittings4 from "@/assets/show_fittings4.jpg";
+// import show_fittings5 from "@/assets/show_fittings5.jpg";
+// import show_fittings6 from "@/assets/show_fittings6.jpg";
+// import show_fittings7 from "@/assets/show_fittings7.jpg";
+// import show_fittings8 from "@/assets/show_fittings8.jpg";
+// import show_fittings9 from "@/assets/show_fittings9.jpg";
+// import show_fittings10 from "@/assets/show_fittings10.jpg";
+// import show_fittings11 from "@/assets/show_fittings11.jpg";
+// import show_fittings12 from "@/assets/show_fittings12.jpg";
+// import show_fittings13 from "@/assets/show_fittings13.jpg";
+// import show_big from "@/assets/big.jpg";
+// import show_big2 from "@/assets/big2.jpg";
+// import show_big3 from "@/assets/big3.jpg";
+// import show_big4 from "@/assets/big4.jpg";
+// import show_big5 from "@/assets/big5.jpg";
+// import show_big6 from "@/assets/big6.jpg";
+// import show_flanges from "@/assets/show_flanges.jpg";
+// import show_f from "@/assets/show_f.jpg"
+// import heat_exchange from "@/assets/heat_exchange.jpg";
+// import helium_button from "@/assets/helium_button.jpg";
 
-import show_tube_webp from "@/assets/tube.webp";
-import show_tube1_webp from "@/assets/tube1.webp";
-import show_tube2_webp from "@/assets/tube2.webp";
-import show_tube3_webp from "@/assets/tube3.webp";
-import show_tube4_webp from "@/assets/tube4.webp";
-import show_tube5_webp from "@/assets/tube5.webp";
-import show_tube6_webp from "@/assets/tube6.webp";
-import show_tube7_webp from "@/assets/tube7.webp";
-import show_tube8_webp from "@/assets/tube8.webp";
-import show_tube9_webp from "@/assets/tube9.webp";
-import show_tube10_webp from "@/assets/tube10.webp";
-import show_tube11_webp from "@/assets/tube11.webp";
-import show_tube12_webp from "@/assets/tube12.webp";
-import show_tube13_webp from "@/assets/tube13.webp";
-import show_tube14_webp from "@/assets/tube14.webp";
-import show_tube15_webp from "@/assets/tube15.webp";
-import show_tube16_webp from "@/assets/tube16.webp";
-import show_tube17_webp from "@/assets/tube17.webp";
-import show_tube18_webp from "@/assets/tube18.webp";
-import show_tube19_webp from "@/assets/tube19.webp";
-import show_tube20_webp from "@/assets/tube20.webp";
-import show_tube21_webp from "@/assets/tube21.webp";
-import show_tube22_webp from "@/assets/tube22.webp";
-import show_tube23_webp from "@/assets/tube23.webp";
-import show_tube24_webp from "@/assets/tube24.webp";
-import show_tube25_webp from "@/assets/tube25.webp";
-import show_tube26_webp from "@/assets/tube26.webp";
-import show_tube27_webp from "@/assets/tube27.webp";
-import show_tube28_webp from "@/assets/tube28.webp";
-import show_tube29_webp from "@/assets/tube29.webp";
-import show_tube30_webp from "@/assets/tube30.webp";
-import show_tube31_webp from "@/assets/tube31.webp";
-import show_tube32_webp from "@/assets/tube32.webp";
-import show_tube33_webp from "@/assets/tube33.webp";
-import show_tube34_webp from "@/assets/tube34.webp";
-import show_tube35_webp from "@/assets/tube35.webp";
-import show_tube36_webp from "@/assets/tube36.webp";
-import show_tube37_webp from "@/assets/tube37.webp";
-import show_tube38_webp from "@/assets/tube38.webp";
-import show_tube39_webp from "@/assets/tube39.webp";
-import show_tube40_webp from "@/assets/tube40.webp";
-import show_tube41_webp from "@/assets/tube41.webp";
-import show_tube43_webp from "@/assets/tube43.webp";
-import show_tube44_webp from "@/assets/tube44.webp";
-import show_tube45_webp from "@/assets/tube45.webp";
-import show_tube46_webp from "@/assets/tube46.webp";
-import show_tube47_webp from "@/assets/tube47.webp";
-import show_tube48_webp from "@/assets/tube48.webp";
-import show_tube49_webp from "@/assets/tube49.webp";
-import show_tube50_webp from "@/assets/tube50.webp";
-import show_tube51_webp from "@/assets/tube51.webp";
-import show_tube52_webp from "@/assets/tube52.webp";
-import show_tube53_webp from "@/assets/tube53.webp";
-import show_tube54_webp from "@/assets/tube54.webp";
-import show_tube55_webp from "@/assets/tube55.webp";
-import show_tube56_webp from "@/assets/tube56.webp";
-import show_tube57_webp from "@/assets/tube57.webp";
-import show_tube58_webp from "@/assets/tube58.webp";
-import show_tube59_webp from "@/assets/tube59.webp";
-import show_tube60_webp from "@/assets/tube60.webp";
-import show_tube61_webp from "@/assets/tube61.webp";
-import show_tube62_webp from "@/assets/tube62.webp";
-import show_tube63_webp from "@/assets/tube63.webp";
-import show_tube64_webp from "@/assets/tube64.webp";
-import show_tube65_webp from "@/assets/tube65.webp";
-import show_tube66_webp from "@/assets/tube66.webp";
-import show_tube67_webp from "@/assets/tube67.webp";
-import show_tube68_webp from "@/assets/tube68.webp";
-import show_tube69_webp from "@/assets/tube69.webp";
-import show_tube70_webp from "@/assets/tube70.webp";
-import show_tube71_webp from "@/assets/tube71.webp";
-import show_tube72_webp from "@/assets/tube72.webp";
-import show_tube73_webp from "@/assets/tube73.webp";
-import show_tube74_webp from "@/assets/tube74.webp";
-import show_tube75_webp from "@/assets/tube75.webp";
-import show_tube76_webp from "@/assets/tube76.webp";
-import show_tube77_webp from "@/assets/tube77.webp";
-import show_tube78_webp from "@/assets/tube78.webp";
-import show_tube79_webp from "@/assets/tube79.webp";
-import show_coil_webp from "@/assets/coil.webp";
-import show_coil1_webp from "@/assets/coil1.webp";
-import show_coil2_webp from "@/assets/coil2.webp";
-import show_fittings_webp from "@/assets/show_fittings.webp";
-import show_fittings2_webp from "@/assets/show_fittings2.webp";
-import show_fittings3_webp from "@/assets/show_fittings3.webp";
-import show_fittings4_webp from "@/assets/show_fittings4.webp";
-import show_fittings5_webp from "@/assets/show_fittings5.webp";
-import show_fittings6_webp from "@/assets/show_fittings6.webp";
-import show_fittings7_webp from "@/assets/show_fittings7.webp";
-import show_fittings8_webp from "@/assets/show_fittings8.webp";
-import show_fittings9_webp from "@/assets/show_fittings9.webp";
-import show_fittings10_webp from "@/assets/show_fittings10.webp";
-import show_fittings11_webp from "@/assets/show_fittings11.webp";
-import show_fittings12_webp from "@/assets/show_fittings12.webp";
-import show_fittings13_webp from "@/assets/show_fittings13.webp";
-import show_big_webp from "@/assets/big.webp";
-import show_big2_webp from "@/assets/big2.webp";
-import show_big3_webp from "@/assets/big3.webp";
-import show_big4_webp from "@/assets/big4.webp";
-import show_big5_webp from "@/assets/big5.webp";
-import show_big6_webp from "@/assets/big6.webp";
-import show_flanges_webp from "@/assets/show_flanges.webp";
-import show_f_webp from "@/assets/show_f.webp"
-import heat_exchange_webp from "@/assets/heat_exchange.webp";
-import helium_button_webp from "@/assets/helium_button.webp";
+// import show_tube_webp from "@/assets/tube.webp";
+// import show_tube1_webp from "@/assets/tube1.webp";
+// import show_tube2_webp from "@/assets/tube2.webp";
+// import show_tube3_webp from "@/assets/tube3.webp";
+// import show_tube4_webp from "@/assets/tube4.webp";
+// import show_tube5_webp from "@/assets/tube5.webp";
+// import show_tube6_webp from "@/assets/tube6.webp";
+// import show_tube7_webp from "@/assets/tube7.webp";
+// import show_tube8_webp from "@/assets/tube8.webp";
+// import show_tube9_webp from "@/assets/tube9.webp";
+// import show_tube10_webp from "@/assets/tube10.webp";
+// import show_tube11_webp from "@/assets/tube11.webp";
+// import show_tube12_webp from "@/assets/tube12.webp";
+// import show_tube13_webp from "@/assets/tube13.webp";
+// import show_tube14_webp from "@/assets/tube14.webp";
+// import show_tube15_webp from "@/assets/tube15.webp";
+// import show_tube16_webp from "@/assets/tube16.webp";
+// import show_tube17_webp from "@/assets/tube17.webp";
+// import show_tube18_webp from "@/assets/tube18.webp";
+// import show_tube19_webp from "@/assets/tube19.webp";
+// import show_tube20_webp from "@/assets/tube20.webp";
+// import show_tube21_webp from "@/assets/tube21.webp";
+// import show_tube22_webp from "@/assets/tube22.webp";
+// import show_tube23_webp from "@/assets/tube23.webp";
+// import show_tube24_webp from "@/assets/tube24.webp";
+// import show_tube25_webp from "@/assets/tube25.webp";
+// import show_tube26_webp from "@/assets/tube26.webp";
+// import show_tube27_webp from "@/assets/tube27.webp";
+// import show_tube28_webp from "@/assets/tube28.webp";
+// import show_tube29_webp from "@/assets/tube29.webp";
+// import show_tube30_webp from "@/assets/tube30.webp";
+// import show_tube31_webp from "@/assets/tube31.webp";
+// import show_tube32_webp from "@/assets/tube32.webp";
+// import show_tube33_webp from "@/assets/tube33.webp";
+// import show_tube34_webp from "@/assets/tube34.webp";
+// import show_tube35_webp from "@/assets/tube35.webp";
+// import show_tube36_webp from "@/assets/tube36.webp";
+// import show_tube37_webp from "@/assets/tube37.webp";
+// import show_tube38_webp from "@/assets/tube38.webp";
+// import show_tube39_webp from "@/assets/tube39.webp";
+// import show_tube40_webp from "@/assets/tube40.webp";
+// import show_tube41_webp from "@/assets/tube41.webp";
+// import show_tube43_webp from "@/assets/tube43.webp";
+// import show_tube44_webp from "@/assets/tube44.webp";
+// import show_tube45_webp from "@/assets/tube45.webp";
+// import show_tube46_webp from "@/assets/tube46.webp";
+// import show_tube47_webp from "@/assets/tube47.webp";
+// import show_tube48_webp from "@/assets/tube48.webp";
+// import show_tube49_webp from "@/assets/tube49.webp";
+// import show_tube50_webp from "@/assets/tube50.webp";
+// import show_tube51_webp from "@/assets/tube51.webp";
+// import show_tube52_webp from "@/assets/tube52.webp";
+// import show_tube53_webp from "@/assets/tube53.webp";
+// import show_tube54_webp from "@/assets/tube54.webp";
+// import show_tube55_webp from "@/assets/tube55.webp";
+// import show_tube56_webp from "@/assets/tube56.webp";
+// import show_tube57_webp from "@/assets/tube57.webp";
+// import show_tube58_webp from "@/assets/tube58.webp";
+// import show_tube59_webp from "@/assets/tube59.webp";
+// import show_tube60_webp from "@/assets/tube60.webp";
+// import show_tube61_webp from "@/assets/tube61.webp";
+// import show_tube62_webp from "@/assets/tube62.webp";
+// import show_tube63_webp from "@/assets/tube63.webp";
+// import show_tube64_webp from "@/assets/tube64.webp";
+// import show_tube65_webp from "@/assets/tube65.webp";
+// import show_tube66_webp from "@/assets/tube66.webp";
+// import show_tube67_webp from "@/assets/tube67.webp";
+// import show_tube68_webp from "@/assets/tube68.webp";
+// import show_tube69_webp from "@/assets/tube69.webp";
+// import show_tube70_webp from "@/assets/tube70.webp";
+// import show_tube71_webp from "@/assets/tube71.webp";
+// import show_tube72_webp from "@/assets/tube72.webp";
+// import show_tube73_webp from "@/assets/tube73.webp";
+// import show_tube74_webp from "@/assets/tube74.webp";
+// import show_tube75_webp from "@/assets/tube75.webp";
+// import show_tube76_webp from "@/assets/tube76.webp";
+// import show_tube77_webp from "@/assets/tube77.webp";
+// import show_tube78_webp from "@/assets/tube78.webp";
+// import show_tube79_webp from "@/assets/tube79.webp";
+// import show_coil_webp from "@/assets/coil.webp";
+// import show_coil1_webp from "@/assets/coil1.webp";
+// import show_coil2_webp from "@/assets/coil2.webp";
+// import show_fittings_webp from "@/assets/show_fittings.webp";
+// import show_fittings2_webp from "@/assets/show_fittings2.webp";
+// import show_fittings3_webp from "@/assets/show_fittings3.webp";
+// import show_fittings4_webp from "@/assets/show_fittings4.webp";
+// import show_fittings5_webp from "@/assets/show_fittings5.webp";
+// import show_fittings6_webp from "@/assets/show_fittings6.webp";
+// import show_fittings7_webp from "@/assets/show_fittings7.webp";
+// import show_fittings8_webp from "@/assets/show_fittings8.webp";
+// import show_fittings9_webp from "@/assets/show_fittings9.webp";
+// import show_fittings10_webp from "@/assets/show_fittings10.webp";
+// import show_fittings11_webp from "@/assets/show_fittings11.webp";
+// import show_fittings12_webp from "@/assets/show_fittings12.webp";
+// import show_fittings13_webp from "@/assets/show_fittings13.webp";
+// import show_big_webp from "@/assets/big.webp";
+// import show_big2_webp from "@/assets/big2.webp";
+// import show_big3_webp from "@/assets/big3.webp";
+// import show_big4_webp from "@/assets/big4.webp";
+// import show_big5_webp from "@/assets/big5.webp";
+// import show_big6_webp from "@/assets/big6.webp";
+// import show_flanges_webp from "@/assets/show_flanges.webp";
+// import show_f_webp from "@/assets/show_f.webp"
+// import heat_exchange_webp from "@/assets/heat_exchange.webp";
+// import helium_button_webp from "@/assets/helium_button.webp";
 
 // ====================  새로운 사진 가져오기 ============================
 // import example from "@/assets/example.jpg"
@@ -265,6 +265,7 @@ import { productDetails } from "@/data/productDetails";
 const Index = () => {
   const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
   const mapUrl = `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=Gwangnaru-ro+323,Seongdong-gu,Seoul`;
+  const cdn = import.meta.env.VITE_CDN_URL
   const [language, setLanguage] = useState<Language>("en");
   
   const t = translations[language];
@@ -355,428 +356,536 @@ const Index = () => {
     { href: "#contact", label: t.nav.contactUs },
   ];
 
+  const image_files = [
+    "tube",
+    "tube1",
+    "tube2",
+    "tube3",
+    "tube4",
+    "tube5",
+    "tube6",
+    "tube7",
+    "tube8",
+    "tube9",
+    "tube10",
+    "tube11",
+    "tube12",
+    "tube13",
+    "tube14",
+    "tube15",
+    "tube16",
+    "tube17",
+    "tube18",
+    "tube19",
+    "tube20",
+    "tube21",
+    "tube22",
+    "tube23",
+    "tube24",
+    "tube25",
+    "tube26",
+    "tube27",
+    "tube28",
+    "tube29",
+    "tube30",
+    "tube31",
+    "tube32",
+    "tube33",
+    "tube34",
+    "tube35",
+    "tube36",
+    "tube37",
+    "tube38",
+    "tube39",
+    "tube40",
+    "tube41",
+    "tube43",
+    "tube44",
+    "tube45",
+    "tube46",
+    "tube47",
+    "tube48",
+    "tube49",
+    "tube50",
+    "tube51",
+    "tube52",
+    "tube53",
+    "tube54",
+    "tube55",
+    "tube56",
+    "tube57",
+    "tube58",
+    "tube59",
+    "tube60",
+    "tube61",
+    "tube62",
+    "tube63",
+    "tube64",
+    "tube65",
+    "tube66",
+    "tube67",
+    "tube68",
+    "tube69",
+    "tube70",
+    "tube71",
+    "tube72",
+    "tube73",
+    "tube74",
+    "tube75",
+    "tube76",
+    "tube77",
+    "tube78",
+    "tube79",
+    "coil",
+    "coil1",
+    "coil2",
+    "show_fittings",
+    "show_fittings2",
+    "show_fittings3",
+    "show_fittings4",
+    "show_fittings5",
+    "show_fittings6",
+    "show_fittings7",
+    "show_fittings8",
+    "show_fittings9",
+    "show_fittings10",
+    "show_fittings11",
+    "show_fittings12",
+    "show_fittings13",
+    "big",
+    "big2",
+    "big3",
+    "big4",
+    "big5",
+    "big6",
+    "show_flanges",
+    "show_f",
+    "heat_exchange",
+    "helium_button",
+  ]
 
-  const show_image = [
-    {
-        jpg: show_big2,
-        webp: show_big2_webp
-    },
-    {
-        jpg: show_big3,
-        webp: show_big3_webp
-    },
-    {
-        jpg: show_big4,
-        webp: show_big4_webp
-    },
-    {
-        jpg: show_big5,
-        webp: show_big5_webp
-    },
-    {
-        jpg: show_big6,
-        webp: show_big6_webp
-    },
-    {
-        jpg: show_coil2,
-        webp: show_coil2_webp
-    },
-    {
-        jpg: show_tube,
-        webp: show_tube_webp
-    },
-    {
-        jpg: show_tube1,
-        webp: show_tube1_webp
-    },
-    {
-        jpg: show_tube2,
-        webp: show_tube2_webp
-    },
-    {
-        jpg: show_tube3,
-        webp: show_tube3_webp
-    },
-    {
-        jpg: show_tube4,
-        webp: show_tube4_webp
-    },
-    {
-        jpg: show_tube5,
-        webp: show_tube5_webp
-    },
-    {
-        jpg: show_tube6,
-        webp: show_tube6_webp
-    },
-    {
-        jpg: show_tube7,
-        webp: show_tube7_webp
-    },
-    {
-        jpg: show_tube8,
-        webp: show_tube8_webp
-    },
-    {
-        jpg: show_tube9,
-        webp: show_tube9_webp
-    },
-    {
-        jpg: show_tube10,
-        webp: show_tube10_webp
-    },
-    {
-        jpg: show_tube11,
-        webp: show_tube11_webp
-    },
-    {
-        jpg: show_tube12,
-        webp: show_tube12_webp
-    },
-    {
-        jpg: show_tube13,
-        webp: show_tube13_webp
-    },
-    {
-        jpg: show_tube14,
-        webp: show_tube14_webp
-    },
-    {
-        jpg: show_tube15,
-        webp: show_tube15_webp
-    },
-    {
-        jpg: show_tube16,
-        webp: show_tube16_webp
-    },
-    {
-        jpg: show_tube17,
-        webp: show_tube17_webp
-    },
-    {
-        jpg: show_tube18,
-        webp: show_tube18_webp
-    },
-    {
-        jpg: show_tube19,
-        webp: show_tube19_webp
-    },
-    {
-        jpg: show_tube20,
-        webp: show_tube20_webp
-    },
-    {
-        jpg: show_tube21,
-        webp: show_tube21_webp
-    },
-    {
-        jpg: show_tube22,
-        webp: show_tube22_webp
-    },
-    {
-        jpg: show_tube23,
-        webp: show_tube23_webp
-    },
-    {
-        jpg: show_tube24,
-        webp: show_tube24_webp
-    },
-    {
-        jpg: show_tube25,
-        webp: show_tube25_webp
-    },
-    {
-        jpg: show_tube26,
-        webp: show_tube26_webp
-    },
-    {
-        jpg: show_tube27,
-        webp: show_tube27_webp
-    },
-    {
-        jpg: show_tube28,
-        webp: show_tube28_webp
-    },
-    {
-        jpg: show_tube29,
-        webp: show_tube29_webp
-    },
-    {
-        jpg: show_tube30,
-        webp: show_tube30_webp
-    },
-    {
-        jpg: show_tube31,
-        webp: show_tube31_webp
-    },
-    {
-        jpg: show_tube32,
-        webp: show_tube32_webp
-    },
-    {
-        jpg: show_tube33,
-        webp: show_tube33_webp
-    },
-    {
-        jpg: show_tube34,
-        webp: show_tube34_webp
-    },
-    {
-        jpg: show_tube35,
-        webp: show_tube35_webp
-    },
-    {
-        jpg: show_tube36,
-        webp: show_tube36_webp
-    },
-    {
-        jpg: show_tube37,
-        webp: show_tube37_webp
-    },
-    {
-        jpg: show_tube38,
-        webp: show_tube38_webp
-    },
-    {
-        jpg: show_tube39,
-        webp: show_tube39_webp
-    },
-    {
-        jpg: show_tube40,
-        webp: show_tube40_webp
-    },
-    {
-        jpg: show_tube41,
-        webp: show_tube41_webp
-    },
-    {
-        jpg: show_tube43,
-        webp: show_tube43_webp
-    },
-    {
-        jpg: show_tube44,
-        webp: show_tube44_webp
-    },
-    {
-        jpg: show_tube45,
-        webp: show_tube45_webp
-    },
-    {
-        jpg: show_tube46,
-        webp: show_tube46_webp
-    },
-    {
-        jpg: show_tube47,
-        webp: show_tube47_webp
-    },
-    {
-        jpg: show_tube48,
-        webp: show_tube48_webp
-    },
-    {
-        jpg: show_tube49,
-        webp: show_tube49_webp
-    },
-    {
-        jpg: show_tube50,
-        webp: show_tube50_webp
-    },
-    {
-        jpg: show_tube51,
-        webp: show_tube51_webp
-    },
-    {
-        jpg: show_tube52,
-        webp: show_tube52_webp
-    },
-    {
-        jpg: show_tube53,
-        webp: show_tube53_webp
-    },
-    {
-        jpg: show_tube54,
-        webp: show_tube54_webp
-    },
-    {
-        jpg: show_tube55,
-        webp: show_tube55_webp
-    },
-    {
-        jpg: show_tube56,
-        webp: show_tube56_webp
-    },
-    {
-        jpg: show_tube57,
-        webp: show_tube57_webp
-    },
-    {
-        jpg: show_tube58,
-        webp: show_tube58_webp
-    },
-    {
-        jpg: show_tube59,
-        webp: show_tube59_webp
-    },
-    {
-        jpg: show_tube60,
-        webp: show_tube60_webp
-    },
-    {
-        jpg: show_tube61,
-        webp: show_tube61_webp
-    },
-    {
-        jpg: show_tube62,
-        webp: show_tube62_webp
-    },
-    {
-        jpg: show_tube63,
-        webp: show_tube63_webp
-    },
-    {
-        jpg: show_tube64,
-        webp: show_tube64_webp
-    },
-    {
-        jpg: show_tube65,
-        webp: show_tube65_webp
-    },
-    {
-        jpg: show_tube66,
-        webp: show_tube66_webp
-    },
-    {
-        jpg: show_tube67,
-        webp: show_tube67_webp
-    },
-    {
-        jpg: show_tube68,
-        webp: show_tube68_webp
-    },
-    {
-        jpg: show_tube69,
-        webp: show_tube69_webp
-    },
-    {
-        jpg: show_tube70,
-        webp: show_tube70_webp
-    },
-    {
-        jpg: show_tube71,
-        webp: show_tube71_webp
-    },
-    {
-        jpg: show_tube72,
-        webp: show_tube72_webp
-    },
-    {
-        jpg: show_tube73,
-        webp: show_tube73_webp
-    },
-    {
-        jpg: show_tube74,
-        webp: show_tube74_webp
-    },
-    {
-        jpg: show_tube75,
-        webp: show_tube75_webp
-    },
-    {
-        jpg: show_tube76,
-        webp: show_tube76_webp
-    },
-    {
-        jpg: show_tube77,
-        webp: show_tube77_webp
-    },
-    {
-        jpg: show_tube78,
-        webp: show_tube78_webp
-    },
-    {
-        jpg: show_tube79,
-        webp: show_tube79_webp
-    },
-    {
-        jpg: show_coil,
-        webp: show_coil_webp
-    },
-    {
-        jpg: show_coil1,
-        webp: show_coil1_webp
-    },
-    {
-        jpg: heat_exchange,
-        webp: heat_exchange_webp
-    },
-    {
-        jpg: show_fittings,
-        webp: show_fittings_webp
-    },
-    {
-        jpg: show_fittings2,
-        webp: show_fittings2_webp
-    },
-    {
-        jpg: show_fittings3,
-        webp: show_fittings3_webp
-    },
-    {
-        jpg: show_fittings4,
-        webp: show_fittings4_webp
-    },
-    {
-        jpg: show_fittings5,
-        webp: show_fittings5_webp
-    },
-    {
-        jpg: show_fittings6,
-        webp: show_fittings6_webp
-    },
-    {
-        jpg: show_fittings7,
-        webp: show_fittings7_webp
-    },
-    {
-        jpg: show_fittings8,
-        webp: show_fittings8_webp
-    },
-    {
-        jpg: show_fittings9,
-        webp: show_fittings9_webp
-    },
-    {
-        jpg: show_fittings10,
-        webp: show_fittings10_webp
-    },
-    {
-        jpg: show_fittings11,
-        webp: show_fittings11_webp
-    },
-    {
-        jpg: show_fittings12,
-        webp: show_fittings12_webp
-    },
-    {
-        jpg: show_fittings13,
-        webp: show_fittings13_webp
-    },
-    {
-        jpg: show_big,
-        webp: show_big_webp
-    },
-    {
-        jpg: show_flanges,
-        webp: show_flanges_webp
-    },
-    {
-        jpg: show_f,
-        webp: show_f_webp
-    },
-    {
-        jpg: helium_button,
-        webp: helium_button_webp
-    },
+
+  // const show_image = [
+  //   {
+  //       jpg: show_big2,
+  //       webp: show_big2_webp
+  //   },
+  //   {
+  //       jpg: show_big3,
+  //       webp: show_big3_webp
+  //   },
+  //   {
+  //       jpg: show_big4,
+  //       webp: show_big4_webp
+  //   },
+  //   {
+  //       jpg: show_big5,
+  //       webp: show_big5_webp
+  //   },
+  //   {
+  //       jpg: show_big6,
+  //       webp: show_big6_webp
+  //   },
+  //   {
+  //       jpg: show_coil2,
+  //       webp: show_coil2_webp
+  //   },
+  //   {
+  //       jpg: show_tube,
+  //       webp: show_tube_webp
+  //   },
+  //   {
+  //       jpg: show_tube1,
+  //       webp: show_tube1_webp
+  //   },
+  //   {
+  //       jpg: show_tube2,
+  //       webp: show_tube2_webp
+  //   },
+  //   {
+  //       jpg: show_tube3,
+  //       webp: show_tube3_webp
+  //   },
+  //   {
+  //       jpg: show_tube4,
+  //       webp: show_tube4_webp
+  //   },
+  //   {
+  //       jpg: show_tube5,
+  //       webp: show_tube5_webp
+  //   },
+  //   {
+  //       jpg: show_tube6,
+  //       webp: show_tube6_webp
+  //   },
+  //   {
+  //       jpg: show_tube7,
+  //       webp: show_tube7_webp
+  //   },
+  //   {
+  //       jpg: show_tube8,
+  //       webp: show_tube8_webp
+  //   },
+  //   {
+  //       jpg: show_tube9,
+  //       webp: show_tube9_webp
+  //   },
+  //   {
+  //       jpg: show_tube10,
+  //       webp: show_tube10_webp
+  //   },
+  //   {
+  //       jpg: show_tube11,
+  //       webp: show_tube11_webp
+  //   },
+  //   {
+  //       jpg: show_tube12,
+  //       webp: show_tube12_webp
+  //   },
+  //   {
+  //       jpg: show_tube13,
+  //       webp: show_tube13_webp
+  //   },
+  //   {
+  //       jpg: show_tube14,
+  //       webp: show_tube14_webp
+  //   },
+  //   {
+  //       jpg: show_tube15,
+  //       webp: show_tube15_webp
+  //   },
+  //   {
+  //       jpg: show_tube16,
+  //       webp: show_tube16_webp
+  //   },
+  //   {
+  //       jpg: show_tube17,
+  //       webp: show_tube17_webp
+  //   },
+  //   {
+  //       jpg: show_tube18,
+  //       webp: show_tube18_webp
+  //   },
+  //   {
+  //       jpg: show_tube19,
+  //       webp: show_tube19_webp
+  //   },
+  //   {
+  //       jpg: show_tube20,
+  //       webp: show_tube20_webp
+  //   },
+  //   {
+  //       jpg: show_tube21,
+  //       webp: show_tube21_webp
+  //   },
+  //   {
+  //       jpg: show_tube22,
+  //       webp: show_tube22_webp
+  //   },
+  //   {
+  //       jpg: show_tube23,
+  //       webp: show_tube23_webp
+  //   },
+  //   {
+  //       jpg: show_tube24,
+  //       webp: show_tube24_webp
+  //   },
+  //   {
+  //       jpg: show_tube25,
+  //       webp: show_tube25_webp
+  //   },
+  //   {
+  //       jpg: show_tube26,
+  //       webp: show_tube26_webp
+  //   },
+  //   {
+  //       jpg: show_tube27,
+  //       webp: show_tube27_webp
+  //   },
+  //   {
+  //       jpg: show_tube28,
+  //       webp: show_tube28_webp
+  //   },
+  //   {
+  //       jpg: show_tube29,
+  //       webp: show_tube29_webp
+  //   },
+  //   {
+  //       jpg: show_tube30,
+  //       webp: show_tube30_webp
+  //   },
+  //   {
+  //       jpg: show_tube31,
+  //       webp: show_tube31_webp
+  //   },
+  //   {
+  //       jpg: show_tube32,
+  //       webp: show_tube32_webp
+  //   },
+  //   {
+  //       jpg: show_tube33,
+  //       webp: show_tube33_webp
+  //   },
+  //   {
+  //       jpg: show_tube34,
+  //       webp: show_tube34_webp
+  //   },
+  //   {
+  //       jpg: show_tube35,
+  //       webp: show_tube35_webp
+  //   },
+  //   {
+  //       jpg: show_tube36,
+  //       webp: show_tube36_webp
+  //   },
+  //   {
+  //       jpg: show_tube37,
+  //       webp: show_tube37_webp
+  //   },
+  //   {
+  //       jpg: show_tube38,
+  //       webp: show_tube38_webp
+  //   },
+  //   {
+  //       jpg: show_tube39,
+  //       webp: show_tube39_webp
+  //   },
+  //   {
+  //       jpg: show_tube40,
+  //       webp: show_tube40_webp
+  //   },
+  //   {
+  //       jpg: show_tube41,
+  //       webp: show_tube41_webp
+  //   },
+  //   {
+  //       jpg: show_tube43,
+  //       webp: show_tube43_webp
+  //   },
+  //   {
+  //       jpg: show_tube44,
+  //       webp: show_tube44_webp
+  //   },
+  //   {
+  //       jpg: show_tube45,
+  //       webp: show_tube45_webp
+  //   },
+  //   {
+  //       jpg: show_tube46,
+  //       webp: show_tube46_webp
+  //   },
+  //   {
+  //       jpg: show_tube47,
+  //       webp: show_tube47_webp
+  //   },
+  //   {
+  //       jpg: show_tube48,
+  //       webp: show_tube48_webp
+  //   },
+  //   {
+  //       jpg: show_tube49,
+  //       webp: show_tube49_webp
+  //   },
+  //   {
+  //       jpg: show_tube50,
+  //       webp: show_tube50_webp
+  //   },
+  //   {
+  //       jpg: show_tube51,
+  //       webp: show_tube51_webp
+  //   },
+  //   {
+  //       jpg: show_tube52,
+  //       webp: show_tube52_webp
+  //   },
+  //   {
+  //       jpg: show_tube53,
+  //       webp: show_tube53_webp
+  //   },
+  //   {
+  //       jpg: show_tube54,
+  //       webp: show_tube54_webp
+  //   },
+  //   {
+  //       jpg: show_tube55,
+  //       webp: show_tube55_webp
+  //   },
+  //   {
+  //       jpg: show_tube56,
+  //       webp: show_tube56_webp
+  //   },
+  //   {
+  //       jpg: show_tube57,
+  //       webp: show_tube57_webp
+  //   },
+  //   {
+  //       jpg: show_tube58,
+  //       webp: show_tube58_webp
+  //   },
+  //   {
+  //       jpg: show_tube59,
+  //       webp: show_tube59_webp
+  //   },
+  //   {
+  //       jpg: show_tube60,
+  //       webp: show_tube60_webp
+  //   },
+  //   {
+  //       jpg: show_tube61,
+  //       webp: show_tube61_webp
+  //   },
+  //   {
+  //       jpg: show_tube62,
+  //       webp: show_tube62_webp
+  //   },
+  //   {
+  //       jpg: show_tube63,
+  //       webp: show_tube63_webp
+  //   },
+  //   {
+  //       jpg: show_tube64,
+  //       webp: show_tube64_webp
+  //   },
+  //   {
+  //       jpg: show_tube65,
+  //       webp: show_tube65_webp
+  //   },
+  //   {
+  //       jpg: show_tube66,
+  //       webp: show_tube66_webp
+  //   },
+  //   {
+  //       jpg: show_tube67,
+  //       webp: show_tube67_webp
+  //   },
+  //   {
+  //       jpg: show_tube68,
+  //       webp: show_tube68_webp
+  //   },
+  //   {
+  //       jpg: show_tube69,
+  //       webp: show_tube69_webp
+  //   },
+  //   {
+  //       jpg: show_tube70,
+  //       webp: show_tube70_webp
+  //   },
+  //   {
+  //       jpg: show_tube71,
+  //       webp: show_tube71_webp
+  //   },
+  //   {
+  //       jpg: show_tube72,
+  //       webp: show_tube72_webp
+  //   },
+  //   {
+  //       jpg: show_tube73,
+  //       webp: show_tube73_webp
+  //   },
+  //   {
+  //       jpg: show_tube74,
+  //       webp: show_tube74_webp
+  //   },
+  //   {
+  //       jpg: show_tube75,
+  //       webp: show_tube75_webp
+  //   },
+  //   {
+  //       jpg: show_tube76,
+  //       webp: show_tube76_webp
+  //   },
+  //   {
+  //       jpg: show_tube77,
+  //       webp: show_tube77_webp
+  //   },
+  //   {
+  //       jpg: show_tube78,
+  //       webp: show_tube78_webp
+  //   },
+  //   {
+  //       jpg: show_tube79,
+  //       webp: show_tube79_webp
+  //   },
+  //   {
+  //       jpg: show_coil,
+  //       webp: show_coil_webp
+  //   },
+  //   {
+  //       jpg: show_coil1,
+  //       webp: show_coil1_webp
+  //   },
+  //   {
+  //       jpg: heat_exchange,
+  //       webp: heat_exchange_webp
+  //   },
+  //   {
+  //       jpg: show_fittings,
+  //       webp: show_fittings_webp
+  //   },
+  //   {
+  //       jpg: show_fittings2,
+  //       webp: show_fittings2_webp
+  //   },
+  //   {
+  //       jpg: show_fittings3,
+  //       webp: show_fittings3_webp
+  //   },
+  //   {
+  //       jpg: show_fittings4,
+  //       webp: show_fittings4_webp
+  //   },
+  //   {
+  //       jpg: show_fittings5,
+  //       webp: show_fittings5_webp
+  //   },
+  //   {
+  //       jpg: show_fittings6,
+  //       webp: show_fittings6_webp
+  //   },
+  //   {
+  //       jpg: show_fittings7,
+  //       webp: show_fittings7_webp
+  //   },
+  //   {
+  //       jpg: show_fittings8,
+  //       webp: show_fittings8_webp
+  //   },
+  //   {
+  //       jpg: show_fittings9,
+  //       webp: show_fittings9_webp
+  //   },
+  //   {
+  //       jpg: show_fittings10,
+  //       webp: show_fittings10_webp
+  //   },
+  //   {
+  //       jpg: show_fittings11,
+  //       webp: show_fittings11_webp
+  //   },
+  //   {
+  //       jpg: show_fittings12,
+  //       webp: show_fittings12_webp
+  //   },
+  //   {
+  //       jpg: show_fittings13,
+  //       webp: show_fittings13_webp
+  //   },
+  //   {
+  //       jpg: show_big,
+  //       webp: show_big_webp
+  //   },
+  //   {
+  //       jpg: show_flanges,
+  //       webp: show_flanges_webp
+  //   },
+  //   {
+  //       jpg: show_f,
+  //       webp: show_f_webp
+  //   },
+  //   {
+  //       jpg: helium_button,
+  //       webp: helium_button_webp
+  //   },
     // ===================== 새롭게 가져온 사진을 이런 형식으로 집어놓기 =========================================
     // {
     //     jpg: example,
@@ -789,7 +898,7 @@ const Index = () => {
 
 
     // =====================================================================================================
-  ]
+  // ]
 
   const plugin = React.useRef(
     Autoplay({
@@ -908,13 +1017,13 @@ const Index = () => {
                 }}
               >
                 <CarouselContent className="-ml-6">
-                  {show_image.map((k, i) => (
+                  {image_files.map((k, i) => (
                     <CarouselItem key={i} className="pl-6 basis-full md:basis-1/2 lg:basis-1/2 xl:basis-1/3">
                       <div className="overflow-hidden aspect-[16/10]">
                         <picture>
-                          <source srcSet={k.webp} type="image/webp"></source>
+                          <source srcSet={`${cdn}/${k}.webp`} type="image/webp"></source>
                           <img
-                            src={k.jpg}
+                            src={`${cdn}/${k}.jpg`}
                             alt={`Site ${i + 1}`}
                             loading={i < 6 ? "eager" : "lazy"} // Eager load the first 3, lazy load the rest
                             decoding="async" // Helps the browser render the page faster
