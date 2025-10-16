@@ -127,7 +127,7 @@ const Index = () => {
     document.head.appendChild(script);
   }, [language, t]);
 
-useEffect(() => {
+  useEffect(() => {
     const fetchImages = async () => {
       try {
         // The endpoint is relative to your project root
@@ -135,6 +135,7 @@ useEffect(() => {
         if (!response.ok) {
           throw new Error('Failed to fetch images');
         }
+        console.log(response)
         const data: string[] = await response.json();
         setImageFiles(data); // Update the state with the fetched names
       } catch (error) {
@@ -273,14 +274,14 @@ useEffect(() => {
 
   const [api, setApi] = React.useState<CarouselApi>()
 
-  React.useEffect(() => {
-    if (!api) {
-      return
-    }
+  // React.useEffect(() => {
+  //   if (!api) {
+  //     return
+  //   }
 
-    api.plugins().autoplay?.play()
+  //   api.plugins().autoplay?.play()
 
-  }, [api])
+  // }, [api])
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -369,8 +370,8 @@ useEffect(() => {
             {/* 1. Add event handlers to the carousel's wrapper div 👇 */}
             <div 
               className="w-full max-w-full mx-auto"
-              onMouseEnter={() => plugin.current.stop()}
-              onMouseLeave={() => plugin.current.play()}
+              onMouseEnter={() => api?.plugins().autoplay?.stop()}
+              onMouseLeave={() => api?.plugins().autoplay?.play()}
             >
               <Carousel
                 setApi={setApi}
@@ -385,7 +386,7 @@ useEffect(() => {
                     <CarouselItem key={i} className="pl-6 basis-full md:basis-1/2 lg:basis-1/2 xl:basis-1/3">
                       <div className="overflow-hidden aspect-[16/10]">
                         <picture>
-                          <source srcSet={`${cdn}/${k}.webp`} type="image/webp"></source>
+                          <source srcSet={`${cdn}/${k}`} type="image/webp"></source>
                           <img
                             src={`${cdn}/${k}.jpg`}
                             alt={`Site ${i + 1}`}

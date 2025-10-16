@@ -16,16 +16,22 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     // You can add a Prefix here if your images are in a subfolder
     // Prefix: "works-gallery/",
   });
-
+  
   try {
     const { Contents } = await s3Client.send(command);
-    // We only want the file names (Keys)
-    const fileNames = Contents?.map(item => item.Key).filter(Boolean) || [];
+    
+    // Get all file names, filtering out any null/undefined entries
+    const allFileNames = Contents?.map(item => item.Key).filter(Boolean) || [];
+
+    // **NEW:** Filter the list to only include files ending with '.webp'
+    const webpFileNames = allFileNames.filter(name => 
+      name && name.toLowerCase().endsWith('.webp')
+    );
 
     // Remove file extensions for use in your component
-    const baseNames = fileNames.map(name => name?.split('.')[0]);
+    // const baseNames = webpFileNames.map(name => name?.split('.')[0]);
 
-    res.status(200).json(baseNames);
+    res.status(200).json(webpFileNames);
   } catch (error) {
     console.error("Error listing S3 objects:", error);
     res.status(500).json({ error: "Failed to list bucket contents." });
