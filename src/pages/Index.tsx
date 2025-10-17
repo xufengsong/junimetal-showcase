@@ -43,7 +43,7 @@ import { productDetails } from "@/data/productDetails";
 const Index = () => {
   const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
   const mapUrl = `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=Gwangnaru-ro+323,Seongdong-gu,Seoul`;
-  const cdn = import.meta.env.VITE_CDN_URL
+  const cdn = import.meta.env.VITE_CDN_IMAGE_URL
   const [language, setLanguage] = useState<Language>("en");
 
   const [imageFiles, setImageFiles] = useState<string[]>([]);
